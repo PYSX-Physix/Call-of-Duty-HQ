@@ -1,0 +1,18 @@
+﻿<Window x:Class="Call_of_Duty_HQ.Games.Call_of_Duty_2_Window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Call_of_Duty_HQ.Games"
+        mc:Ignorable="d"
+        Title="Call of Duty 2" Height="450" Width="800" Icon="/Images/CallofDutyLogo.ico" ResizeMode="CanMinimize" Background="#FF1F1F1F" WindowStartupLocation="CenterScreen" MaxWidth="800" MaxHeight="450">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Height="36" Margin="503,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Foreground="White" FontSize="22" Text="Call of Duty 2" TextAlignment="Center"/>
+        <Button Content="Launch Game" HorizontalAlignment="Left" Height="61" Margin="503,79,0,0" VerticalAlignment="Top" Width="220" FontSize="20" Click="CoD_Run_Clicked"/>
+        <TextBlock Height="25" TextWrapping="Wrap" Text="This game requires a valid license to run.  " Width="293" Foreground="White" FontSize="16" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="84,250,0,0"/>
+        <TextBlock HorizontalAlignment="Left" Height="30" Margin="512,145,0,0" TextWrapping="Wrap" Text="Developers: Infinity Ward" VerticalAlignment="Top" Width="201" Foreground="White" FontSize="18"/>
+        <Button Content="Back" HorizontalAlignment="Left" Height="50" Margin="725,352,0,0" VerticalAlignment="Top" Width="50" Click="Back_Clicked"/>
+        <Image Source="/Images/Game_Backgrounds/CoD_2005_Backsplash.png" Stretch="Fill" Margin="10,9,317,173" RenderTransformOrigin="0.5,0.5" />
+
+    </Grid>
+</Window>

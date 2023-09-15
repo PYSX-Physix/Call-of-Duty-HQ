@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A2055C5D-B9B5-43DE-94DA-1E545A723BCA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Call_of_Duty_Launcher</RootNamespace>
+    <AssemblyName>Call of Duty Launcher</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>http://localhost/Call of Duty Launcher/</UpdateUrl>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>F749AD44116DB66337C1ACC3651C4D93A9CAE69D</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Call of Duty Launcher_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="WindowAbout.xaml.cs">
+      <DependentUpon>WindowAbout.xaml</DependentUpon>
+    </Compile>
+    <Page Include="CoD_Game_Launched.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Coming_Soon.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Games\Call_of_Duty_2_Window.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Games\Call_of_Duty_4_MW.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Games\Call_of_Duty_AW_Window.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Games\Call_of_Duty_BO2_Window.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Games\Call_of_Duty_BO3_Window.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Games\Call_of_Duty_BOCW_Window.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Games\Call_of_Duty_BO_Window.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Games\Call_of_Duty_G_Window.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Games\Call_of_Duty_IW_Window.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Games\Call_of_Duty_MW2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Games\Call_of_Duty_MW3_Window.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Games\Call_of_Duty_MWII_Window.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Games\Call_of_Duty_MW_19_Window.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Games\Call_of_Duty_MW_III.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Games\Call_of_Duty_UO_Window.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Games\Call_of_Duty_VG_Window.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Games\Call_of_Duty_WaW_Window.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Games\Call_of_Duty_Window.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Games\Call_of_Duty_WW2_Window.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Help_Window.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoD_Game_Launched.xaml.cs">
+      <DependentUpon>CoD_Game_Launched.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Coming_Soon.xaml.cs">
+      <DependentUpon>Coming_Soon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Games\Call_of_Duty_2_Window.xaml.cs">
+      <DependentUpon>Call_of_Duty_2_Window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Games\Call_of_Duty_4_MW.xaml.cs">
+      <DependentUpon>Call_of_Duty_4_MW.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Games\Call_of_Duty_AW_Window.xaml.cs">
+      <DependentUpon>Call_of_Duty_AW_Window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Games\Call_of_Duty_BO2_Window.xaml.cs">
+      <DependentUpon>Call_of_Duty_BO2_Window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Games\Call_of_Duty_BO3_Window.xaml.cs">
+      <DependentUpon>Call_of_Duty_BO3_Window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Games\Call_of_Duty_BOCW_Window.xaml.cs">
+      <DependentUpon>Call_of_Duty_BOCW_Window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Games\Call_of_Duty_BO_Window.xaml.cs">
+      <DependentUpon>Call_of_Duty_BO_Window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Games\Call_of_Duty_G_Window.xaml.cs">
+      <DependentUpon>Call_of_Duty_G_Window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Games\Call_of_Duty_IW_Window.xaml.cs">
+      <DependentUpon>Call_of_Duty_IW_Window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Games\Call_of_Duty_MW2.xaml.cs">
+      <DependentUpon>Call_of_Duty_MW2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Games\Call_of_Duty_MW3_Window.xaml.cs">
+      <DependentUpon>Call_of_Duty_MW3_Window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Games\Call_of_Duty_MWII_Window.xaml.cs">
+      <DependentUpon>Call_of_Duty_MWII_Window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Games\Call_of_Duty_MW_19_Window.xaml.cs">
+      <DependentUpon>Call_of_Duty_MW_19_Window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Games\Call_of_Duty_MW_III.xaml.cs">
+      <DependentUpon>Call_of_Duty_MW_III.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Games\Call_of_Duty_UO_Window.xaml.cs">
+      <DependentUpon>Call_of_Duty_UO_Window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Games\Call_of_Duty_VG_Window.xaml.cs">
+      <DependentUpon>Call_of_Duty_VG_Window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Games\Call_of_Duty_WaW_Window.xaml.cs">
+      <DependentUpon>Call_of_Duty_WaW_Window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Games\Call_of_Duty_Window.xaml.cs">
+      <DependentUpon>Call_of_Duty_Window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Games\Call_of_Duty_WW2_Window.xaml.cs">
+      <DependentUpon>Call_of_Duty_WW2_Window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help_Window.xaml.cs">
+      <DependentUpon>Help_Window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="WindowAbout.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Resource Include="CoD_Font.ttf" />
+    <None Include="Call of Duty Launcher_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CallofDutyLogo.ico" />
+    <Resource Include="CoD_1_Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Arrow_Down.gif" />
+    <Resource Include="Images\CallofDutyLogo.ico" />
+    <Resource Include="Images\CoD Logo WT Dark.png" />
+    <Resource Include="Images\CoD Logo.png" />
+    <Resource Include="Images\Game_Backgrounds\CoD_2003_Backsplash.png" />
+    <Resource Include="Images\Game_Backgrounds\CoD_2004_Backsplash.png" />
+    <Resource Include="Images\Game_Backgrounds\CoD_2005_Backsplash.png" />
+    <Resource Include="Images\Game_Backgrounds\CoD_2007_Backsplash.png" />
+    <Resource Include="Images\Game_Backgrounds\CoD_2008_Backsplash.png" />
+    <Resource Include="Images\Game_Backgrounds\CoD_2009_Backsplash.png" />
+    <Resource Include="Images\Game_Backgrounds\CoD_2010_Backsplash.png" />
+    <Resource Include="Images\Game_Backgrounds\CoD_2011_Backsplash.png" />
+    <Resource Include="Images\Game_Backgrounds\CoD_2012_Backsplash.png" />
+    <Resource Include="Images\Game_Backgrounds\CoD_2013_Backsplash.png" />
+    <Resource Include="Images\Game_Backgrounds\CoD_2014_Backsplash.png" />
+    <Resource Include="Images\Game_Backgrounds\CoD_2015_Backsplash.png" />
+    <Resource Include="Images\Game_Backgrounds\CoD_2016_Backsplash.png" />
+    <Resource Include="Images\Game_Backgrounds\CoD_2017_Backsplash.png" />
+    <Resource Include="Images\Game_Backgrounds\CoD_2019_Backsplash.png" />
+    <Resource Include="Images\Game_Backgrounds\CoD_2020_Backsplash.png" />
+    <Resource Include="Images\Game_Backgrounds\CoD_2021_Backsplash.png" />
+    <Resource Include="Images\Game_Backgrounds\CoD_2022_Backsplash.png" />
+    <Resource Include="Images\Game_Icons\5-24-ghost-hub-hero-desktop.jpg" />
+    <Resource Include="Images\Game_Icons\CoD_1_Icon.png" />
+    <Resource Include="Images\News_Images\MWIII-REVEAL-BLANKCANVAS-001.jpg" />
+    <Resource Include="Images\News_Images\newsimg_00000001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\Button\" />
+    <Folder Include="Images\Game_Icons\Logos\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
