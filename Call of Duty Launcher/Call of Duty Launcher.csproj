@@ -27,7 +27,7 @@
     <MapFileExtensions>true</MapFileExtensions>
     <UpdateUrl>http://localhost/Call of Duty Launcher/</UpdateUrl>
     <AutorunEnabled>true</AutorunEnabled>
-    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationRevision>4</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -73,9 +73,7 @@
   </PropertyGroup>
   <PropertyGroup />
   <PropertyGroup />
-  <PropertyGroup>
-    <NoWin32Manifest>true</NoWin32Manifest>
-  </PropertyGroup>
+  <PropertyGroup />
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -350,7 +348,7 @@
     <Resource Include="GithubICO.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\Game_Backgrounds\CoDMWIII.jpg" />
+    <Resource Include="Images\Game_Backgrounds\CoD_2023_Backsplash.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\Maps\MWIII-MODERNIZING-MULTIPLAYER-MAPS-001.jpg" />

@@ -12,9 +12,9 @@
         <Button Content="Help" Height="45" Width="41" Click="Button_Click_Help" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="76,10,0,0"/>
         <TextBlock Margin="294,101,259,622" TextWrapping="Wrap" Text="This application depends on the Steam Launcher to work properly." Foreground="White"/>
         <TextBlock TextWrapping="Wrap" Text="News" Width="65" Foreground="White" FontSize="24" FontWeight="Bold" Height="30" Margin="228,101,686,642"/>
-        <Image Margin="94,145,490,425" Source="/Images/Game_Backgrounds/CoDMWIII.jpg" Stretch="Fill"/>
+        <Image Margin="94,145,490,425" Source="/Images/Game_Backgrounds/CoD_2023_Backsplash.jpg" Stretch="Fill"/>
         <TextBlock HorizontalAlignment="Left" Height="54" Margin="96,262,0,0" TextWrapping="Wrap" Text="Call of Duty Modern Warfare III Brings Back Many Loved Maps" VerticalAlignment="Top" Width="274" Foreground="White" FontWeight="Bold" FontSize="18" TextAlignment="Center"/>
-        <Image Margin="410,353,447,369" Source="/Images/Arrow_Down.gif" Stretch="Fill"/>
+        <Image Margin="432,358,468,364" Source="/Images/Arrow_Down.gif" Stretch="Fill"/>
         <ScrollViewer Margin="564,101,10,321">
             <Grid Height="265" Width="375">
                 <Grid.ColumnDefinitions>

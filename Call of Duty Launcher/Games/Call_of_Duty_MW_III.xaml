@@ -5,13 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Call_of_Duty_HQ.Games"
         mc:Ignorable="d"
-        Title="Call of Duty: Call of Duty Modern Warfare III" Height="450" Width="800" Icon="/Images/CallofDutyLogo.ico" ResizeMode="CanMinimize" Background="#FF1F1F1F" WindowStartupLocation="CenterScreen">
+        Title="Call of Duty: Modern Warfare III" Height="450" Width="800" Icon="/Images/CallofDutyLogo.ico" ResizeMode="CanMinimize" Background="#FF1F1F1F" WindowStartupLocation="CenterScreen">
     <Grid>
-        <Image Margin="6,10,318,163" Source="/Images/News_Images/MWIII-REVEAL-BLANKCANVAS-001.jpg"/>
+        <Image Margin="6,10,318,163" Source="/Images/Game_Backgrounds/CoD_2023_Backsplash.jpg"/>
         <TextBlock Height="61" Margin="522,13,0,0" TextWrapping="Wrap" Width="235" Foreground="White" FontSize="22" Text="Call of Duty: Modern Warfare III" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Button Content="Launch Game" Margin="537,79,43,294" Width="220" FontSize="20" Click="CoD_Run_Clicked"/>
-        <TextBlock Height="73" Margin="530,144,36,217" TextWrapping="Wrap" Text="Developers: Sledge Hammer Games, and Treyarch" Foreground="White" FontSize="18" TextAlignment="Center"/>
-        <Button Content="Back" HorizontalAlignment="Left" Height="50" Margin="740,0,0,10" VerticalAlignment="Bottom" Width="50" Click="Back_Clicked"/>
+        <TextBlock Margin="530,144,36,163" TextWrapping="Wrap" Text="Developers: Sledge Hammer Games, and Treyarch" Foreground="White" FontSize="18" TextAlignment="Center"/>
+        <Button Content="Back" HorizontalAlignment="Left" Height="50" Margin="714,352,0,0" VerticalAlignment="Top" Width="50" Click="Back_Clicked"/>
         <TextBlock Margin="95,254,407,113" TextWrapping="Wrap" Text="This game requires a valid license to run" FontSize="16" Foreground="White" TextAlignment="Center"/>
     </Grid>
 </Window>
