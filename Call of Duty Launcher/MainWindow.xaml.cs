@@ -1,19 +1,9 @@
 ﻿using Call_of_Duty_HQ.Games;
 using Call_of_Duty_HQ;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+using System.Net;
+using System.Diagnostics;
 
 namespace Call_of_Duty_Launcher
 {
@@ -25,6 +15,8 @@ namespace Call_of_Duty_Launcher
         public MainWindow()
         {
             InitializeComponent();
+
+            
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -213,5 +205,7 @@ namespace Call_of_Duty_Launcher
 
             this.Close();
         }
+
+        }
     }
-}
+

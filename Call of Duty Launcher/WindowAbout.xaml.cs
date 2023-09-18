@@ -22,6 +22,8 @@ namespace Call_of_Duty_HQ
         public WindowAbout()
         {
             InitializeComponent();
+
+
         }
     }
 }

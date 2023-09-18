@@ -27,7 +27,7 @@
     <MapFileExtensions>true</MapFileExtensions>
     <UpdateUrl>http://localhost/Call of Duty Launcher/</UpdateUrl>
     <AutorunEnabled>true</AutorunEnabled>
-    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationRevision>3</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -63,6 +63,18 @@
   </PropertyGroup>
   <PropertyGroup>
     <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>CallofDutyLogo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -289,7 +301,6 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="CallofDutyLogo.ico" />
-    <Resource Include="CoD_1_Icon.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\Arrow_Down.gif" />
@@ -320,7 +331,7 @@
     <Resource Include="Images\News_Images\newsimg_00000001.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Images\Button\" />
+    <Folder Include="Images\Button\Links\" />
     <Folder Include="Images\Game_Icons\Logos\" />
   </ItemGroup>
   <ItemGroup>
@@ -334,6 +345,27 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="GithubICO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Game_Backgrounds\CoDMWIII.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Maps\MWIII-MODERNIZING-MULTIPLAYER-MAPS-001.jpg" />
+    <Resource Include="Images\Maps\MWIII-MODERNIZING-MULTIPLAYER-MAPS-010.jpg" />
+    <Resource Include="Images\Maps\MWIII-MODERNIZING-MULTIPLAYER-MAPS-011.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Maps\MWIII-MODERNIZING-MULTIPLAYER-MAPS-015.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Maps\MWIII-MODERNIZING-MULTIPLAYER-MAPS-007.jpg" />
+    <Resource Include="Images\Maps\MWIII-MODERNIZING-MULTIPLAYER-MAPS-012.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <SplashScreen Include="Images\CoD_Logo_Splash.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

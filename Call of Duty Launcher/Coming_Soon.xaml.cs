@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Call_of_Duty_Launcher;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,15 @@ namespace Call_of_Duty_HQ
         public Coming_Soon()
         {
             InitializeComponent();
+        }
+
+        private void Ok_Clicked(object sender, RoutedEventArgs e)
+        {
+            MainWindow main = new MainWindow();
+
+            main.Show();
+
+            Close();
         }
     }
 }

@@ -5,41 +5,121 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Call_of_Duty_Launcher"
         mc:Ignorable="d"
-            Title="Call of Duty HQ" Background="#FF1F1F1F" Icon="/Images/CallofDutyLogo.ico" MaxHeight="450" MaxWidth="800" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize" Height="826">
-    <Grid Height="430" VerticalAlignment="Top">
-        <ScrollViewer Margin="0,-9,0,0">
-            <Grid Height="830" Width="800">
-                <Image x:Name="Title_Image" Height="73" Source="/Images/CoD Logo.png" Stretch="Fill" Width="338" Margin="222,13,240,744"/>
-                <Button Content="About" Height="45" Width="41" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Button_Click" Margin="14,10,0,0"/>
-                <Button Content="Help" Height="45" Width="41" Click="Button_Click_Help" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="76,10,0,0"/>
-                <TextBlock Margin="211,91,228,715" TextWrapping="Wrap" Text="This application depends on the Steam Launcher to work properly." Width="361" Foreground="White"/>
-                <TextBlock Margin="352,120,382,682" TextWrapping="Wrap" Text="News" Width="65" Foreground="White" FontSize="24" FontWeight="Bold"/>
-                <Image Margin="26,153,436,513" Source="/Images/News_Images/MWIII-REVEAL-BLANKCANVAS-001.jpg" Stretch="Fill"/>
-                <TextBlock HorizontalAlignment="Left" Height="54" Margin="34,322,0,0" TextWrapping="Wrap" Text="Call of Duty Modern Warfare III Brings Back Many Loved Maps" VerticalAlignment="Top" Width="321" Foreground="White" FontWeight="Bold" FontSize="18" TextAlignment="Center"/>
-                <Image Margin="340,376,370,399" Source="/Images/Arrow_Down.gif" Stretch="Fill"/>
-                <Grid Margin="0,469,0,0">
-                    <TextBlock HorizontalAlignment="Left" Height="30" TextWrapping="Wrap" Text="Games" VerticalAlignment="Top" Width="88" TextAlignment="Center" FontSize="24" Foreground="White" Margin="0,10,0,0" FontWeight="Bold"/>
-                    <Button x:Name="___CallofDutyLaunch_" Content="Call of Duty" HorizontalAlignment="Left" Height="23" Margin="394,198,0,0" VerticalAlignment="Top" Width="175" Click="___CallofDutyLaunch_Clicked"/>
-                    <Button x:Name="___CallofDutyLaunchUO__" Content="Call of Duty: United Offensive" HorizontalAlignment="Left" Height="23" Margin="214,198,0,0" VerticalAlignment="Top" Width="175" Click="___CallofDutyLaunchUO__Clicked"/>
-                    <Button x:Name="___CallofDutyLaunch2__" Content="Call of Duty 2" HorizontalAlignment="Left" Height="23" Margin="34,198,0,0" VerticalAlignment="Top" Width="175" Click="___CallofDutyLaunch2__Clicked"/>
-                    <Button x:Name="___CallofDutyLaunch___BO" Content="Call of Duty: Black Ops" Height="23" Margin="34,163,591,175" Width="175" Click="___CallofDutyLaunch___BO_Clicked"/>
-                    <Button x:Name="___CallofDutyLaunch___MW3" Content="Call of Duty: Modern Warfare 3" HorizontalAlignment="Left" Height="23" Margin="574,128,0,0" VerticalAlignment="Top" Width="175" Click="___CallofDutyLaunch___MW3_Clicked"/>
-                    <Button x:Name="___CallofDutyLaunch___BO_2" Content="Call of Duty: Black Ops II" HorizontalAlignment="Left" Height="23" Margin="394,128,0,0" VerticalAlignment="Top" Width="175" Click="___CallofDutyLaunch___BO_2_Clicked"/>
-                    <Button x:Name="___CallofDutyLaunch___G" Content="Call of Duty: Ghosts" Height="23" Margin="214,128,411,210" Width="175" Click="___CallofDutyLaunch___G_Clicked"/>
-                    <Button x:Name="___CallofDutyLaunch__MW_19" Content="Call of Duty: Modern Warfare" HorizontalAlignment="Left" Height="23" Margin="574,47,0,0" VerticalAlignment="Top" Width="175" Click="___CallofDutyLaunch__MW_19_Clicked"/>
-                    <Button x:Name="___CallofDutyLaunch__MW2_22" Content="Call of Duty: Modern Warfare II" HorizontalAlignment="Left" Height="23" Margin="214,47,0,0" VerticalAlignment="Top" Width="175" Click="___CallofDutyLaunch__MW2_22_Clicked"/>
-                    <Button x:Name="___CallofDutyLaunch___AW" Content="Call of Duty: Advanced Warfare" Height="23" Margin="34,128,591,210" Width="175" Click="___CallofDutyLaunch___AW_Clicked"/>
-                    <Button x:Name="___CallofDutyLaunch___MW1" Content="Call of Duty 4: Modern Warfare" HorizontalAlignment="Left" Height="23" Margin="574,163,0,0" VerticalAlignment="Top" Width="175" Click="___CallofDutyLaunch___MW_Clicked"/>
-                    <Button x:Name="___CallofDutyLaunch___WaW1" Content="Call of Duty: World at War" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="175" Margin="394,163,0,0" Click="___CallofDutyLaunch___WaW_Clicked"/>
-                    <Button x:Name="___CallofDutyLaunch___MW2" Content="Call of Duty: Modern Warfare 2" HorizontalAlignment="Left" Height="23" Margin="214,163,0,0" VerticalAlignment="Top" Width="175" Click="___CallofDutyLaunch___MW2_Clicked"/>
-                    <Button x:Name="___CallofDutyLaunch___BO_3" Content="Call of Duty: Black Ops III" HorizontalAlignment="Left" Height="23" Margin="574,88,0,0" VerticalAlignment="Top" Width="175" Click="___CallofDutyLaunch___BO_3_Clicked"/>
-                    <Button x:Name="___CallofDutyLaunch___IW" Content="Call of Duty: Infinite Warfare" HorizontalAlignment="Left" Height="23" Margin="394,88,0,0" VerticalAlignment="Top" Width="175" Click="___CallofDutyLaunch___IW_Clicked"/>
-                    <Button x:Name="___CallofDutyLaunch___WW2" Content="Call of Duty: WWII" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="175" Margin="214,88,0,0" Click="___CallofDutyLaunch___WW2_Clicked"/>
-                    <Button x:Name="___CallofDutyLaunch___BOCW" Content="Call of Duty: Black Ops Cold War" HorizontalAlignment="Left" Height="23" Margin="34,88,0,0" VerticalAlignment="Top" Width="175" Click="___CallofDutyLaunch___BOCW_Clicked"/>
-                    <Button x:Name="___CallofDutyLaunch__VG" Content="Call of Duty: Vangaurd" HorizontalAlignment="Left" Height="23" Margin="394,47,0,0" VerticalAlignment="Top" Width="175" Click="___CallofDutyLaunch__VG_Click"/>
-                    <Button x:Name="___CallofDutyLaunch__MW3_23" Content="Call of Duty: Modern Warfare III" HorizontalAlignment="Left" Height="23" Margin="34,47,0,0" VerticalAlignment="Top" Width="175" Click="___CallofDutyLaunch__MW3_23_Clicked"/>
-                </Grid>
+            Title="Call of Duty HQ" Background="#FF1F1F1F" Icon="/Images/CallofDutyLogo.ico" MaxHeight="1000" MaxWidth="1500" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize" Height="800" Width="1000">
+    <Grid Margin="10,10,10,1">
+        <Image x:Name="Title_Image" Source="/Images/CoD Logo.png" Stretch="Fill" Margin="315,10,352,672"/>
+        <Button Content="About" Height="45" Width="41" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Button_Click" Margin="14,10,0,0"/>
+        <Button Content="Help" Height="45" Width="41" Click="Button_Click_Help" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="76,10,0,0"/>
+        <TextBlock Margin="294,101,259,622" TextWrapping="Wrap" Text="This application depends on the Steam Launcher to work properly." Foreground="White"/>
+        <TextBlock TextWrapping="Wrap" Text="News" Width="65" Foreground="White" FontSize="24" FontWeight="Bold" Height="30" Margin="228,101,686,642"/>
+        <Image Margin="94,145,490,425" Source="/Images/Game_Backgrounds/CoDMWIII.jpg" Stretch="Fill"/>
+        <TextBlock HorizontalAlignment="Left" Height="54" Margin="96,262,0,0" TextWrapping="Wrap" Text="Call of Duty Modern Warfare III Brings Back Many Loved Maps" VerticalAlignment="Top" Width="274" Foreground="White" FontWeight="Bold" FontSize="18" TextAlignment="Center"/>
+        <Image Margin="410,353,447,369" Source="/Images/Arrow_Down.gif" Stretch="Fill"/>
+        <ScrollViewer Margin="564,101,10,321">
+            <Grid Height="265" Width="375">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0*"/>
+                    <ColumnDefinition Width="63*"/>
+                    <ColumnDefinition Width="62*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock HorizontalAlignment="Left" Height="30" TextWrapping="Wrap" Text="Games" VerticalAlignment="Top" Width="88" TextAlignment="Center" FontSize="24" Foreground="White" FontWeight="Bold" Margin="142,-42,0,0" Grid.ColumnSpan="3"/>
+                <Button x:Name="___CallofDutyLaunch_" Content="Call of Duty" HorizontalAlignment="Left" Height="23" Margin="14,39,0,0" VerticalAlignment="Top" Width="175" Click="___CallofDutyLaunch_Clicked" Grid.ColumnSpan="2"/>
+                <Button x:Name="___CallofDutyLaunchUO__" Content="Call of Duty: United Offensive" HorizontalAlignment="Left" Height="23" Margin="14,62,0,0" VerticalAlignment="Top" Width="175" Click="___CallofDutyLaunchUO__Clicked" Grid.ColumnSpan="2"/>
+                <Button x:Name="___CallofDutyLaunch2__" Content="Call of Duty 2" HorizontalAlignment="Left" Height="23" Margin="0,39,0,0" VerticalAlignment="Top" Width="175" Click="___CallofDutyLaunch2__Clicked" Grid.Column="2"/>
+                <Button x:Name="___CallofDutyLaunch___BO" Content="Call of Duty: Black Ops" Margin="14,108,0,0" Width="175" Click="___CallofDutyLaunch___BO_Clicked" HorizontalAlignment="Left" VerticalAlignment="Top" Height="22" Grid.ColumnSpan="2"/>
+                <Button x:Name="___CallofDutyLaunch___MW3" Content="Call of Duty: Modern Warfare 3" HorizontalAlignment="Left" Height="23" Margin="0,107,0,0" VerticalAlignment="Top" Width="175" Click="___CallofDutyLaunch___MW3_Clicked" Grid.Column="2"/>
+                <Button x:Name="___CallofDutyLaunch___BO_2" Content="Call of Duty: Black Ops II" HorizontalAlignment="Left" Height="23" Margin="14,130,0,0" VerticalAlignment="Top" Width="175" Click="___CallofDutyLaunch___BO_2_Clicked" Grid.ColumnSpan="2"/>
+                <Button x:Name="___CallofDutyLaunch___G" Content="Call of Duty: Ghosts" Margin="0,130,0,0" Width="175" Click="___CallofDutyLaunch___G_Clicked" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Top" Height="23" Grid.Column="2">
+                    <Button.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleY="1"/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Button.RenderTransform>
+                </Button>
+                <Button x:Name="___CallofDutyLaunch__MW_19" Content="Call of Duty: Modern Warfare" HorizontalAlignment="Left" Height="23" Margin="14,199,0,0" VerticalAlignment="Top" Width="175" Click="___CallofDutyLaunch__MW_19_Clicked" Grid.ColumnSpan="2"/>
+                <Button x:Name="___CallofDutyLaunch__MW2_22" Content="Call of Duty: Modern Warfare II" HorizontalAlignment="Left" Height="23" Margin="0,222,0,0" VerticalAlignment="Top" Width="175" Click="___CallofDutyLaunch__MW2_22_Clicked" Grid.Column="2"/>
+                <Button x:Name="___CallofDutyLaunch___AW" Content="Call of Duty: Advanced Warfare" Height="23" Margin="14,153,0,0" Width="175" Click="___CallofDutyLaunch___AW_Clicked" HorizontalAlignment="Left" VerticalAlignment="Top" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" Grid.ColumnSpan="2"/>
+                <Button x:Name="___CallofDutyLaunch___MW1" Content="Call of Duty 4: Modern Warfare" HorizontalAlignment="Left" Height="23" Margin="0,62,0,0" VerticalAlignment="Top" Width="175" Click="___CallofDutyLaunch___MW_Clicked" Grid.Column="2"/>
+                <Button x:Name="___CallofDutyLaunch___WaW1" Content="Call of Duty: World at War" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="175" Margin="14,85,0,0" Click="___CallofDutyLaunch___WaW_Clicked" Grid.ColumnSpan="2"/>
+                <Button x:Name="___CallofDutyLaunch___MW2" Content="Call of Duty: Modern Warfare 2" HorizontalAlignment="Left" Height="23" Margin="0,85,0,0" VerticalAlignment="Top" Width="175" Click="___CallofDutyLaunch___MW2_Clicked" Grid.Column="2"/>
+                <Button x:Name="___CallofDutyLaunch___BO_3" Content="Call of Duty: Black Ops III" HorizontalAlignment="Left" Height="23" Margin="0,153,0,0" VerticalAlignment="Top" Width="175" Click="___CallofDutyLaunch___BO_3_Clicked" Grid.Column="2"/>
+                <Button x:Name="___CallofDutyLaunch___IW" Content="Call of Duty: Infinite Warfare" HorizontalAlignment="Left" Height="23" Margin="14,176,0,0" VerticalAlignment="Top" Width="175" Click="___CallofDutyLaunch___IW_Clicked" Grid.ColumnSpan="2"/>
+                <Button x:Name="___CallofDutyLaunch___WW2" Content="Call of Duty: WWII" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="175" Margin="0,176,0,0" Click="___CallofDutyLaunch___WW2_Clicked" Grid.Column="2"/>
+                <Button x:Name="___CallofDutyLaunch___BOCW" Content="Call of Duty: Black Ops Cold War" HorizontalAlignment="Left" Height="23" Margin="0,199,0,0" VerticalAlignment="Top" Width="175" Click="___CallofDutyLaunch___BOCW_Clicked" Grid.Column="2"/>
+                <Button x:Name="___CallofDutyLaunch__VG" Content="Call of Duty: Vangaurd" HorizontalAlignment="Left" Height="23" Margin="14,222,0,0" VerticalAlignment="Top" Width="175" Click="___CallofDutyLaunch__VG_Click" Grid.ColumnSpan="2"/>
+                <Button x:Name="___CallofDutyLaunch__MW3_23" Content="Call of Duty: Modern Warfare III" HorizontalAlignment="Left" Height="23" Margin="102,245,0,0" VerticalAlignment="Top" Width="175" Click="___CallofDutyLaunch__MW3_23_Clicked" Grid.ColumnSpan="3"/>
             </Grid>
         </ScrollViewer>
+        <TextBlock HorizontalAlignment="Left" Height="25" Margin="350,409,0,0" TextWrapping="Wrap" Text="New Maps" VerticalAlignment="Top" Width="243" Foreground="White" FontSize="18" FontWeight="Bold" TextAlignment="Center"/>
+        <Image Margin="648,457,0,0" Source="/Images/Maps/MWIII-MODERNIZING-MULTIPLAYER-MAPS-007.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Top" Height="136" Width="305">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image Margin="648,598,0,0" Source="/Images/Maps/MWIII-MODERNIZING-MULTIPLAYER-MAPS-015.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Top" Height="136" Width="305">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image Margin="323,457,0,0" Source="/Images/Maps/MWIII-MODERNIZING-MULTIPLAYER-MAPS-010.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Top" Height="136" Width="320">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image Margin="323,598,0,0" Source="/Images/Maps/MWIII-MODERNIZING-MULTIPLAYER-MAPS-011.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Top" Height="136" Width="320">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image Margin="10,457,0,0" Source="/Images/Maps/MWIII-MODERNIZING-MULTIPLAYER-MAPS-001.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Top" Height="136" Width="305">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image Margin="10,598,0,0" Source="/Images/Maps/MWIII-MODERNIZING-MULTIPLAYER-MAPS-012.jpg" Stretch="Fill" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Top" Height="136" Width="305">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <TextBlock HorizontalAlignment="Left" Height="25" Margin="15,457,0,0" TextWrapping="Wrap" Text="Terminal" VerticalAlignment="Top" Width="163" Foreground="White" FontSize="18" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="25" Margin="327,457,0,0" TextWrapping="Wrap" Text="Skidrow" VerticalAlignment="Top" Width="163" Foreground="White" FontSize="18" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="25" Margin="648,457,0,0" TextWrapping="Wrap" Text="Derail" VerticalAlignment="Top" Width="163" Foreground="White" FontSize="18" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="25" Margin="10,598,0,0" TextWrapping="Wrap" Text="High Rise" VerticalAlignment="Top" Width="163" Foreground="White" FontSize="18" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="25" Margin="327,598,0,0" TextWrapping="Wrap" Text="Rust" VerticalAlignment="Top" Width="163" Foreground="White" FontSize="18" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="25" Margin="648,598,0,0" TextWrapping="Wrap" Text="Favela" VerticalAlignment="Top" Width="163" Foreground="White" FontSize="18" FontWeight="Bold"/>
+        <TextBlock Margin="648,10,10,672" TextWrapping="Wrap" Text="All images on this application are under copyright and ownership of Activision and Infinity Ward. Permission was asked by the creator to use this property." Foreground="White" TextAlignment="Right"/>
     </Grid>
 </Window>

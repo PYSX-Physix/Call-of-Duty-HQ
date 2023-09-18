@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Call_of_Duty_HQ"
         mc:Ignorable="d"
-        Title="Game Coming Soon" Height="201" Width="400" Background="#FF1F1F1F">
+        Title="Game Coming Soon" Height="200" Width="400" Background="#FF1F1F1F" Icon="/CallofDutyLogo.ico" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid>
-        <TextBlock TextWrapping="Wrap" Text="Call of Duty Modern Warfare III is currently under development. You can watch the reveal on August 17, 2023." Foreground="White" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" Height="101" Width="380"/>
-        <Button Content="Ok" HorizontalAlignment="Center" Height="27" Margin="0,125,0,0" VerticalAlignment="Top" Width="123"/>
+        <TextBlock TextWrapping="Wrap" Text="Call of Duty Modern Warfare III is currently under active development. You can now pre-order the game through Steam, Battle Net, Playstation Store, and the Xbox Store. You can also join the open/closed beta." Foreground="White" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Top" Height="55" Width="380" Margin="0,37,0,0"/>
+        <Button Content="Ok" HorizontalAlignment="Center" Height="27" Margin="0,125,0,0" VerticalAlignment="Top" Width="123" Click="Ok_Clicked"/>
 
     </Grid>
 </Window>
