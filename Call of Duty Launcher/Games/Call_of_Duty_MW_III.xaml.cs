@@ -26,15 +26,6 @@ namespace Call_of_Duty_HQ.Games
             InitializeComponent();
         }
 
-        private void CoD_Run_Clicked(object sender, RoutedEventArgs e)
-        {
-            Coming_Soon coming_Soon = new Coming_Soon();
-
-            coming_Soon.Show();
-
-            this.Close();
-        }
-
         private void Back_Clicked(object sender, RoutedEventArgs e)
         {
             MainWindow mainWindow = new MainWindow();

@@ -43,7 +43,7 @@ namespace Call_of_Duty_HQ.Games
 
             mainWindow.Show();
 
-            this.Close();
+            Close();
         }
     }
 }

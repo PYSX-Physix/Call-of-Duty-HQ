@@ -7,6 +7,6 @@
         mc:Ignorable="d"
         Title="About This Launcher" Height="250" Width="400" MaxHeight="250" MaxWidth="400" Background="#FF1F1F1F" ResizeMode="NoResize" Icon="/Images/CallofDutyLogo.ico" WindowStartupLocation="CenterScreen">
     <Canvas HorizontalAlignment="Center" Height="210" Margin="0,10,0,0" VerticalAlignment="Top" Width="380">
-        <TextBlock Height="107" TextWrapping="Wrap" Width="332" Foreground="White" HorizontalAlignment="Center" Canvas.Left="24" Canvas.Top="43" VerticalAlignment="Top" TextAlignment="Center"><Run Text="This is just a concept of the Call of Duty Launcher and this was made out of inspiration because the official game made an announcement on the Steam page named the &quot;All in One Place&quot; and if they decide to they might make a launcher. But Infinity Ward and Activision still have copyright over the franchise."/><LineBreak/><Run/></TextBlock>
+        <TextBlock Height="107" TextWrapping="Wrap" Width="332" Foreground="White" HorizontalAlignment="Center" Canvas.Left="24" Canvas.Top="43" VerticalAlignment="Top" TextAlignment="Center" Text="This is just a fan made launcher that I wanted to create because I thought it would be fun. Also, all images are owned and maintained by Call of Duty, Activision, and other Call of Duty Developers."/>
     </Canvas>
 </Window>

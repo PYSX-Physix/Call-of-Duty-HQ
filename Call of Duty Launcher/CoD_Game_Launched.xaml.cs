@@ -1,4 +1,9 @@
-﻿using System.Windows;
+﻿using Call_of_Duty_Launcher;
+using System;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Threading;
+using System.Collections.Generic;
 
 namespace Call_of_Duty_HQ
 {
@@ -10,12 +15,21 @@ namespace Call_of_Duty_HQ
         public CoD_Game_Launched()
         {
             InitializeComponent();
+            Left = System.Windows.SystemParameters.WorkArea.Width - Width;
+            Top = System.Windows.SystemParameters.WorkArea.Height - Height;
+            ClosingTasks();
         }
 
         private void Ok_Button_Clicked(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            Close();
 
+        }
+
+        private async void ClosingTasks()
+        {
+            await Task.Delay(5000);
+            this.Close();
         }
     }
 }

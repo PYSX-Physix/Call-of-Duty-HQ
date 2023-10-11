@@ -102,10 +102,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Coming_Soon.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="Games\Call_of_Duty_2_Window.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -150,7 +146,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Games\Call_of_Duty_MWII_Window.xaml">
+    <Page Include="Games\Call_of_Duty_MW_II.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -197,9 +193,6 @@
     <Compile Include="CoD_Game_Launched.xaml.cs">
       <DependentUpon>CoD_Game_Launched.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Coming_Soon.xaml.cs">
-      <DependentUpon>Coming_Soon.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Games\Call_of_Duty_2_Window.xaml.cs">
       <DependentUpon>Call_of_Duty_2_Window.xaml</DependentUpon>
     </Compile>
@@ -233,8 +226,8 @@
     <Compile Include="Games\Call_of_Duty_MW3_Window.xaml.cs">
       <DependentUpon>Call_of_Duty_MW3_Window.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Games\Call_of_Duty_MWII_Window.xaml.cs">
-      <DependentUpon>Call_of_Duty_MWII_Window.xaml</DependentUpon>
+    <Compile Include="Games\.xaml.cs">
+      <DependentUpon>Call_of_Duty_MW_II.xaml</DependentUpon>
     </Compile>
     <Compile Include="Games\Call_of_Duty_MW_19_Window.xaml.cs">
       <DependentUpon>Call_of_Duty_MW_19_Window.xaml</DependentUpon>
@@ -364,6 +357,9 @@
   </ItemGroup>
   <ItemGroup>
     <SplashScreen Include="Images\CoD_Logo_Splash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Maps\Preview.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
