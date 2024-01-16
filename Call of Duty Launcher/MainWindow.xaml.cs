@@ -4,6 +4,7 @@ using System;
 using System.Windows;
 using System.Net;
 using System.Diagnostics;
+using System.Windows.Media.Animation;
 
 namespace Call_of_Duty_Launcher
 {
@@ -35,22 +36,18 @@ namespace Call_of_Duty_Launcher
 
         private void ___CallofDutyLaunch_Clicked(object sender, RoutedEventArgs e)
         {
-            Call_of_Duty_Window CoD_Game = new Call_of_Duty_Window();
+            Call_of_Duty_Window call_Of_Duty_Window = new Call_of_Duty_Window();
+            call_Of_Duty_Window.Show();
 
-            CoD_Game.Show();
-
-            this.Close();
+            Close();
         }
 
         private void ___CallofDutyLaunchUO__Clicked(object sender, RoutedEventArgs e)
         {
-            Call_of_Duty_UO_Window CoD_UO = new Call_of_Duty_UO_Window();
+            Call_of_Duty_UO_Window call_Of_Duty_UO_ = new Call_of_Duty_UO_Window();
+            call_Of_Duty_UO_.Show();
 
-            CoD_UO.Show();
-
-
-
-            this.Close();
+            Close();
         }
 
         private void ___CallofDutyLaunch2__Clicked(object sender, RoutedEventArgs e)

@@ -7,9 +7,9 @@
         mc:Ignorable="d"
         Title="Call of Duty HQ Message" Height="83" Width="236" MaxWidth="400" MaxHeight="200" Background="#FF1F1F1F" ResizeMode="NoResize" Icon="/Images/CallofDutyLogo.ico" Topmost="True" WindowStyle="None" ShowInTaskbar="False">
     <Grid>
-        <TextBlock x:Name="Call_of_Duty_Message" HorizontalAlignment="Left" Height="21" TextWrapping="Wrap" VerticalAlignment="Top" Width="215" TextAlignment="Center" Foreground="White" Margin="0,58,0,0" Text="Running Call of Duty game instance"/>
-        <Button Content="X" HorizontalAlignment="Left" Height="21" Margin="215,0,0,0" VerticalAlignment="Top" Width="21" Click="Ok_Button_Clicked" Background="#FF1F1F1F" Foreground="White" BorderBrush="#00707070" Focusable="False"/>
-        <Image HorizontalAlignment="Left" Height="56" Margin="10,10,0,0" VerticalAlignment="Top" Width="200" Source="/Images/CoD Logo.png"/>
+        <TextBlock x:Name="Call_of_Duty_Message" HorizontalAlignment="Left" Height="21" TextWrapping="Wrap" VerticalAlignment="Top" Width="215" TextAlignment="Center" Foreground="White" Margin="2,42,0,0" Text="Running Call of Duty game instance"/>
+        <Button Content="OK" HorizontalAlignment="Center" Height="21" VerticalAlignment="Top" Width="216" Click="Ok_Button_Clicked" Background="#FF1F1F1F" Foreground="White" BorderBrush="#00707070" Focusable="False" Margin="0,59,0,0"/>
+        <Image HorizontalAlignment="Left" Height="56" Margin="10,0,0,0" VerticalAlignment="Top" Width="200" Source="/Images/CoD Logo.png"/>
 
     </Grid>
 </Window>

@@ -7,11 +7,11 @@
         mc:Ignorable="d"
         Title="Call of Duty: Modern Warfare II" Height="450" Width="800" Icon="/Images/CallofDutyLogo.ico" ResizeMode="CanMinimize" Background="#FF1F1F1F" WindowStartupLocation="CenterScreen">
     <Grid>
-        <Image Margin="6,10,318,163" Source="/Images/Game_Backgrounds/CoD_2022_Backsplash.png"/>
-        <TextBlock HorizontalAlignment="Left" Height="61" Margin="503,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Foreground="White" FontSize="22" Text="Call of Duty: Modern Warfare II" TextAlignment="Center"/>
+        <Image Margin="6,10,318,163" Source="/Images/Game_Backgrounds/CoD_2023_Backsplash.jpg"/>
+        <TextBlock HorizontalAlignment="Left" Height="61" Margin="503,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Foreground="White" FontSize="22" Text="Call of Duty®" TextAlignment="Center"/>
         <Button Content="Launch Game" HorizontalAlignment="Left" Height="61" Margin="503,79,0,0" VerticalAlignment="Top" Width="220" FontSize="20" Click="CoD_Run_Clicked"/>
         <TextBlock Height="25" TextWrapping="Wrap" Text="This game requires a valid license to run.  " Width="293" Foreground="White" FontSize="16" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="87,246,0,0"/>
-        <TextBlock HorizontalAlignment="Left" Height="73" Margin="508,145,0,0" TextWrapping="Wrap" Text="Developers: Infinity Ward" VerticalAlignment="Top" Width="210" Foreground="White" FontSize="18" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Height="73" Margin="508,145,0,0" TextWrapping="Wrap" Text="Developers: Infinity Ward, Sledgehammer Studios" VerticalAlignment="Top" Width="210" Foreground="White" FontSize="18" TextAlignment="Center"/>
         <Button Content="Back" HorizontalAlignment="Left" Height="50" Margin="725,352,0,0" VerticalAlignment="Top" Width="50" Click="Back_Clicked"/>
     </Grid>
 </Window>

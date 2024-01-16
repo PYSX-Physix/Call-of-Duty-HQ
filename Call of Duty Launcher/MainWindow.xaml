@@ -5,32 +5,50 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Call_of_Duty_Launcher"
         mc:Ignorable="d"
-            Title="Call of Duty HQ" Background="#FF1F1F1F" Icon="/Images/CallofDutyLogo.ico" MaxHeight="1000" MaxWidth="1500" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize" Height="800" Width="1000">
-    <Grid Margin="10,10,10,1">
-        <Image Margin="10,439,10,28" Source="/Images/Maps/Preview.png" Stretch="Fill"/>
-        <Image x:Name="Title_Image" Source="/Images/CoD Logo.png" Stretch="Fill" Margin="315,10,352,672"/>
+            Title="Call of Duty HQ" Background="#FF1F1F1F" Icon="/Images/CallofDutyLogo.ico" MaxHeight="1000" MaxWidth="1500" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize" Height="500" Width="1001.5">
+    <Grid>
+        <Image x:Name="Title_Image" Source="/Images/CoD Logo.png" Stretch="Fill" Margin="338,0,338,396"/>
         <Button Content="About" Height="45" Width="41" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Button_Click" Margin="14,10,0,0"/>
         <Button Content="Help" Height="45" Width="41" Click="Button_Click_Help" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="76,10,0,0"/>
-        <TextBlock Margin="294,101,259,622" TextWrapping="Wrap" Text="This application depends on the Steam Launcher to work properly." Foreground="White"/>
-        <TextBlock TextWrapping="Wrap" Text="News" Width="65" Foreground="White" FontSize="24" FontWeight="Bold" Height="30" Margin="228,101,686,642"/>
-        <Image Margin="94,145,490,425" Source="/Images/Game_Backgrounds/CoD_2023_Backsplash.jpg" Stretch="Fill"/>
-        <TextBlock HorizontalAlignment="Left" Height="54" Margin="96,262,0,0" TextWrapping="Wrap" Text="Call of Duty Modern Warfare III Brings Back Many Loved Maps" VerticalAlignment="Top" Width="274" Foreground="White" FontWeight="Bold" FontSize="18" TextAlignment="Center"/>
-        <Image Margin="432,358,468,364" Source="/Images/Arrow_Down.gif" Stretch="Fill"/>
-        <ScrollViewer Margin="564,101,10,321" VerticalScrollBarVisibility="Disabled">
-            <Grid Height="265" Width="375">
+        <TextBlock Margin="320,61,320,341" TextWrapping="Wrap" Text="This application depends on the Steam Launcher to work properly." Foreground="White" TextAlignment="Center"/>
+        <ScrollViewer VerticalScrollBarVisibility="Disabled" HorizontalScrollBarVisibility="Auto" Margin="0,178,0,44">
+            <Grid Width="1694">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="0*"/>
-                    <ColumnDefinition Width="63*"/>
-                    <ColumnDefinition Width="62*"/>
+                    <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <TextBlock HorizontalAlignment="Left" Height="30" TextWrapping="Wrap" Text="Games" VerticalAlignment="Top" Width="88" TextAlignment="Center" FontSize="24" Foreground="White" FontWeight="Bold" Margin="142,-42,0,0" Grid.ColumnSpan="3"/>
-                <Button x:Name="___CallofDutyLaunch_" Content="Call of Duty" HorizontalAlignment="Left" Height="23" Margin="14,39,0,0" VerticalAlignment="Top" Width="175" Click="___CallofDutyLaunch_Clicked" Grid.ColumnSpan="2" Background="Black" Foreground="White" BorderBrush="#FFFF1515"/>
-                <Button x:Name="___CallofDutyLaunchUO__" Content="Call of Duty: United Offensive" HorizontalAlignment="Left" Height="23" Margin="14,62,0,0" VerticalAlignment="Top" Width="175" Click="___CallofDutyLaunchUO__Clicked" Grid.ColumnSpan="2" Background="Black" Foreground="White" BorderBrush="#FFFF1515"/>
-                <Button x:Name="___CallofDutyLaunch2__" Content="Call of Duty 2" HorizontalAlignment="Left" Height="23" Margin="0,39,0,0" VerticalAlignment="Top" Width="175" Click="___CallofDutyLaunch2__Clicked" Grid.Column="2" Background="Black" Foreground="White" BorderBrush="#FFFF1515"/>
-                <Button x:Name="___CallofDutyLaunch___BO" Content="Call of Duty: Black Ops" Margin="14,108,0,0" Width="175" Click="___CallofDutyLaunch___BO_Clicked" HorizontalAlignment="Left" VerticalAlignment="Top" Height="22" Grid.ColumnSpan="2" Background="Black" Foreground="White" BorderBrush="#FFFF1515"/>
-                <Button x:Name="___CallofDutyLaunch___MW3" Content="Call of Duty: Modern Warfare 3" HorizontalAlignment="Left" Height="23" Margin="0,107,0,0" VerticalAlignment="Top" Width="175" Click="___CallofDutyLaunch___MW3_Clicked" Grid.Column="2" Background="Black" Foreground="White" BorderBrush="#FFFF1515"/>
-                <Button x:Name="___CallofDutyLaunch___BO_2" Content="Call of Duty: Black Ops II" HorizontalAlignment="Left" Height="23" Margin="14,130,0,0" VerticalAlignment="Top" Width="175" Click="___CallofDutyLaunch___BO_2_Clicked" Grid.ColumnSpan="2" Background="Black" Foreground="White" BorderBrush="#FFFF1515"/>
-                <Button x:Name="___CallofDutyLaunch___G" Content="Call of Duty: Ghosts" Margin="0,130,0,0" Width="175" Click="___CallofDutyLaunch___G_Clicked" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Top" Height="23" Grid.Column="2" Background="Black" Foreground="White" BorderBrush="#FFFF1515">
+                <TextBlock HorizontalAlignment="Left" Height="30" TextWrapping="Wrap" Text="Games" VerticalAlignment="Top" Width="88" TextAlignment="Center" FontSize="24" Foreground="White" FontWeight="Bold" Margin="142,-42,0,0" Grid.ColumnSpan="2"/>
+                <Button x:Name="___CallofDutyLaunch_" HorizontalAlignment="Left" Height="102" Margin="10,10,0,0" VerticalAlignment="Top" Width="180" Click="___CallofDutyLaunch_Clicked" Grid.ColumnSpan="2" Background="Black" Foreground="White" BorderBrush="#FFFF1515">
+                    <StackPanel>
+                        <Image Source="/Images/Game_Backgrounds/CoD_2003_Backsplash.png" Height="99"/>
+                    </StackPanel>
+                </Button>
+                <Button x:Name="___CallofDutyLaunchUO__" HorizontalAlignment="Left" Height="94" Margin="10,116,0,0" VerticalAlignment="Top" Width="180" Click="___CallofDutyLaunchUO__Clicked" Grid.ColumnSpan="2" Background="Black" Foreground="White" BorderBrush="#FFFF1515">
+                    <StackPanel Height="98" Width="176">
+                        <Image Source="/Images/Game_Backgrounds/CoD_2008_Backsplash.png" Height="97"/>
+                    </StackPanel>
+                </Button>
+                <Button x:Name="___CallofDutyLaunch2__" HorizontalAlignment="Left" Height="102" Margin="195,10,0,0" VerticalAlignment="Top" Width="181" Click="___CallofDutyLaunch2__Clicked" Grid.Column="1" Background="Black" Foreground="White" BorderBrush="#FFFF1515">
+                    <StackPanel Height="98" Width="176">
+                        <Image Source="/Images/Game_Backgrounds/CoD_2005_Backsplash.png" Height="99"/>
+                    </StackPanel>
+                </Button>
+                <Button x:Name="___CallofDutyLaunch___BO" Margin="381,116,0,0" Width="178" Click="___CallofDutyLaunch___BO_Clicked" HorizontalAlignment="Left" VerticalAlignment="Top" Height="93" Grid.ColumnSpan="2" Background="Black" Foreground="White" BorderBrush="#FFFF1515">
+                    <StackPanel Height="98" Width="176">
+                        <Image Source="/Images/Game_Backgrounds/CoD_2010_Backsplash.png" Height="90"/>
+                    </StackPanel>
+                </Button>
+                <Button x:Name="___CallofDutyLaunch___MW3" HorizontalAlignment="Left" Height="102" Margin="743,10,0,0" VerticalAlignment="Top" Width="175" Click="___CallofDutyLaunch___MW3_Clicked" Grid.Column="1" Background="Black" Foreground="White" BorderBrush="#FFFF1515">
+                    <StackPanel Height="98" Width="176">
+                        <Image Source="/Images/Game_Backgrounds/CoD_2011_Backsplash.png" Height="99"/>
+                    </StackPanel>
+                </Button>
+                <Button x:Name="___CallofDutyLaunch___BO_2" HorizontalAlignment="Left" Height="93" Margin="564,116,0,0" VerticalAlignment="Top" Width="174" Click="___CallofDutyLaunch___BO_2_Clicked" Grid.ColumnSpan="2" Background="Black" Foreground="White" BorderBrush="#FFFF1515">
+                    <StackPanel Height="98" Width="176">
+                        <Image Source="/Images/Game_Backgrounds/CoD_2012_Backsplash.png" Height="93" Width="175"/>
+                    </StackPanel>
+                </Button>
+                <Button x:Name="___CallofDutyLaunch___G" Margin="923,10,0,0" Width="175" Click="___CallofDutyLaunch___G_Clicked" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" VerticalAlignment="Top" Height="102" Grid.Column="1" Background="Black" Foreground="White" BorderBrush="#FFFF1515">
                     <Button.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform ScaleY="1"/>
@@ -39,28 +57,66 @@
                             <TranslateTransform/>
                         </TransformGroup>
                     </Button.RenderTransform>
+                    <StackPanel Height="98" Width="176">
+                        <Image Source="/Images/Game_Backgrounds/CoD_2013_Backsplash.png" Height="99"/>
+                    </StackPanel>
                 </Button>
-                <Button x:Name="___CallofDutyLaunch__MW_19" Content="Call of Duty: Modern Warfare" HorizontalAlignment="Left" Height="23" Margin="14,199,0,0" VerticalAlignment="Top" Width="175" Click="___CallofDutyLaunch__MW_19_Clicked" Grid.ColumnSpan="2" Background="Black" Foreground="White" BorderBrush="#FFFF1515"/>
-                <Button x:Name="___CallofDutyLaunch__MW2_22" Content="Call of Duty: Modern Warfare II" HorizontalAlignment="Left" Height="23" Margin="0,222,0,0" VerticalAlignment="Top" Width="175" Click="___CallofDutyLaunch__MW2_22_Clicked" Grid.Column="2" Background="Black" Foreground="White" BorderBrush="#FFFF1515"/>
-                <Button x:Name="___CallofDutyLaunch___AW" Content="Call of Duty: Advanced Warfare" Height="23" Margin="14,153,0,0" Width="175" Click="___CallofDutyLaunch___AW_Clicked" HorizontalAlignment="Left" VerticalAlignment="Top" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" Grid.ColumnSpan="2" Background="Black" Foreground="White" BorderBrush="#FFFF1515"/>
-                <Button x:Name="___CallofDutyLaunch___MW1" Content="Call of Duty 4: Modern Warfare" HorizontalAlignment="Left" Height="23" Margin="0,62,0,0" VerticalAlignment="Top" Width="175" Click="___CallofDutyLaunch___MW_Clicked" Grid.Column="2" Background="Black" Foreground="White" BorderBrush="#FFFF1515"/>
-                <Button x:Name="___CallofDutyLaunch___WaW1" Content="Call of Duty: World at War" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="175" Margin="14,85,0,0" Click="___CallofDutyLaunch___WaW_Clicked" Grid.ColumnSpan="2" Background="Black" Foreground="White" BorderBrush="#FFFF1515"/>
-                <Button x:Name="___CallofDutyLaunch___MW2" Content="Call of Duty: Modern Warfare 2" HorizontalAlignment="Left" Height="23" Margin="0,85,0,0" VerticalAlignment="Top" Width="175" Click="___CallofDutyLaunch___MW2_Clicked" Grid.Column="2" Background="Black" Foreground="White" BorderBrush="#FFFF1515"/>
-                <Button x:Name="___CallofDutyLaunch___BO_3" Content="Call of Duty: Black Ops III" HorizontalAlignment="Left" Height="23" Margin="0,153,0,0" VerticalAlignment="Top" Width="175" Click="___CallofDutyLaunch___BO_3_Clicked" Grid.Column="2" Background="Black" Foreground="White" BorderBrush="#FFFF1515"/>
-                <Button x:Name="___CallofDutyLaunch___IW" Content="Call of Duty: Infinite Warfare" HorizontalAlignment="Left" Height="23" Margin="14,176,0,0" VerticalAlignment="Top" Width="175" Click="___CallofDutyLaunch___IW_Clicked" Grid.ColumnSpan="2" Background="Black" Foreground="White" BorderBrush="#FFFF1515"/>
-                <Button x:Name="___CallofDutyLaunch___WW2" Content="Call of Duty: WWII" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="175" Margin="0,176,0,0" Click="___CallofDutyLaunch___WW2_Clicked" Grid.Column="2" Background="Black" Foreground="White" BorderBrush="#FFFF1515"/>
-                <Button x:Name="___CallofDutyLaunch___BOCW" Content="Call of Duty: Black Ops Cold War" HorizontalAlignment="Left" Height="23" Margin="0,199,0,0" VerticalAlignment="Top" Width="175" Click="___CallofDutyLaunch___BOCW_Clicked" Grid.Column="2" Background="Black" Foreground="White" BorderBrush="#FFFF1515"/>
-                <Button x:Name="___CallofDutyLaunch__VG" Content="Call of Duty: Vangaurd" HorizontalAlignment="Left" Height="23" Margin="14,222,0,0" VerticalAlignment="Top" Width="175" Click="___CallofDutyLaunch__VG_Click" Grid.ColumnSpan="2" Background="Black" Foreground="White" BorderBrush="#FFFF1515"/>
-                <Button x:Name="___CallofDutyLaunch__MW3_23" Content="Call of Duty: Modern Warfare III" HorizontalAlignment="Left" Height="23" Margin="102,245,0,0" VerticalAlignment="Top" Width="175" Click="___CallofDutyLaunch__MW3_23_Clicked" Grid.ColumnSpan="3" Background="Black" Foreground="White" BorderBrush="#FFFF1515"/>
+                <Button x:Name="___CallofDutyLaunch__MW_19" HorizontalAlignment="Left" Height="93" Margin="1103,116,0,0" VerticalAlignment="Top" Width="175" Click="___CallofDutyLaunch__MW_19_Clicked" Grid.ColumnSpan="2" Background="Black" Foreground="White" BorderBrush="#FFFF1515">
+                    <StackPanel Height="98" Width="176">
+                        <Image Source="/Images/Game_Backgrounds/CoD_2019_Backsplash.png" Height="99"/>
+                    </StackPanel>
+                </Button>
+                <Button x:Name="___CallofDutyLaunch__MW2_22" HorizontalAlignment="Left" Height="94" Margin="1463,116,0,0" VerticalAlignment="Top" Width="175" Click="___CallofDutyLaunch__MW2_22_Clicked" Grid.Column="1" Background="Black" Foreground="White" BorderBrush="#FFFF1515">
+                    <StackPanel Height="98" Width="176">
+                        <Image Source="/Images/Game_Backgrounds/CoD_2023_Backsplash.jpg" RenderTransformOrigin="0.517,0.409" Stretch="Fill" Height="98" Width="207"/>
+                    </StackPanel>
+                </Button>
+                <Button x:Name="___CallofDutyLaunch___AW" Height="93" Margin="743,116,0,0" Width="175" Click="___CallofDutyLaunch___AW_Clicked" HorizontalAlignment="Left" VerticalAlignment="Top" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" Grid.ColumnSpan="2" Background="Black" Foreground="White" BorderBrush="#FFFF1515">
+                    <StackPanel>
+                        <Image Source="/Images/Game_Backgrounds/CoD_2014_Backsplash.png" Height="99"/>
+                    </StackPanel>
+                </Button>
+                <Button x:Name="___CallofDutyLaunch___MW1" HorizontalAlignment="Left" Height="102" Margin="381,10,0,0" VerticalAlignment="Top" Width="178" Click="___CallofDutyLaunch___MW_Clicked" Grid.Column="1" Background="Black" Foreground="White" BorderBrush="#FFFF1515">
+                    <StackPanel Height="98" Width="176">
+                        <Image Source="/Images/Game_Backgrounds/CoD_2007_Backsplash.png" Height="99"/>
+                    </StackPanel>
+                </Button>
+                <Button x:Name="___CallofDutyLaunch___WaW1" HorizontalAlignment="Left" Height="93" VerticalAlignment="Top" Width="181" Margin="195,116,0,0" Click="___CallofDutyLaunch___WaW_Clicked" Grid.ColumnSpan="2" Background="Black" Foreground="White" BorderBrush="#FFFF1515">
+                    <StackPanel Height="98" Width="176">
+                        <Image Source="/Images/Game_Backgrounds/CoD_2004_Backsplash.png" Height="100"/>
+                    </StackPanel>
+                </Button>
+                <Button x:Name="___CallofDutyLaunch___MW2" HorizontalAlignment="Left" Height="102" Margin="564,10,0,0" VerticalAlignment="Top" Width="174" Click="___CallofDutyLaunch___MW2_Clicked" Grid.Column="1" Background="Black" Foreground="White" BorderBrush="#FFFF1515">
+                    <StackPanel Height="98" Width="176">
+                        <Image Source="/Images/Game_Backgrounds/CoD_2009_Backsplash.png" Height="99"/>
+                    </StackPanel>
+                </Button>
+                <Button x:Name="___CallofDutyLaunch___BO_3" HorizontalAlignment="Left" Height="102" Margin="1103,10,0,0" VerticalAlignment="Top" Width="175" Click="___CallofDutyLaunch___BO_3_Clicked" Grid.Column="1" Background="Black" Foreground="White" BorderBrush="#FFFF1515">
+                    <StackPanel Height="98" Width="176">
+                        <Image Source="/Images/Game_Backgrounds/CoD_2015_Backsplash.png" Height="99"/>
+                    </StackPanel>
+                </Button>
+                <Button x:Name="___CallofDutyLaunch___IW" HorizontalAlignment="Left" Height="93" Margin="923,116,0,0" VerticalAlignment="Top" Width="175" Click="___CallofDutyLaunch___IW_Clicked" Grid.ColumnSpan="2" Background="Black" Foreground="White" BorderBrush="#FFFF1515">
+                    <StackPanel Height="98" Width="176">
+                        <Image Source="/Images/Game_Backgrounds/CoD_2016_Backsplash.png" Height="99"/>
+                    </StackPanel>
+                </Button>
+                <Button x:Name="___CallofDutyLaunch___WW2" HorizontalAlignment="Left" Height="102" VerticalAlignment="Top" Width="175" Margin="1283,10,0,0" Click="___CallofDutyLaunch___WW2_Clicked" Grid.Column="1" Background="Black" Foreground="White" BorderBrush="#FFFF1515">
+                    <StackPanel Height="98" Width="176">
+                        <Image Source="/Images/Game_Backgrounds/CoD_2017_Backsplash.png" Height="99"/>
+                    </StackPanel>
+                </Button>
+                <Button x:Name="___CallofDutyLaunch___BOCW" HorizontalAlignment="Left" Height="102" Margin="1463,10,0,0" VerticalAlignment="Top" Width="175" Click="___CallofDutyLaunch___BOCW_Clicked" Grid.Column="1" Background="Black" Foreground="White" BorderBrush="#FFFF1515">
+                    <StackPanel Height="98" Width="176">
+                        <Image Source="/Images/Game_Backgrounds/CoD_2020_Backsplash.png" Height="99"/>
+                    </StackPanel>
+                </Button>
+                <Button x:Name="___CallofDutyLaunch__VG" HorizontalAlignment="Left" Height="93" Margin="1283,116,0,0" VerticalAlignment="Top" Width="175" Click="___CallofDutyLaunch__VG_Click" Grid.ColumnSpan="2" Background="Black" Foreground="White" BorderBrush="#FFFF1515">
+                    <StackPanel Height="98" Width="176">
+                        <Image Source="/Images/Game_Backgrounds/CoD_2021_Backsplash.png" Height="95"/>
+                    </StackPanel>
+                </Button>
             </Grid>
         </ScrollViewer>
-        <TextBlock HorizontalAlignment="Left" Height="25" Margin="350,409,0,0" TextWrapping="Wrap" Text="New Maps" VerticalAlignment="Top" Width="243" Foreground="White" FontSize="18" FontWeight="Bold" TextAlignment="Center"/>
-        <TextBlock HorizontalAlignment="Left" Height="25" Margin="15,438,0,0" TextWrapping="Wrap" Text="Terminal" VerticalAlignment="Top" Width="163" Foreground="White" FontSize="18" FontWeight="Bold"/>
-        <TextBlock HorizontalAlignment="Left" Height="25" Margin="661,438,0,0" TextWrapping="Wrap" Text="Skidrow" VerticalAlignment="Top" Width="163" Foreground="White" FontSize="18" FontWeight="Bold"/>
-        <TextBlock HorizontalAlignment="Left" Height="25" Margin="338,433,0,0" TextWrapping="Wrap" Text="Derail" VerticalAlignment="Top" Width="140" Foreground="White" FontSize="18" FontWeight="Bold"/>
-        <TextBlock HorizontalAlignment="Left" Height="25" Margin="338,591,0,0" TextWrapping="Wrap" Text="High Rise" VerticalAlignment="Top" Width="163" Foreground="White" FontSize="18" FontWeight="Bold"/>
-        <TextBlock HorizontalAlignment="Left" Height="25" Margin="15,592,0,0" TextWrapping="Wrap" Text="Rust" VerticalAlignment="Top" Width="163" Foreground="White" FontSize="18" FontWeight="Bold"/>
-        <TextBlock HorizontalAlignment="Left" Height="25" Margin="661,592,0,0" TextWrapping="Wrap" Text="Favela" VerticalAlignment="Top" Width="163" Foreground="White" FontSize="18" FontWeight="Bold"/>
-        <TextBlock Margin="648,10,10,672" TextWrapping="Wrap" Text="All images on this application are under copyright and ownership of Activision and Infinity Ward. Permission was asked by the creator to use this property." Foreground="White" TextAlignment="Right"/>
     </Grid>
 </Window>

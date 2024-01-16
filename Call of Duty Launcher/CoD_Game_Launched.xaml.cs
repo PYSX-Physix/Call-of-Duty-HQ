@@ -17,6 +17,7 @@ namespace Call_of_Duty_HQ
             InitializeComponent();
             Left = System.Windows.SystemParameters.WorkArea.Width - Width;
             Top = System.Windows.SystemParameters.WorkArea.Height - Height;
+            System.Media.SystemSounds.Hand.Play();
             ClosingTasks();
         }
 
@@ -29,7 +30,7 @@ namespace Call_of_Duty_HQ
         private async void ClosingTasks()
         {
             await Task.Delay(5000);
-            this.Close();
+            Close();
         }
     }
 }

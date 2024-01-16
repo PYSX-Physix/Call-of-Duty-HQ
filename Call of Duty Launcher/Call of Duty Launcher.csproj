@@ -95,6 +95,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="PolicyWindow.xaml.cs">
+      <DependentUpon>PolicyWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Required.xaml.cs">
+      <DependentUpon>Required.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Steam_API_ID_Enter.xaml.cs">
+      <DependentUpon>Steam_API_ID_Enter.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WindowAbout.xaml.cs">
       <DependentUpon>WindowAbout.xaml</DependentUpon>
     </Compile>
@@ -102,79 +111,79 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Games\Call_of_Duty_2_Window.xaml">
+    <Page Include="Games\COD2\Call_of_Duty_2_Window.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Games\Call_of_Duty_4_MW.xaml">
+    <Page Include="Games\COD4\Call_of_Duty_4_MW.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Games\Call_of_Duty_AW_Window.xaml">
+    <Page Include="Games\CODAW\Call_of_Duty_AW_Window.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Games\Call_of_Duty_BO2_Window.xaml">
+    <Page Include="Games\CODBO2\Call_of_Duty_BO2_Window.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Games\Call_of_Duty_BO3_Window.xaml">
+    <Page Include="Games\CODBO3\Call_of_Duty_BO3_Window.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Games\Call_of_Duty_BOCW_Window.xaml">
+    <Page Include="Games\BOCW\Call_of_Duty_BOCW_Window.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Games\Call_of_Duty_BO_Window.xaml">
+    <Page Include="Games\CODBO\Call_of_Duty_BO_Window.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Games\Call_of_Duty_G_Window.xaml">
+    <Page Include="Games\CODGhosts\Call_of_Duty_G_Window.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Games\Call_of_Duty_IW_Window.xaml">
+    <Page Include="Games\CODIW\Call_of_Duty_IW_Window.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Games\Call_of_Duty_MW2.xaml">
+    <Page Include="Games\MW2\Call_of_Duty_MW2.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Games\Call_of_Duty_MW3_Window.xaml">
+    <Page Include="Games\MW3\Call_of_Duty_MW3_Window.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Games\Call_of_Duty_MW_II.xaml">
+    <Page Include="Games\MW2022\Call_of_Duty_MW_II.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Games\Call_of_Duty_MW_19_Window.xaml">
+    <Page Include="Games\MW19\Call_of_Duty_MW_19_Window.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Games\Call_of_Duty_MW_III.xaml">
+    <Page Include="Games\MW2023\Call_of_Duty_MW_III.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Games\Call_of_Duty_UO_Window.xaml">
+    <Page Include="Games\CODUO\Call_of_Duty_UO_Window.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Games\Call_of_Duty_VG_Window.xaml">
+    <Page Include="Games\CODVG\Call_of_Duty_VG_Window.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Games\Call_of_Duty_WaW_Window.xaml">
+    <Page Include="Games\WaW\Call_of_Duty_WaW_Window.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Games\Call_of_Duty_Window.xaml">
+    <Page Include="Games\COD2003\Call_of_Duty_Window.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Games\Call_of_Duty_WW2_Window.xaml">
+    <Page Include="Games\WW2\Call_of_Duty_WW2_Window.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -193,61 +202,61 @@
     <Compile Include="CoD_Game_Launched.xaml.cs">
       <DependentUpon>CoD_Game_Launched.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Games\Call_of_Duty_2_Window.xaml.cs">
+    <Compile Include="Games\COD2\Call_of_Duty_2_Window.xaml.cs">
       <DependentUpon>Call_of_Duty_2_Window.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Games\Call_of_Duty_4_MW.xaml.cs">
+    <Compile Include="Games\COD4\Call_of_Duty_4_MW.xaml.cs">
       <DependentUpon>Call_of_Duty_4_MW.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Games\Call_of_Duty_AW_Window.xaml.cs">
+    <Compile Include="Games\CODAW\Call_of_Duty_AW_Window.xaml.cs">
       <DependentUpon>Call_of_Duty_AW_Window.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Games\Call_of_Duty_BO2_Window.xaml.cs">
+    <Compile Include="Games\CODBO2\Call_of_Duty_BO2_Window.xaml.cs">
       <DependentUpon>Call_of_Duty_BO2_Window.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Games\Call_of_Duty_BO3_Window.xaml.cs">
+    <Compile Include="Games\CODBO3\Call_of_Duty_BO3_Window.xaml.cs">
       <DependentUpon>Call_of_Duty_BO3_Window.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Games\Call_of_Duty_BOCW_Window.xaml.cs">
+    <Compile Include="Games\BOCW\Call_of_Duty_BOCW_Window.xaml.cs">
       <DependentUpon>Call_of_Duty_BOCW_Window.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Games\Call_of_Duty_BO_Window.xaml.cs">
+    <Compile Include="Games\CODBO\Call_of_Duty_BO_Window.xaml.cs">
       <DependentUpon>Call_of_Duty_BO_Window.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Games\Call_of_Duty_G_Window.xaml.cs">
+    <Compile Include="Games\CODGhosts\Call_of_Duty_G_Window.xaml.cs">
       <DependentUpon>Call_of_Duty_G_Window.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Games\Call_of_Duty_IW_Window.xaml.cs">
+    <Compile Include="Games\CODIW\Call_of_Duty_IW_Window.xaml.cs">
       <DependentUpon>Call_of_Duty_IW_Window.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Games\Call_of_Duty_MW2.xaml.cs">
+    <Compile Include="Games\MW2\Call_of_Duty_MW2.xaml.cs">
       <DependentUpon>Call_of_Duty_MW2.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Games\Call_of_Duty_MW3_Window.xaml.cs">
+    <Compile Include="Games\MW3\Call_of_Duty_MW3_Window.xaml.cs">
       <DependentUpon>Call_of_Duty_MW3_Window.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Games\.xaml.cs">
+    <Compile Include="Games\MW2022\.xaml.cs">
       <DependentUpon>Call_of_Duty_MW_II.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Games\Call_of_Duty_MW_19_Window.xaml.cs">
+    <Compile Include="Games\MW19\Call_of_Duty_MW_19_Window.xaml.cs">
       <DependentUpon>Call_of_Duty_MW_19_Window.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Games\Call_of_Duty_MW_III.xaml.cs">
+    <Compile Include="Games\MW2023\Call_of_Duty_MW_III.xaml.cs">
       <DependentUpon>Call_of_Duty_MW_III.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Games\Call_of_Duty_UO_Window.xaml.cs">
+    <Compile Include="Games\CODUO\Call_of_Duty_UO_Window.xaml.cs">
       <DependentUpon>Call_of_Duty_UO_Window.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Games\Call_of_Duty_VG_Window.xaml.cs">
+    <Compile Include="Games\CODVG\Call_of_Duty_VG_Window.xaml.cs">
       <DependentUpon>Call_of_Duty_VG_Window.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Games\Call_of_Duty_WaW_Window.xaml.cs">
+    <Compile Include="Games\WaW\Call_of_Duty_WaW_Window.xaml.cs">
       <DependentUpon>Call_of_Duty_WaW_Window.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Games\Call_of_Duty_Window.xaml.cs">
+    <Compile Include="Games\COD2003\Call_of_Duty_Window.xaml.cs">
       <DependentUpon>Call_of_Duty_Window.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Games\Call_of_Duty_WW2_Window.xaml.cs">
+    <Compile Include="Games\WW2\Call_of_Duty_WW2_Window.xaml.cs">
       <DependentUpon>Call_of_Duty_WW2_Window.xaml</DependentUpon>
     </Compile>
     <Compile Include="Help_Window.xaml.cs">
@@ -257,6 +266,18 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="PolicyWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Required.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Steam_API_ID_Enter.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="WindowAbout.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
