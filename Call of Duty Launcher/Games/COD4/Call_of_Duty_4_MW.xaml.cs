@@ -28,7 +28,7 @@ namespace Call_of_Duty_HQ.Games
 
         private void CoD_Run_Clicked(object sender, RoutedEventArgs e)
         {
-            Process process = Process.Start("C:\\Program Files (x86)\\Steam\\steam.exe", "steam://rungameid/7940");
+            Process process = Process.Start("steam://rungameid/7940");
 
             CoD_Game_Launched Game_Launched = new CoD_Game_Launched();
 

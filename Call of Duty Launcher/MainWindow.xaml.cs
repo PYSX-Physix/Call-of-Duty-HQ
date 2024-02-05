@@ -194,15 +194,6 @@ namespace Call_of_Duty_Launcher
             this.Close();
         }
 
-        private void ___CallofDutyLaunch__MW3_23_Clicked(object sender, RoutedEventArgs e)
-        {
-            Call_of_Duty_MW_III CoD_MWIII = new Call_of_Duty_MW_III();
-
-            CoD_MWIII.Show();
-
-            this.Close();
-        }
-
         }
     }
 

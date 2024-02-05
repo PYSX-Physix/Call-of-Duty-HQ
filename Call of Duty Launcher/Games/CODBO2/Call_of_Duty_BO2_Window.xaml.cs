@@ -32,7 +32,7 @@ namespace Call_of_Duty_HQ.Games
 
             coD_Game_Launched.Show();
 
-            Process process = Process.Start("C:\\Program Files (x86)\\Steam\\steam.exe", "steam://rungameid/209160");
+            Process process = Process.Start("steam://rungameid/209160");
 
             this.Close();
         }

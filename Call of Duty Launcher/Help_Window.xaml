@@ -1,9 +1,10 @@
-﻿<Window x:Class="Call_of_Duty_HQ.Help_Window"
+﻿<Window
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Call_of_Duty_HQ"
+        xmlns:Http="clr-namespace:System.Net.Http;assembly=System.Net.Http" x:Class="Call_of_Duty_HQ.Help_Window"
         mc:Ignorable="d"
         Title="Call of Duty HQ Help Menu" Height="500" Width="800" Background="#FF1F1F1F" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize" Icon="/Images/CallofDutyLogo.ico">
     <Grid>
@@ -15,12 +16,12 @@
         <TextBlock HorizontalAlignment="Left" Height="36" Margin="10,268,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="343" FontSize="20" Foreground="White" Text="My game won't launch through Steam"/>
         <TextBlock HorizontalAlignment="Left" Height="153" Margin="10,304,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="343" FontSize="16" Foreground="White"><Run Text="Please make sure you have one of the following"/><LineBreak/><Run Text=" • You have the game you wish to run installed"/><LineBreak/><Run Text=" • You have a valid license for the game"/><LineBreak/><Run Text=" • You own the game (This doesn't allow pirated games of Call of Duty to be used)"/><LineBreak/><Run Text=" • If you own the game and is installed try reinstalling the game."/><LineBreak/><Run/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Height="36" Margin="400,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="343" FontSize="20" Foreground="White" Text="My game won't launch with Steam"/>
-        <TextBlock HorizontalAlignment="Left" Height="74" Margin="400,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="343" FontSize="16" Foreground="White" Text="This launcher only uses the default location of the Steam installation. Also make sure actually have Steam installed."/>
+        <TextBlock HorizontalAlignment="Left" Height="74" Margin="400,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="343" FontSize="16" Foreground="White" Text="If that doesn't work then try reinstalling Steam. I changed the code to run without the default location."/>
         <TextBlock HorizontalAlignment="Left" Height="36" Margin="400,252,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="343" FontSize="20" Foreground="White" Text="What if it's none of these things?"/>
         <TextBlock HorizontalAlignment="Left" Height="74" Margin="400,288,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="343" FontSize="16" Foreground="White" Text="Then please add an issue to the GitHub repository and I will do my best to help. Plus my help you as well."/>
         <Button HorizontalAlignment="Left" Height="75" Margin="668,367,0,0" VerticalAlignment="Top" Width="75" Click="repobutton_Clicked">
             <StackPanel FlowDirection="RightToLeft">
-                <Image Height="71" Source="/GithubICO.png" Stretch="Fill" Width="69"/>
+                <Image Height="71" Source="/GithubICO.png" Stretch="Fill" Width="71"/>
             </StackPanel>
         </Button>
     </Grid>

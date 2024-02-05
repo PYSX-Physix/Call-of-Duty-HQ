@@ -1,23 +1,11 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A2055C5D-B9B5-43DE-94DA-1E545A723BCA}</ProjectGuid>
+    <TargetFramework>net8.0-windows</TargetFramework>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Call_of_Duty_Launcher</RootNamespace>
-    <AssemblyName>Call of Duty Launcher</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <WarningLevel>4</WarningLevel>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <Deterministic>true</Deterministic>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>publish\</PublishUrl>
+    <PublishUrl>\\Gunnars-Laptop\Users\lolat\Desktop\COD_Launcher\</PublishUrl>
     <Install>true</Install>
-    <InstallFrom>Disk</InstallFrom>
+    <InstallFrom>Unc</InstallFrom>
     <UpdateEnabled>true</UpdateEnabled>
     <UpdateMode>Foreground</UpdateMode>
     <UpdateInterval>7</UpdateInterval>
@@ -25,32 +13,19 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <UpdateUrl>http://localhost/Call of Duty Launcher/</UpdateUrl>
-    <AutorunEnabled>true</AutorunEnabled>
-    <ApplicationRevision>4</ApplicationRevision>
+    <InstallUrl>\\Gunnars-Laptop\Users\lolat\Desktop\COD_Launcher\</InstallUrl>
+    <UpdateUrl>\\Gunnars-Laptop\Users\lolat\Desktop\COD_Launcher\</UpdateUrl>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <UseWPF>true</UseWPF>
+    <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestCertificateThumbprint>F749AD44116DB66337C1ACC3651C4D93A9CAE69D</ManifestCertificateThumbprint>
@@ -71,245 +46,11 @@
   <PropertyGroup>
     <ApplicationIcon>CallofDutyLogo.ico</ApplicationIcon>
   </PropertyGroup>
-  <PropertyGroup />
-  <PropertyGroup />
-  <PropertyGroup />
   <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="System.Xaml">
-      <RequiredTargetFramework>4.0</RequiredTargetFramework>
-    </Reference>
-    <Reference Include="WindowsBase" />
-    <Reference Include="PresentationCore" />
-    <Reference Include="PresentationFramework" />
+    <Reference Include="System.IO.Compression" />
   </ItemGroup>
   <ItemGroup>
-    <ApplicationDefinition Include="App.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </ApplicationDefinition>
-    <Compile Include="PolicyWindow.xaml.cs">
-      <DependentUpon>PolicyWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Required.xaml.cs">
-      <DependentUpon>Required.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Steam_API_ID_Enter.xaml.cs">
-      <DependentUpon>Steam_API_ID_Enter.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="WindowAbout.xaml.cs">
-      <DependentUpon>WindowAbout.xaml</DependentUpon>
-    </Compile>
-    <Page Include="CoD_Game_Launched.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Games\COD2\Call_of_Duty_2_Window.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Games\COD4\Call_of_Duty_4_MW.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Games\CODAW\Call_of_Duty_AW_Window.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Games\CODBO2\Call_of_Duty_BO2_Window.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Games\CODBO3\Call_of_Duty_BO3_Window.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Games\BOCW\Call_of_Duty_BOCW_Window.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Games\CODBO\Call_of_Duty_BO_Window.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Games\CODGhosts\Call_of_Duty_G_Window.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Games\CODIW\Call_of_Duty_IW_Window.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Games\MW2\Call_of_Duty_MW2.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Games\MW3\Call_of_Duty_MW3_Window.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Games\MW2022\Call_of_Duty_MW_II.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Games\MW19\Call_of_Duty_MW_19_Window.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Games\MW2023\Call_of_Duty_MW_III.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Games\CODUO\Call_of_Duty_UO_Window.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Games\CODVG\Call_of_Duty_VG_Window.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Games\WaW\Call_of_Duty_WaW_Window.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Games\COD2003\Call_of_Duty_Window.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Games\WW2\Call_of_Duty_WW2_Window.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Help_Window.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="MainWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Compile Include="App.xaml.cs">
-      <DependentUpon>App.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="CoD_Game_Launched.xaml.cs">
-      <DependentUpon>CoD_Game_Launched.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Games\COD2\Call_of_Duty_2_Window.xaml.cs">
-      <DependentUpon>Call_of_Duty_2_Window.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Games\COD4\Call_of_Duty_4_MW.xaml.cs">
-      <DependentUpon>Call_of_Duty_4_MW.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Games\CODAW\Call_of_Duty_AW_Window.xaml.cs">
-      <DependentUpon>Call_of_Duty_AW_Window.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Games\CODBO2\Call_of_Duty_BO2_Window.xaml.cs">
-      <DependentUpon>Call_of_Duty_BO2_Window.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Games\CODBO3\Call_of_Duty_BO3_Window.xaml.cs">
-      <DependentUpon>Call_of_Duty_BO3_Window.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Games\BOCW\Call_of_Duty_BOCW_Window.xaml.cs">
-      <DependentUpon>Call_of_Duty_BOCW_Window.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Games\CODBO\Call_of_Duty_BO_Window.xaml.cs">
-      <DependentUpon>Call_of_Duty_BO_Window.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Games\CODGhosts\Call_of_Duty_G_Window.xaml.cs">
-      <DependentUpon>Call_of_Duty_G_Window.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Games\CODIW\Call_of_Duty_IW_Window.xaml.cs">
-      <DependentUpon>Call_of_Duty_IW_Window.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Games\MW2\Call_of_Duty_MW2.xaml.cs">
-      <DependentUpon>Call_of_Duty_MW2.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Games\MW3\Call_of_Duty_MW3_Window.xaml.cs">
-      <DependentUpon>Call_of_Duty_MW3_Window.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Games\MW2022\.xaml.cs">
-      <DependentUpon>Call_of_Duty_MW_II.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Games\MW19\Call_of_Duty_MW_19_Window.xaml.cs">
-      <DependentUpon>Call_of_Duty_MW_19_Window.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Games\MW2023\Call_of_Duty_MW_III.xaml.cs">
-      <DependentUpon>Call_of_Duty_MW_III.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Games\CODUO\Call_of_Duty_UO_Window.xaml.cs">
-      <DependentUpon>Call_of_Duty_UO_Window.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Games\CODVG\Call_of_Duty_VG_Window.xaml.cs">
-      <DependentUpon>Call_of_Duty_VG_Window.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Games\WaW\Call_of_Duty_WaW_Window.xaml.cs">
-      <DependentUpon>Call_of_Duty_WaW_Window.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Games\COD2003\Call_of_Duty_Window.xaml.cs">
-      <DependentUpon>Call_of_Duty_Window.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Games\WW2\Call_of_Duty_WW2_Window.xaml.cs">
-      <DependentUpon>Call_of_Duty_WW2_Window.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Help_Window.xaml.cs">
-      <DependentUpon>Help_Window.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Page Include="PolicyWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Required.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Steam_API_ID_Enter.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="WindowAbout.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Properties\AssemblyInfo.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Settings.settings</DependentUpon>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
     <Resource Include="CoD_Font.ttf" />
-    <None Include="Call of Duty Launcher_TemporaryKey.pfx" />
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="CallofDutyLogo.ico" />
@@ -382,5 +123,13 @@
   <ItemGroup>
     <Resource Include="Images\Maps\Preview.png" />
   </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22621.2428" />
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.4.231219000" />
+    <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <AppxPackage>false</AppxPackage>
+  </PropertyGroup>
 </Project>
