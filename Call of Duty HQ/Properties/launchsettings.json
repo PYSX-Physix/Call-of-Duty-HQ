@@ -1,0 +1,10 @@
+﻿{
+    "profiles": {
+      "Call of Duty HQ (Package)": {
+        "commandName": "MsixPackage"
+      },
+      "Call of Duty HQ (Unpackaged)": {
+        "commandName": "Project"
+      }
+    }
+}
