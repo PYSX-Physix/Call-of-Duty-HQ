@@ -205,10 +205,10 @@
     <value>Default</value>
   </data>
   <data name="Settings_About.Text" xml:space="preserve">
-    <value>About Call of Duty HQ Launcher</value>
+    <value>About The Call of Duty HQ Launcher</value>
   </data>
   <data name="Settings_AboutDescription.Text" xml:space="preserve">
-    <value>I the creator made this for simplicity for all of Call of Duty games and plan to do so. This app uses Steam to work properly so have that installed.</value>
+    <value>The launcher is to simplifiy launching Call of Duty games</value>
   </data>
   <data name="Shell_About.Content" xml:space="preserve">
     <value>About</value>
@@ -218,8 +218,5 @@
   </data>
   <data name="Shell_Help.Content" xml:space="preserve">
     <value>Help</value>
-  </data>
-  <data name="Shell_UO.Content" xml:space="preserve">
-    <value>UO</value>
   </data>
 </root>

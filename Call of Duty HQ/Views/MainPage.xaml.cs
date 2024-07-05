@@ -122,10 +122,5 @@ public sealed partial class MainPage : Page
     {
         _navigationService.NavigateTo(typeof(BO6ViewModel).FullName);
     }
-
-    private void UO_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
-    {
-        _navigationService.NavigateTo(typeof(UOViewModel).FullName);
-    }
 #pragma warning restore CS8604 // Possible null reference argument.
 }

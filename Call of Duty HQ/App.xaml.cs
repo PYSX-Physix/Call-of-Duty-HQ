@@ -70,8 +70,6 @@ public partial class App : Application
             services.AddSingleton<IFileService, FileService>();
 
             // Views and ViewModels
-            services.AddTransient<UOViewModel>();
-            services.AddTransient<UOPage>();
             services.AddTransient<HelpViewModel>();
             services.AddTransient<HelpPage>();
             services.AddTransient<AboutViewModel>();

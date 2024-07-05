@@ -10,9 +10,10 @@
     <Grid x:Name="ContentArea">
         <ScrollView HorizontalAlignment="Center">
             <StackPanel>
-                <StackPanel Orientation="Horizontal">
+                
+                <StackPanel Orientation="Horizontal" Margin="0 15">
                     <Button Margin="15 0" Click="BO6_Click">
-                        <Image Source="/Assets/Images/CoDBo6.jpg" Height="300" Margin="3 5"/>
+                        <Image Source="/Assets/Images/CoDBO6.jpg" Height="300" Margin="3 5"/>
                     </Button>
                     <Button Margin="15 0" Click="MWIII_Click">
                         <Image Source="/Assets/Images/CoDMWIII.jpg" Height="300" Margin="0 5"/>
@@ -24,7 +25,7 @@
                         <Image Source="/Assets/Images/CoDV.jpg" Height="300" Margin="0 5"/>
                     </Button>
                 </StackPanel>
-                <StackPanel Orientation="Horizontal">
+                <StackPanel Orientation="Horizontal" Margin="0 15">
                     <Button Margin="15 0" Click="BOCW_Click">
                         <Image Source="/Assets/Images/CoDBOCW.jpg" Height="300" Margin="3 5"/>
                     </Button>
@@ -38,7 +39,7 @@
                         <Image Source="/Assets/Images/CoDIW.jpg" Height="300" Margin="0 5"/>
                     </Button>
                 </StackPanel>
-                <StackPanel Orientation="Horizontal">
+                <StackPanel Orientation="Horizontal" Margin="0 15">
                     <Button Margin="15 0" Click="BO3_Click">
                         <Image Source="/Assets/Images/CoDBO3.jpg" Height="300" Margin="3 5"/>
                     </Button>
@@ -52,7 +53,7 @@
                         <Image Source="/Assets/Images/CoDBO2.jpg" Height="300" Margin="0 5"/>
                     </Button>
                 </StackPanel>
-                <StackPanel Orientation="Horizontal">
+                <StackPanel Orientation="Horizontal" Margin="0 15">
                     <Button Margin="15 0" Click="MW3_Click">
                         <Image Source="/Assets/Images/CoDMW3.jpg" Height="300" Margin="3 5"/>
                     </Button>
@@ -66,7 +67,7 @@
                         <Image Source="/Assets/Images/CoDWaW.jpg" Height="300" Margin="0 5"/>
                     </Button>
                 </StackPanel>
-                <StackPanel Orientation="Horizontal">
+                <StackPanel Orientation="Horizontal" Margin="0 15">
                     <Button Margin="15 0" Click="MW4_Click">
                         <Image Source="/Assets/Images/CoD4MW.jpg" Height="300" Margin="0 5"/>
                     </Button>
