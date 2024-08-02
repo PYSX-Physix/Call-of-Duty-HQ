@@ -2,11 +2,14 @@
 using Call_of_Duty_HQ.ViewModels;
 
 using Microsoft.UI.Xaml.Controls;
+using Windows.Storage;
 
 namespace Call_of_Duty_HQ.Views;
 
 public sealed partial class BOCWPage : Page
 {
+    string steamPath = ApplicationData.Current.LocalSettings.Values["Steam Path"] as string;
+
     public BOCWViewModel ViewModel
     {
         get;

@@ -13,9 +13,6 @@ namespace Call_of_Duty_HQ.Views;
 
 public sealed partial class SettingsPage : Page
 {
-    ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
-
-
     public SettingsViewModel ViewModel
     {
         get;
@@ -24,7 +21,14 @@ public sealed partial class SettingsPage : Page
     public SettingsPage()
     {
         ViewModel = App.GetService<SettingsViewModel>();
-        InitializeComponent();
+        this.InitializeComponent();
+        Construct();
+    }
+
+    private void Construct()
+    {
+        string SteamFolder = ApplicationData.Current.LocalSettings.Values["Steam Path"] as string;
+        SteamPath.Text = SteamFolder;
     }
 
     private async void PickFolderButton_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
@@ -51,13 +55,29 @@ public sealed partial class SettingsPage : Page
         StorageFolder folder = await openPicker.PickSingleFolderAsync();
         if (folder != null)
         {
-            StorageApplicationPermissions.FutureAccessList.AddOrReplace("PickedFolderToken", folder);
-            SteamPath.Text = folder.Path;
-            
+            if (File.Exists("\\steam.exe"))
+            {
+                ApplicationData.Current.LocalSettings.Values["Steam Path"] = folder.Path;
+                SteamPath.Text= folder.Path;
+                SteamInfoBar.Title = "Success";
+                SteamInfoBar.IsOpen = true;
+                SteamInfoBar.Severity = InfoBarSeverity.Success;
+                SteamInfoBar.Message = "Steam has been found and this directory has been saved.";
+            }
+            else
+            {
+                ApplicationData.Current.LocalSettings.Values["Steam Path"] = folder.Path;
+                SteamPath.Text = folder.Path;
+                SteamInfoBar.Title = "Error";
+                SteamInfoBar.IsOpen = true;
+                SteamInfoBar.Severity = InfoBarSeverity.Error;
+                SteamInfoBar.Message = "Steam is not detected in this folder please try another folder.";
+            }
+
         }
         else
         {
-            PickFolderOutputTextBlock.Text = "Operation cancelled.";
+            
         }
     }
 

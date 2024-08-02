@@ -12,7 +12,8 @@
             <GridView>
                 <GridView.ItemContainerStyle>
                     <Style TargetType="GridViewItem" BasedOn="{StaticResource DefaultGridViewItemStyle}">
-                        <Setter Property="Margin" Value="9"/>
+                        <Setter Property="Margin" Value="10"/>
+                        <Setter Property="CornerRadius" Value="10"/>
                     </Style>
                 </GridView.ItemContainerStyle>
 

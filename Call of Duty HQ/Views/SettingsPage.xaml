@@ -6,6 +6,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:helpers="using:Call_of_Duty_HQ.Helpers"
     xmlns:xaml="using:Microsoft.UI.Xaml"
+    xmlns:local="using:Call_of_Duty_HQ.Views"
     mc:Ignorable="d">
     <Page.Resources>
         <helpers:EnumToBooleanConverter x:Key="EnumToBooleanConverter" />
@@ -51,12 +52,20 @@
                 </StackPanel>
             </StackPanel>
 
-            <StackPanel Visibility="Collapsed">
+            <StackPanel>
+                <TextBlock x:Uid="Settings_SteamPath" Style="{ThemeResource SubtitleTextBlockStyle}" />
                 <StackPanel Margin="{StaticResource SmallTopBottomMargin}" Orientation="Horizontal">
-                    <TextBox x:Name="SteamPath" PlaceholderText="Steam Path" Width="800" x:Uid="Settings_SteamPath"/>
+                    <TextBox x:Name="SteamPath" PlaceholderText="Steam Path" MaxWidth="800" MinWidth="400" x:Uid="Settings_SteamPath"/>
                     <Button x:Name="PickFolderButton" Content="..." Click="PickFolderButton_Click"/>
                 </StackPanel>
-                <TextBlock x:Name="PickFolderOutputTextBlock" TextWrapping="Wrap" Padding="0,5,0,0"/>
+                <InfoBar
+                    IsOpen="False"
+                    Title="Title"
+                    Message="Set Steam directory to {PLACE DIR HERE}"
+                    IsClosable="True"
+                    Severity="Error"
+                    x:Name="SteamInfoBar">
+                </InfoBar>
                 <TextBlock x:Name="SteamAppPathDisplay" Style="{StaticResource InfoTextStyle}"/>
             </StackPanel>
         </StackPanel>

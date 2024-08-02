@@ -12,7 +12,7 @@
 
   <Identity
     Publisher="CN=lolat"
-    Version="1.0.1.0"  Name="d08ec2ee-c030-4fd1-80f9-bd8e3102f89a"/>
+    Version="1.1.7.0"  Name="d08ec2ee-c030-4fd1-80f9-bd8e3102f89a"/>
     
   <mp:PhoneIdentity PhoneProductId="d08ec2ee-c030-4fd1-80f9-bd8e3102f89a" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
     

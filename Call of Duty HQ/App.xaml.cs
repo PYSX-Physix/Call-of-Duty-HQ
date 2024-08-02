@@ -106,8 +106,6 @@ public partial class App : Application
             services.AddTransient<IWPage>();
             services.AddTransient<WWIIViewModel>();
             services.AddTransient<WWIIPage>();
-            services.AddTransient<BO4ViewModel>();
-            services.AddTransient<BO4Page>();
             services.AddTransient<MW2019ViewModel>();
             services.AddTransient<MW2019Page>();
             services.AddTransient<VanguardViewModel>();

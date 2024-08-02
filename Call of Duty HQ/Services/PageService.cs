@@ -20,7 +20,6 @@ public class PageService : IPageService
         Configure<MWIIViewModel, MWIIPage>();
         Configure<VanguardViewModel, VanguardPage>();
         Configure<MW2019ViewModel, MW2019Page>();
-        Configure<BO4ViewModel, BO4Page>();
         Configure<WWIIViewModel, WWIIPage>();
         Configure<IWViewModel, IWPage>();
         Configure<BO3ViewModel, BO3Page>();

@@ -219,4 +219,7 @@
   <data name="Shell_Help.Content" xml:space="preserve">
     <value>Help</value>
   </data>
+  <data name="Settings_SteamPath.Text" xml:space="preserve">
+    <value>Steam Directory Settings</value>
+  </data>
 </root>
