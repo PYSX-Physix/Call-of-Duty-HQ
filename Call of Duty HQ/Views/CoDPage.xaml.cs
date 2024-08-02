@@ -20,6 +20,6 @@ public sealed partial class CoDPage : Page
 
     private void Button_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
     {
-        Process.Start("C:\\Program Files (x86)\\Steam\\steam.exe", "steam://rungameid/1985820");
+        Process.Start("C:\\Program Files (x86)\\Steam\\steam.exe", "steam://rungameid/2620");
     }
 }

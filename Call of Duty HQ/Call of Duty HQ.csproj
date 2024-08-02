@@ -43,4 +43,16 @@
   <PropertyGroup Condition="'$(DisableHasPackageAndPublishMenuAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
     <HasPackageAndPublishMenu>true</HasPackageAndPublishMenu>
   </PropertyGroup>
+  
+  <ItemGroup>
+    <CustomAdditionalCompileInputs Remove="Views\BlankPage1.xaml" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <None Remove="Views\BlankPage1.xaml" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Resource Remove="Views\BlankPage1.xaml" />
+  </ItemGroup>
 </Project>

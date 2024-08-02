@@ -20,6 +20,6 @@ public sealed partial class GhostsPage : Page
 
     private void Button_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
     {
-        Process.Start("C:\\Program Files (x86)\\Steam\\steam.exe", "steam://rungameid/1938090");
+        Process.Start("C:\\Program Files (x86)\\Steam\\steam.exe", "steam://rungameid/209160");
     }
 }
