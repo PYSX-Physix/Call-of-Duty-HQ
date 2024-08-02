@@ -72,7 +72,7 @@
                         <Image Source="/Assets/Images/CoD4MW.jpg" Height="300" Margin="0 5"/>
                     </Button>
                     <Button Margin="15 0" Click="C3_Click">
-                        <Image Source="/Assets/Images/CoD3.jpg" Height="300" Margin="0 5"/>
+                        <Image Source="/Assets/Images/CoDUO.jpg" Height="300" Margin="0 5"/>
                     </Button>
                     <Button Margin="15 0" Click="C2_Click">
                         <Image Source="/Assets/Images/CoD2.jpg" Height="300" Margin="0 5"/>

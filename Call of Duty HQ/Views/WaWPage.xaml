@@ -13,8 +13,10 @@
                     <TextBlock Text="Call of Duty: World at War" Style="{ThemeResource TitleTextBlockStyle}"/>
                 </StackPanel>
                 <StackPanel Margin="0 15 0 0" Orientation="Horizontal">
-                    <Border Background="#525252" Padding="10" CornerRadius="5" Opacity="20">
-                        <Image Source="/Assets/Images/CoDWaW.jpg" Height="400" HorizontalAlignment="Left"/>
+                    <Border CornerRadius="10" Height="450" Width="300">
+                        <Border.Background>
+                            <ImageBrush ImageSource="/Assets/Images/CoDWaW.jpg" Stretch="Fill"/>
+                        </Border.Background>
                     </Border>
                     <StackPanel Orientation="Vertical">
                         <StackPanel Orientation="Horizontal">

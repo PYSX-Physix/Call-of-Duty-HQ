@@ -7,6 +7,32 @@
     mc:Ignorable="d">
 
     <Grid x:Name="ContentArea">
-        
+        <ScrollView>
+            <StackPanel Orientation="Vertical">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Call of Duty: United Offensive" Style="{ThemeResource TitleTextBlockStyle}"/>
+                </StackPanel>
+                <StackPanel Margin="0 15 0 0" Orientation="Horizontal">
+                    <Border CornerRadius="10" Height="450" Width="300">
+                        <Border.Background>
+                            <ImageBrush ImageSource="/Assets/Images/CoDUO.jpg" Stretch="Fill"/>
+                        </Border.Background>
+                    </Border>
+                    <StackPanel Orientation="Vertical">
+                        <StackPanel Orientation="Horizontal">
+                            <StackPanel Margin="25 0 0 0">
+                                <TextBlock Text="Released in: September 15, 2004" Style="{ThemeResource InfoTextStyle}" Margin="0 10"/>
+                                <TextBlock Text="Developers: Gray Matter Studios" Style="{ThemeResource InfoTextStyle}" Margin="0 10"/>
+                            </StackPanel>
+                            <StackPanel Margin="25 0 0 0">
+                                <TextBlock Text="Publisher: Activision Inc." Style="{ThemeResource InfoTextStyle}" Margin="0 10"/>
+                                <TextBlock Text="Feedback: Very Positive" Style="{ThemeResource InfoTextStyle}" Margin="0 10"/>
+                            </StackPanel>
+                        </StackPanel>
+                        <Button Content="Play" FontWeight="SemiBold" Width="100" Margin="25 5" Click="Button_Click"/>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+        </ScrollView>
     </Grid>
 </Page>
