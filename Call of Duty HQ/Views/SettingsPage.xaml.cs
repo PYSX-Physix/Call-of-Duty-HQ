@@ -1,18 +1,12 @@
 ﻿using Call_of_Duty_HQ.ViewModels;
-
 using Microsoft.UI.Xaml.Controls;
-using Windows.Storage.AccessCache;
-using Windows.Storage.Pickers;
 using Windows.Storage;
-using Call_of_Duty_HQ.Helpers;
-using Microsoft.UI.System;
-using Call_of_Duty_HQ.Contracts.Services;
-using System.Linq;
+using Windows.Storage.Pickers;
 
 namespace Call_of_Duty_HQ.Views;
 
 public sealed partial class SettingsPage : Page
-{
+{   
     public SettingsViewModel ViewModel
     {
         get;
@@ -55,7 +49,10 @@ public sealed partial class SettingsPage : Page
         StorageFolder folder = await openPicker.PickSingleFolderAsync();
         if (folder != null)
         {
-            if (File.Exists("\\steam.exe"))
+            string file = "steam.exe";
+            string SteamFile = Path.Combine(folder.Path, file);
+
+            if (Path.Exists(SteamFile))
             {
                 ApplicationData.Current.LocalSettings.Values["Steam Path"] = folder.Path;
                 SteamPath.Text= folder.Path;
