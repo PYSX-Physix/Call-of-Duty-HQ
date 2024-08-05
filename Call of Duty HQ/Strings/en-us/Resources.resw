@@ -222,4 +222,7 @@
   <data name="Settings_SteamPath.Text" xml:space="preserve">
     <value>Steam Directory Settings</value>
   </data>
+  <data name="Settings_Resources.Text" xml:space="preserve">
+    <value>Resources Used</value>
+  </data>
 </root>

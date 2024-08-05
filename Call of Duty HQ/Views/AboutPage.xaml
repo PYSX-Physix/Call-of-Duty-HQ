@@ -8,15 +8,26 @@
 
     <Grid x:Name="ContentArea">
 		<StackPanel>
-			<TextBlock x:Uid="Settings_About" Style="{ThemeResource SubtitleTextBlockStyle}" />
+			
 
-			<StackPanel Margin="{StaticResource XSmallTopMargin}">
-				<TextBlock Text="{x:Bind ViewModel.VersionDescription, Mode=OneWay}" Style="{ThemeResource BodyTextBlockStyle}" />
+            <StackPanel Orientation="Horizontal">
+                <StackPanel Margin="{StaticResource XSmallTopMargin}">
+                    <TextBlock x:Uid="Settings_About" Style="{ThemeResource SubtitleTextBlockStyle}" Margin="0 0 5 0"/>
+                    <TextBlock Text="{x:Bind ViewModel.VersionDescription, Mode=OneWay}" Style="{ThemeResource BodyTextBlockStyle}" />
 
-                <TextBlock
-                    x:Uid="Settings_AboutDescription"
-                    Margin="{StaticResource XSmallTopMargin}"
-                    Style="{ThemeResource BodyTextBlockStyle}" />
+                    <TextBlock
+                        x:Uid="Settings_AboutDescription"
+                        Margin="{StaticResource XSmallTopMargin}"
+                        Style="{ThemeResource BodyTextBlockStyle}" />
+                </StackPanel>
+
+                <StackPanel Margin="{StaticResource XSmallLeftMargin}" Visibility="Collapsed">
+                    <TextBlock x:Uid="Settings_Resources" Style="{ThemeResource SubtitleTextBlockStyle}"/>
+                    <TextBlock Text="Steam"/>
+                    <TextBlock Text="Call of Duty Branding site"/>
+                    <TextBlock Text="IMDB Call of Duty images"/>
+                    <TextBlock Text="SteamDB"/>
+                </StackPanel>
             </StackPanel>
 		</StackPanel>
     </Grid>
