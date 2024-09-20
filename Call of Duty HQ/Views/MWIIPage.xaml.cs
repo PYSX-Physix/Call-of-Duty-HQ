@@ -19,7 +19,43 @@ public sealed partial class MWIIPage : Page
     {
         ViewModel = App.GetService<MWIIViewModel>();
         InitializeComponent();
+        GetSteamStoreInfo();
     }
+
+    private async void GetSteamStoreInfo()
+    {
+        string url = $"https://store.steampowered.com/appreviews/1938090?json=1";
+
+        using (HttpClient client = new HttpClient())
+        {
+            try
+            {
+                HttpResponseMessage response = await client.GetAsync(url);
+                response.EnsureSuccessStatusCode();
+                string responseBody = await response.Content.ReadAsStringAsync();
+
+                // Parse the JSON response
+                using (JsonDocument doc = JsonDocument.Parse(responseBody))
+                {
+                    JsonElement root = doc.RootElement;
+                    if (root.TryGetProperty("query_summary", out JsonElement querySummary) &&
+                        querySummary.TryGetProperty("review_score_desc", out JsonElement reviewScoreDesc))
+                    {
+                        FeedbackText.Text = $"Feedback: {reviewScoreDesc.GetString()}";
+                    }
+                }
+            }
+            catch (HttpRequestException ex)
+            {
+                FeedbackText.Text = $"Exception Caught! Message: {ex.Message}";
+            }
+            catch (JsonException ex)
+            {
+                FeedbackText.Text = $"JSON Parsing Exception! Message: {ex.Message}";
+            }
+        }
+    }
+    
 
     private void Button_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
     {

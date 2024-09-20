@@ -26,7 +26,7 @@
                             </StackPanel>
                             <StackPanel Margin="25 0 0 0">
                                 <TextBlock Text="Publisher: Activision Inc." Style="{ThemeResource InfoTextStyle}" Margin="0 10"/>
-                                <TextBlock Text="Feedback: Mostly Negative" Style="{ThemeResource InfoTextStyle}" Margin="0 10"/>
+                                <TextBlock x:Name="FeedbackText" Text="Feedback: Fetching" Style="{ThemeResource InfoTextStyle}" Margin="0 10"/>
                             </StackPanel>
                         </StackPanel>
                         <Button Content="Play" FontWeight="SemiBold" Width="100" Margin="25 5" Click="Button_Click"/>
