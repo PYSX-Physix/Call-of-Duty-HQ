@@ -19,29 +19,27 @@
 				<StackPanel Orientation="Horizontal">
 					<TextBlock Text="Call of Duty: Black Ops 6" Style="{ThemeResource TitleTextBlockStyle}"/>
 				</StackPanel>
-				<StackPanel Margin="0 15 0 0" Orientation="Horizontal">
+                <StackPanel Margin="0 15 0 0" Orientation="Horizontal">
                     <Border CornerRadius="10" Height="450" Width="300">
                         <Border.Background>
                             <ImageBrush ImageSource="/Assets/Images/CoDBO6.jpg" Stretch="Fill"/>
                         </Border.Background>
                     </Border>
                     <StackPanel Orientation="Vertical">
-						<StackPanel Orientation="Horizontal">
-							<StackPanel Margin="25 0 0 0">
-								<TextBlock Text="Released in: October 24, 2024" Style="{ThemeResource InfoTextStyle}" Margin="0 10"/>
-								<TextBlock Text="Developers: Treyarch, Raven Software" Style="{ThemeResource InfoTextStyle}" Margin="0 10"/>
-							</StackPanel>
-							<StackPanel Margin="25 0 0 0">
-								<TextBlock Text="Publisher: Activision Inc." Style="{ThemeResource InfoTextStyle}" Margin="0 10"/>
-								<TextBlock Text="Feedback: Unknown" Style="{ThemeResource InfoTextStyle}" Margin="0 10"/>
-							</StackPanel>
-						</StackPanel>
-						<Button Content="Play" FontWeight="SemiBold" Width="100" Margin="25 5" Click="Button_Click" IsEnabled="False"/>
-					</StackPanel>
-				</StackPanel>
-				<TextBlock Text="The Truth Lies" Style="{ThemeResource TitleTextBlockStyle}" Margin="0 10"/>
-                <WebView2 Source="https://www.youtube.com/embed/oyZY_BiTmd8" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="1" Height="800" Margin="0 0 0 10"/>
-			</StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <StackPanel Margin="25 0 0 0">
+                                <TextBlock Text="Released in: October 24, 2024" Style="{ThemeResource InfoTextStyle}" Margin="0 10"/>
+                                <TextBlock Text="Developers: Treyarch, Raven Software" Style="{ThemeResource InfoTextStyle}" Margin="0 10"/>
+                            </StackPanel>
+                            <StackPanel Margin="25 0 0 0">
+                                <TextBlock Text="Publisher: Activision Inc." Style="{ThemeResource InfoTextStyle}" Margin="0 10"/>
+                                <TextBlock Text="Feedback: Unknown" Style="{ThemeResource InfoTextStyle}" Margin="0 10"/>
+                            </StackPanel>
+                        </StackPanel>
+                        <Button Content="Play" FontWeight="SemiBold" Width="100" Margin="25 5" Click="Button_Click" IsEnabled="False"/>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
 		</ScrollView>
     </Grid>
 </Page>
