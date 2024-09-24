@@ -17,7 +17,11 @@
                 <TextBlock Text="News" FontSize="36" FontWeight="Bold" Margin="10 5 0 0"/>
                 <TextBlock Text="Games" FontSize="36" FontWeight="Bold" Margin="10 5 0 0"/>
                 <WrapPanel>
-                
+					<Border>
+						<Border.Background>
+							<ImageBrush Source="/Assets/Images/"/>
+						</Border.Background>
+					</Border>
                 </WrapPanel>
             </StackPanel>
         </ScrollViewer>
