@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Call of Duty HQ")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e61ec43944ed0ab378ae70dfd463d0a8a54f943e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a5ecc09bbfcafb9af713e37a04e089afc425395d")]
 [assembly: System.Reflection.AssemblyProductAttribute("Call of Duty HQ")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Call of Duty HQ")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
