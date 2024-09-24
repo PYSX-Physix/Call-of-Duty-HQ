@@ -5,6 +5,8 @@ VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Call of Duty HQ", "Call of Duty HQ\Call of Duty HQ.csproj", "{B828DEB8-D673-491E-9556-C0124B07E9C0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoDExecutor", "CoDExecutor\CoDExecutor.csproj", "{6F06B35C-95F6-4CD5-86C4-E519CC3350D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{B828DEB8-D673-491E-9556-C0124B07E9C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B828DEB8-D673-491E-9556-C0124B07E9C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B828DEB8-D673-491E-9556-C0124B07E9C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F06B35C-95F6-4CD5-86C4-E519CC3350D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F06B35C-95F6-4CD5-86C4-E519CC3350D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F06B35C-95F6-4CD5-86C4-E519CC3350D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F06B35C-95F6-4CD5-86C4-E519CC3350D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
