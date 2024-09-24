@@ -1,6 +1,5 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Blend for Visual Studio Version 17
+# Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Call of Duty Launcher", "Call of Duty Launcher\Call of Duty Launcher.csproj", "{A2055C5D-B9B5-43DE-94DA-1E545A723BCA}"
