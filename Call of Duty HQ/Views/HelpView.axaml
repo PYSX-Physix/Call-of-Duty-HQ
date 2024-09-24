@@ -3,15 +3,13 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:vm="using:Call_of_Duty_HQ.ViewModels"
-             x:DataType="vm:SettingsViewModel"
+             x:DataType="vm:HelpViewModel"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-             x:Class="Call_of_Duty_HQ.Views.SettingsView">
+             x:Class="Call_of_Duty_HQ.Views.HelpView">
     <Design.DataContext>
-        <!-- This only sets the DataContext for the previewer in an IDE,
-             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
-        <vm:SettingsViewModel/>
+        <vm:HelpViewModel/>
     </Design.DataContext>
     <StackPanel>
-        <TextBlock Text="Settings" FontSize="36" FontWeight="Bold" Margin="10 5 0 0"/>
+        <TextBlock Text="Help" FontSize="36" FontWeight="Bold" Margin="10 5 0 0"/>
     </StackPanel>
 </UserControl>

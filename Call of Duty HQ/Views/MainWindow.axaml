@@ -6,8 +6,8 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="Call_of_Duty_HQ.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
-        Icon="/Assets/avalonia-logo.ico"
-        Title="Call_of_Duty_HQ">
+        Icon="/Assets/WindowsLogo.ico"
+        Title="Call of Duty HQ">
 
     <Design.DataContext>
         <!-- This only sets the DataContext for the previewer in an IDE,
@@ -15,6 +15,27 @@
         <vm:MainWindowViewModel/>
     </Design.DataContext>
 
-    <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+	<SplitView CompactPaneLength="43" OpenPaneLength="200" DisplayMode="CompactInline" IsPaneOpen="{Binding IsPaneClosed}">
+		<SplitView.Pane>
+			<StackPanel>
+				<Button Command="{Binding ClosePaneCommand}" Width="43">
+					<PathIcon Data="{StaticResource Menu}"/> 
+				</Button>
+				<ListBox ItemsSource="{Binding Items}" SelectedItem="{Binding SelectedItem}">
+					<ListBox.ItemTemplate>
+						<DataTemplate DataType="{x:Type vm:ListItemTemplate}">
+							<StackPanel Orientation="Horizontal" Spacing="15">
+								<PathIcon Data="{Binding Icon}"/>
+								<TextBlock Margin="0 3 0 0" Text="{Binding Name}"/>
+							</StackPanel>
+						</DataTemplate>
+					</ListBox.ItemTemplate>
+				</ListBox>
+			</StackPanel>
+		</SplitView.Pane>
+		<SplitView.Content>
+			<TransitioningContentControl Content="{Binding ActiveViewModel}"/>
+		</SplitView.Content>
+	</SplitView>
 
 </Window>

@@ -11,4 +11,15 @@
              to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
         <vm:MainViewModel/>
     </Design.DataContext>
+    <StackPanel>
+        <ScrollViewer>
+            <StackPanel>
+                <TextBlock Text="News" FontSize="36" FontWeight="Bold" Margin="10 5 0 0"/>
+                <TextBlock Text="Games" FontSize="36" FontWeight="Bold" Margin="10 5 0 0"/>
+                <WrapPanel>
+                
+                </WrapPanel>
+            </StackPanel>
+        </ScrollViewer>
+    </StackPanel>
 </UserControl>

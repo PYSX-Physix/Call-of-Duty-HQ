@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CoDExecutor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e61ec43944ed0ab378ae70dfd463d0a8a54f943e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+67f0474152c61e41d1210e0ab7725c8ad75d4c54")]
 [assembly: System.Reflection.AssemblyProductAttribute("CoDExecutor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CoDExecutor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
