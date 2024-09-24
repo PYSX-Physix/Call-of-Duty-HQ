@@ -1536,11 +1536,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lolat\\OneDrive\\Repos\\Call of Duty HQ\\Avalonia\\Call of Duty HQ\\CoDExecutor\\CoDExecutor.csproj",
+      "projectUniqueName": "C:\\Users\\lolat\\OneDrive\\Repos\\Call of Duty HQ\\Avalonia\\Call-of-Duty-Launcher\\CoDExecutor\\CoDExecutor.csproj",
       "projectName": "CoDExecutor",
-      "projectPath": "C:\\Users\\lolat\\OneDrive\\Repos\\Call of Duty HQ\\Avalonia\\Call of Duty HQ\\CoDExecutor\\CoDExecutor.csproj",
+      "projectPath": "C:\\Users\\lolat\\OneDrive\\Repos\\Call of Duty HQ\\Avalonia\\Call-of-Duty-Launcher\\CoDExecutor\\CoDExecutor.csproj",
       "packagesPath": "C:\\Users\\lolat\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lolat\\OneDrive\\Repos\\Call of Duty HQ\\Avalonia\\Call of Duty HQ\\CoDExecutor\\obj\\",
+      "outputPath": "C:\\Users\\lolat\\OneDrive\\Repos\\Call of Duty HQ\\Avalonia\\Call-of-Duty-Launcher\\CoDExecutor\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
