@@ -9,155 +9,160 @@
 
     <Grid x:Name="ContentArea">
         <ScrollView HorizontalAlignment="Center">
-            <GridView>
-                <GridView.ItemContainerStyle>
-                    <Style TargetType="GridViewItem" BasedOn="{StaticResource DefaultGridViewItemStyle}">
-                        <Setter Property="Margin" Value="10"/>
-                        <Setter Property="CornerRadius" Value="10"/>
-                    </Style>
-                </GridView.ItemContainerStyle>
+            <StackPanel>
+                <StackPanel Name="NewsSection">
+                    
+                </StackPanel>
+                <GridView>
+                    <GridView.ItemContainerStyle>
+                        <Style TargetType="GridViewItem" BasedOn="{StaticResource DefaultGridViewItemStyle}">
+                            <Setter Property="Margin" Value="10"/>
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </GridView.ItemContainerStyle>
 
-                <GridViewItem Tapped="BO6_Tapped">
-                    <Border CornerRadius="10" Height="450" Width="300">
-                        <Border.Background>
-                            <ImageBrush ImageSource="/Assets/Images/CoDBO6.jpg" Stretch="Fill"/>
-                        </Border.Background>
-                    </Border>
-                </GridViewItem>
-                <GridViewItem Tapped="MWIII_Tapped">
-                    <Border CornerRadius="10" Height="450" Width="300">
-                        <Border.Background>
-                            <ImageBrush ImageSource="/Assets/Images/CoDMWIII.jpg" Stretch="Fill"/>
-                        </Border.Background>
-                    </Border>
-                </GridViewItem>
-                <GridViewItem Tapped="MWII_Tapped">
-                    <Border CornerRadius="10" Height="450" Width="300">
-                        <Border.Background>
-                            <ImageBrush ImageSource="/Assets/Images/CoDMWII.jpg" Stretch="Fill"/>
-                        </Border.Background>
-                    </Border>
-                </GridViewItem>
-                <GridViewItem Tapped="V_Tapped">
-                    <Border CornerRadius="10" Height="450" Width="300">
-                        <Border.Background>
-                            <ImageBrush ImageSource="/Assets/Images/CoDV.jpg" Stretch="Fill"/>
-                        </Border.Background>
-                    </Border>
-                </GridViewItem>
-                <GridViewItem Tapped="BOCW_Tapped">
-                    <Border CornerRadius="10" Height="450" Width="300">
-                        <Border.Background>
-                            <ImageBrush ImageSource="/Assets/Images/CoDBOCW.jpg" Stretch="Fill"/>
-                        </Border.Background>
-                    </Border>
-                </GridViewItem>
-                <GridViewItem Tapped="MW_Tapped">
-                    <Border CornerRadius="10" Height="450" Width="300">
-                        <Border.Background>
-                            <ImageBrush ImageSource="/Assets/Images/CoDMW.jpg" Stretch="Fill"/>
-                        </Border.Background>
-                    </Border>
-                </GridViewItem>
-                <GridViewItem Tapped="WWII_Tapped">
-                    <Border CornerRadius="10" Height="450" Width="300">
-                        <Border.Background>
-                            <ImageBrush ImageSource="/Assets/Images/CoDWWII.jpg" Stretch="Fill"/>
-                        </Border.Background>
-                    </Border>
-                </GridViewItem>
-                <GridViewItem Tapped="IW_Tapped">
-                    <Border CornerRadius="10" Height="450" Width="300">
-                        <Border.Background>
-                            <ImageBrush ImageSource="/Assets/Images/CoDIW.jpg" Stretch="Fill"/>
-                        </Border.Background>
-                    </Border>
-                </GridViewItem>
-                <GridViewItem Tapped="BO3_Tapped">
-                    <Border CornerRadius="10" Height="450" Width="300">
-                        <Border.Background>
-                            <ImageBrush ImageSource="/Assets/Images/CoDBO3.jpg" Stretch="Fill"/>
-                        </Border.Background>
-                    </Border>
-                </GridViewItem>
-                <GridViewItem Tapped="AW_Tapped">
-                    <Border CornerRadius="10" Height="450" Width="300">
-                        <Border.Background>
-                            <ImageBrush ImageSource="/Assets/Images/CoDAW.jpg" Stretch="Fill"/>
-                        </Border.Background>
-                    </Border>
-                </GridViewItem>
-                <GridViewItem Tapped="G_Tapped">
-                    <Border CornerRadius="10" Height="450" Width="300">
-                        <Border.Background>
-                            <ImageBrush ImageSource="/Assets/Images/CoDG.jpg" Stretch="Fill"/>
-                        </Border.Background>
-                    </Border>
-                </GridViewItem>
-                <GridViewItem Tapped="BO2_Tapped">
-                    <Border CornerRadius="10" Height="450" Width="300">
-                        <Border.Background>
-                            <ImageBrush ImageSource="/Assets/Images/CoDBO2.jpg" Stretch="Fill"/>
-                        </Border.Background>
-                    </Border>
-                </GridViewItem>
-                <GridViewItem Tapped="MW3_Tapped">
-                    <Border CornerRadius="10" Height="450" Width="300">
-                        <Border.Background>
-                            <ImageBrush ImageSource="/Assets/Images/CoDMW3.jpg" Stretch="Fill"/>
-                        </Border.Background>
-                    </Border>
-                </GridViewItem>
-                <GridViewItem Tapped="BO_Tapped">
-                    <Border CornerRadius="10" Height="450" Width="300">
-                        <Border.Background>
-                            <ImageBrush ImageSource="/Assets/Images/CoDBO.jpg" Stretch="Fill"/>
-                        </Border.Background>
-                    </Border>
-                </GridViewItem>
-                <GridViewItem Tapped="MW2_Tapped">
-                    <Border CornerRadius="10" Height="450" Width="300">
-                        <Border.Background>
-                            <ImageBrush ImageSource="/Assets/Images/CoDMW2.jpg" Stretch="Fill"/>
-                        </Border.Background>
-                    </Border>
-                </GridViewItem>
-                <GridViewItem Tapped="WaW_Tapped">
-                    <Border CornerRadius="10" Height="450" Width="300">
-                        <Border.Background>
-                            <ImageBrush ImageSource="/Assets/Images/CoDWaW.jpg" Stretch="Fill"/>
-                        </Border.Background>
-                    </Border>
-                </GridViewItem>
-                <GridViewItem Tapped="MW4_Tapped">
-                    <Border CornerRadius="10" Height="450" Width="300">
-                        <Border.Background>
-                            <ImageBrush ImageSource="/Assets/Images/CoD4MW.jpg" Stretch="Fill"/>
-                        </Border.Background>
-                    </Border>
-                </GridViewItem>
-                <GridViewItem Tapped="C3_Tapped">
-                    <Border CornerRadius="10" Height="450" Width="300">
-                        <Border.Background>
-                            <ImageBrush ImageSource="/Assets/Images/CoDUO.jpg" Stretch="Fill"/>
-                        </Border.Background>
-                    </Border>
-                </GridViewItem>
-                <GridViewItem Tapped="C2_Tapped">
-                    <Border CornerRadius="10" Height="450" Width="300">
-                        <Border.Background>
-                            <ImageBrush ImageSource="/Assets/Images/CoD2.jpg" Stretch="Fill"/>
-                        </Border.Background>
-                    </Border>
-                </GridViewItem>
-                <GridViewItem Tapped="C_Tapped">
-                    <Border CornerRadius="10" Height="450" Width="300">
-                        <Border.Background>
-                            <ImageBrush ImageSource="/Assets/Images/CoD.jpg" Stretch="Fill"/>
-                        </Border.Background>
-                    </Border>
-                </GridViewItem>
-            </GridView>
+                    <GridViewItem Tapped="BO6_Tapped">
+                        <Border CornerRadius="10" Height="450" Width="300">
+                            <Border.Background>
+                                <ImageBrush ImageSource="/Assets/Images/CoDBO6.jpg" Stretch="Fill"/>
+                            </Border.Background>
+                        </Border>
+                    </GridViewItem>
+                    <GridViewItem Tapped="MWIII_Tapped">
+                        <Border CornerRadius="10" Height="450" Width="300">
+                            <Border.Background>
+                                <ImageBrush ImageSource="/Assets/Images/CoDMWIII.jpg" Stretch="Fill"/>
+                            </Border.Background>
+                        </Border>
+                    </GridViewItem>
+                    <GridViewItem Tapped="MWII_Tapped">
+                        <Border CornerRadius="10" Height="450" Width="300">
+                            <Border.Background>
+                                <ImageBrush ImageSource="/Assets/Images/CoDMWII.jpg" Stretch="Fill"/>
+                            </Border.Background>
+                        </Border>
+                    </GridViewItem>
+                    <GridViewItem Tapped="V_Tapped">
+                        <Border CornerRadius="10" Height="450" Width="300">
+                            <Border.Background>
+                                <ImageBrush ImageSource="/Assets/Images/CoDV.jpg" Stretch="Fill"/>
+                            </Border.Background>
+                        </Border>
+                    </GridViewItem>
+                    <GridViewItem Tapped="BOCW_Tapped">
+                        <Border CornerRadius="10" Height="450" Width="300">
+                            <Border.Background>
+                                <ImageBrush ImageSource="/Assets/Images/CoDBOCW.jpg" Stretch="Fill"/>
+                            </Border.Background>
+                        </Border>
+                    </GridViewItem>
+                    <GridViewItem Tapped="MW_Tapped">
+                        <Border CornerRadius="10" Height="450" Width="300">
+                            <Border.Background>
+                                <ImageBrush ImageSource="/Assets/Images/CoDMW.jpg" Stretch="Fill"/>
+                            </Border.Background>
+                        </Border>
+                    </GridViewItem>
+                    <GridViewItem Tapped="WWII_Tapped">
+                        <Border CornerRadius="10" Height="450" Width="300">
+                            <Border.Background>
+                                <ImageBrush ImageSource="/Assets/Images/CoDWWII.jpg" Stretch="Fill"/>
+                            </Border.Background>
+                        </Border>
+                    </GridViewItem>
+                    <GridViewItem Tapped="IW_Tapped">
+                        <Border CornerRadius="10" Height="450" Width="300">
+                            <Border.Background>
+                                <ImageBrush ImageSource="/Assets/Images/CoDIW.jpg" Stretch="Fill"/>
+                            </Border.Background>
+                        </Border>
+                    </GridViewItem>
+                    <GridViewItem Tapped="BO3_Tapped">
+                        <Border CornerRadius="10" Height="450" Width="300">
+                            <Border.Background>
+                                <ImageBrush ImageSource="/Assets/Images/CoDBO3.jpg" Stretch="Fill"/>
+                            </Border.Background>
+                        </Border>
+                    </GridViewItem>
+                    <GridViewItem Tapped="AW_Tapped">
+                        <Border CornerRadius="10" Height="450" Width="300">
+                            <Border.Background>
+                                <ImageBrush ImageSource="/Assets/Images/CoDAW.jpg" Stretch="Fill"/>
+                            </Border.Background>
+                        </Border>
+                    </GridViewItem>
+                    <GridViewItem Tapped="G_Tapped">
+                        <Border CornerRadius="10" Height="450" Width="300">
+                            <Border.Background>
+                                <ImageBrush ImageSource="/Assets/Images/CoDG.jpg" Stretch="Fill"/>
+                            </Border.Background>
+                        </Border>
+                    </GridViewItem>
+                    <GridViewItem Tapped="BO2_Tapped">
+                        <Border CornerRadius="10" Height="450" Width="300">
+                            <Border.Background>
+                                <ImageBrush ImageSource="/Assets/Images/CoDBO2.jpg" Stretch="Fill"/>
+                            </Border.Background>
+                        </Border>
+                    </GridViewItem>
+                    <GridViewItem Tapped="MW3_Tapped">
+                        <Border CornerRadius="10" Height="450" Width="300">
+                            <Border.Background>
+                                <ImageBrush ImageSource="/Assets/Images/CoDMW3.jpg" Stretch="Fill"/>
+                            </Border.Background>
+                        </Border>
+                    </GridViewItem>
+                    <GridViewItem Tapped="BO_Tapped">
+                        <Border CornerRadius="10" Height="450" Width="300">
+                            <Border.Background>
+                                <ImageBrush ImageSource="/Assets/Images/CoDBO.jpg" Stretch="Fill"/>
+                            </Border.Background>
+                        </Border>
+                    </GridViewItem>
+                    <GridViewItem Tapped="MW2_Tapped">
+                        <Border CornerRadius="10" Height="450" Width="300">
+                            <Border.Background>
+                                <ImageBrush ImageSource="/Assets/Images/CoDMW2.jpg" Stretch="Fill"/>
+                            </Border.Background>
+                        </Border>
+                    </GridViewItem>
+                    <GridViewItem Tapped="WaW_Tapped">
+                        <Border CornerRadius="10" Height="450" Width="300">
+                            <Border.Background>
+                                <ImageBrush ImageSource="/Assets/Images/CoDWaW.jpg" Stretch="Fill"/>
+                            </Border.Background>
+                        </Border>
+                    </GridViewItem>
+                    <GridViewItem Tapped="MW4_Tapped">
+                        <Border CornerRadius="10" Height="450" Width="300">
+                            <Border.Background>
+                                <ImageBrush ImageSource="/Assets/Images/CoD4MW.jpg" Stretch="Fill"/>
+                            </Border.Background>
+                        </Border>
+                    </GridViewItem>
+                    <GridViewItem Tapped="C3_Tapped">
+                        <Border CornerRadius="10" Height="450" Width="300">
+                            <Border.Background>
+                                <ImageBrush ImageSource="/Assets/Images/CoDUO.jpg" Stretch="Fill"/>
+                            </Border.Background>
+                        </Border>
+                    </GridViewItem>
+                    <GridViewItem Tapped="C2_Tapped">
+                        <Border CornerRadius="10" Height="450" Width="300">
+                            <Border.Background>
+                                <ImageBrush ImageSource="/Assets/Images/CoD2.jpg" Stretch="Fill"/>
+                            </Border.Background>
+                        </Border>
+                    </GridViewItem>
+                    <GridViewItem Tapped="C_Tapped">
+                        <Border CornerRadius="10" Height="450" Width="300">
+                            <Border.Background>
+                                <ImageBrush ImageSource="/Assets/Images/CoD.jpg" Stretch="Fill"/>
+                            </Border.Background>
+                        </Border>
+                    </GridViewItem>
+                </GridView>
+            </StackPanel>
         </ScrollView>
     </Grid>
 </Page>

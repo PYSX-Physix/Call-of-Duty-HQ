@@ -1,7 +1,7 @@
-﻿using Call_of_Duty_HQ.Helpers;
-using System.Reflection;
-using CommunityToolkit.Mvvm.ComponentModel;
+﻿using System.Reflection;
 using Windows.ApplicationModel;
+using Call_of_Duty_HQ.Helpers;
+using CommunityToolkit.Mvvm.ComponentModel;
 
 namespace Call_of_Duty_HQ.ViewModels;
 

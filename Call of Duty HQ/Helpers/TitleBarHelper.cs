@@ -1,11 +1,9 @@
 ﻿using System.Runtime.InteropServices;
-
+using Windows.UI;
+using Windows.UI.ViewManagement;
 using Microsoft.UI;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Media;
-
-using Windows.UI;
-using Windows.UI.ViewManagement;
 
 namespace Call_of_Duty_HQ.Helpers;
 

@@ -1,6 +1,5 @@
-﻿using Call_of_Duty_HQ.Helpers;
-
-using Windows.UI.ViewManagement;
+﻿using Windows.UI.ViewManagement;
+using Call_of_Duty_HQ.Helpers;
 
 namespace Call_of_Duty_HQ;
 

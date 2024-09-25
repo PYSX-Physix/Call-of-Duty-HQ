@@ -1,13 +1,11 @@
-﻿using Call_of_Duty_HQ.Contracts.Services;
+﻿using Windows.ApplicationModel;
+using Windows.Storage;
+using Call_of_Duty_HQ.Contracts.Services;
 using Call_of_Duty_HQ.Core.Contracts.Services;
 using Call_of_Duty_HQ.Core.Helpers;
 using Call_of_Duty_HQ.Helpers;
 using Call_of_Duty_HQ.Models;
-
 using Microsoft.Extensions.Options;
-
-using Windows.ApplicationModel;
-using Windows.Storage;
 
 namespace Call_of_Duty_HQ.Services;
 

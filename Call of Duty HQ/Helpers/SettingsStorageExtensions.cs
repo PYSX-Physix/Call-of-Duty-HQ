@@ -1,7 +1,6 @@
-﻿using Call_of_Duty_HQ.Core.Helpers;
-
-using Windows.Storage;
+﻿using Windows.Storage;
 using Windows.Storage.Streams;
+using Call_of_Duty_HQ.Core.Helpers;
 
 namespace Call_of_Duty_HQ.Helpers;
 

@@ -1,15 +1,11 @@
 ﻿using System.Reflection;
 using System.Windows.Input;
-
+using Windows.ApplicationModel;
 using Call_of_Duty_HQ.Contracts.Services;
 using Call_of_Duty_HQ.Helpers;
-
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-
 using Microsoft.UI.Xaml;
-
-using Windows.ApplicationModel;
 
 namespace Call_of_Duty_HQ.ViewModels;
 
