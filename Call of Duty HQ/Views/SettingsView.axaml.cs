@@ -46,6 +46,7 @@ public partial class SettingsView : UserControl
             popup.PopupMessage.Text = folderPath.ToString();
             popup.CancelButton.Content = "Cancel";
             popup.PrimaryButton.Content = "Confirm";
+            popup.Title = "Confirm Steam Directory";
             popup.Show();
         }
     }

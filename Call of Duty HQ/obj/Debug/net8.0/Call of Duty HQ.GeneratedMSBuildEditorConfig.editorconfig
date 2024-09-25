@@ -35,5 +35,8 @@ build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 [C:/Users/lolat/OneDrive/Repos/Call of Duty HQ/Avalonia/Call-of-Duty-Launcher/Call of Duty HQ/Views/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
+[C:/Users/lolat/OneDrive/Repos/Call of Duty HQ/Avalonia/Call-of-Duty-Launcher/Call of Duty HQ/Views/Popup.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [C:/Users/lolat/OneDrive/Repos/Call of Duty HQ/Avalonia/Call-of-Duty-Launcher/Call of Duty HQ/Views/SettingsView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
