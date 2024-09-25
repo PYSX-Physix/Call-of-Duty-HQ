@@ -1,7 +1,7 @@
+using System;
 using Avalonia.Controls;
 using Avalonia.Controls.Templates;
 using Call_of_Duty_HQ.ViewModels;
-using System;
 
 namespace Call_of_Duty_HQ
 {

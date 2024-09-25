@@ -7,6 +7,8 @@
         x:Class="Call_of_Duty_HQ.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
         Icon="/Assets/WindowsLogo.ico"
+        TransparencyLevelHint="AcrylicBlur"
+        Background="#2B2B2B"
         Title="Call of Duty HQ">
 
     <Design.DataContext>
@@ -15,7 +17,7 @@
         <vm:MainWindowViewModel/>
     </Design.DataContext>
 
-	<SplitView CompactPaneLength="43" OpenPaneLength="200" DisplayMode="CompactInline" IsPaneOpen="{Binding IsPaneClosed}">
+	<SplitView CompactPaneLength="43" OpenPaneLength="300" DisplayMode="CompactInline" IsPaneOpen="{Binding IsPaneClosed}">
 		<SplitView.Pane>
 			<StackPanel>
 				<Button Command="{Binding ClosePaneCommand}" Width="43">
@@ -37,5 +39,4 @@
 			<TransitioningContentControl Content="{Binding ActiveViewModel}"/>
 		</SplitView.Content>
 	</SplitView>
-
 </Window>

@@ -16,12 +16,10 @@
             <StackPanel>
                 <TextBlock Text="News" FontSize="36" FontWeight="Bold" Margin="10 5 0 0"/>
                 <TextBlock Text="Games" FontSize="36" FontWeight="Bold" Margin="10 5 0 0"/>
-                <WrapPanel>
-					<Border>
-						<Border.Background>
-							<ImageBrush Source="/Assets/Images/"/>
-						</Border.Background>
-					</Border>
+                <WrapPanel Margin="10 0">
+                    <Button Height="300" Click="Button_OnClick">
+                        <Image Source="/Assets/Images/CoDMWIII.jpg"/>
+                    </Button>
                 </WrapPanel>
             </StackPanel>
         </ScrollViewer>
