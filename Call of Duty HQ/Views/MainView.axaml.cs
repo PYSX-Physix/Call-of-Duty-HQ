@@ -1,5 +1,6 @@
 ﻿using Avalonia;
 using Avalonia.Controls;
+using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Interactivity;
 using Avalonia.Markup.Xaml;
 using Microsoft.Extensions.Configuration;
@@ -23,9 +24,13 @@ public partial class MainView : UserControl
         };
         view.StartCoD(steamId);
         view.Show();
+        if (Application.Current.ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
+        {
+            desktop.Shutdown();
+        }
     }
     
-    private void Button_OnClick(object? sender, RoutedEventArgs e)
+    private void CoDHQ_OnClick(object? sender, RoutedEventArgs e)
     {
         StartCoDExecutor(1938090);
     }

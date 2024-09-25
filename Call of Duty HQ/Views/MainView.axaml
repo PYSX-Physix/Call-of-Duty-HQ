@@ -11,17 +11,22 @@
              to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
         <vm:MainViewModel/>
     </Design.DataContext>
-    <StackPanel>
-        <ScrollViewer>
-            <StackPanel>
-                <TextBlock Text="News" FontSize="36" FontWeight="Bold" Margin="10 5 0 0"/>
-                <TextBlock Text="Games" FontSize="36" FontWeight="Bold" Margin="10 5 0 0"/>
-                <WrapPanel Margin="10 0">
-                    <Button Height="300" Click="Button_OnClick">
-                        <Image Source="/Assets/Images/CoDMWIII.jpg"/>
-                    </Button>
-                </WrapPanel>
-            </StackPanel>
-        </ScrollViewer>
-    </StackPanel>
+	<ScrollViewer>
+		<StackPanel>
+			<TextBlock Text="Games" FontSize="36" FontWeight="Bold" Margin="10 5 0 0"/>
+			<ScrollViewer>
+				<WrapPanel Margin="10 0">
+					<Button Height="450" Click="CoDHQ_OnClick" IsEnabled="False">
+						<Image Source="/Assets/Images/CoDBo6.jpg"/>
+					</Button>
+					<Button Height="450" Click="CoDHQ_OnClick">
+						<Image Source="/Assets/Images/CoDMWIII.jpg"/>
+					</Button>
+					<Button Height="450" Click="CoDHQ_OnClick">
+						<Image Source="/Assets/Images/CoDMWII.jpg"/>
+					</Button>
+				</WrapPanel>
+			</ScrollViewer>
+		</StackPanel>
+	</ScrollViewer>
 </UserControl>
