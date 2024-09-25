@@ -1,7 +1,7 @@
-﻿using Call_of_Duty_HQ.ViewModels;
-using Microsoft.UI.Xaml.Controls;
-using Windows.Storage;
+﻿using Windows.Storage;
 using Windows.Storage.Pickers;
+using Call_of_Duty_HQ.ViewModels;
+using Microsoft.UI.Xaml.Controls;
 
 namespace Call_of_Duty_HQ.Views;
 

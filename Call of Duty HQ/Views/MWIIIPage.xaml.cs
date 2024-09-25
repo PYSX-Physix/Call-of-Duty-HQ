@@ -1,10 +1,10 @@
-﻿using Call_of_Duty_HQ.ViewModels;
-using System.Diagnostics;
-using Microsoft.UI.Xaml.Controls;
+﻿using System.Diagnostics;
+using System.Text.Json;
 using Windows.Storage;
 using Call_of_Duty_HQ;
 using Call_of_Duty_HQ.Services;
-using System.Text.Json;
+using Call_of_Duty_HQ.ViewModels;
+using Microsoft.UI.Xaml.Controls;
 
 namespace Call_of_Duty_HQ.Views;
 
@@ -27,7 +27,7 @@ public sealed partial class MWIIIPage : Page
 
     private async void GetSteamStoreInfo()
     {
-        string url = $"https://store.steampowered.com/appreviews/1938090?json=1";
+        string url = $"https://store.steampowered.com/appreviews/2519060?json=1";
 
         using (HttpClient client = new HttpClient())
         {
@@ -61,6 +61,6 @@ public sealed partial class MWIIIPage : Page
 
     private void Button_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
     {
-        Process.Start($"{steamPath}\\steam.exe", "steam://rungameid/1938090");
+        Process.Start($"{steamPath}\\steam.exe", "steam://rungameid/2519060");
     }
 }

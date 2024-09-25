@@ -1,9 +1,8 @@
 ﻿using System.Diagnostics;
 using System.Text.Json;
-using Call_of_Duty_HQ.ViewModels;
-
-using Microsoft.UI.Xaml.Controls;
 using Windows.Storage;
+using Call_of_Duty_HQ.ViewModels;
+using Microsoft.UI.Xaml.Controls;
 
 namespace Call_of_Duty_HQ.Views;
 
@@ -25,7 +24,7 @@ public sealed partial class CoD3Page : Page
 
     private async void GetSteamStoreInfo()
     {
-        string url = $"https://store.steampowered.com/appreviews/1938090?json=1";
+        string url = $"https://store.steampowered.com/appreviews/2640?json=1";
 
         using (HttpClient client = new HttpClient())
         {
@@ -56,7 +55,7 @@ public sealed partial class CoD3Page : Page
             }
         }
     }
-}
+
 
     private void Button_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
     {

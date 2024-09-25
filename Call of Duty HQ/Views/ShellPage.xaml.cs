@@ -1,13 +1,11 @@
-﻿using Call_of_Duty_HQ.Contracts.Services;
+﻿using Windows.System;
+using Call_of_Duty_HQ.Contracts.Services;
 using Call_of_Duty_HQ.Helpers;
 using Call_of_Duty_HQ.ViewModels;
-
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Input;
 using Microsoft.UI.Xaml.Media;
-
-using Windows.System;
 
 namespace Call_of_Duty_HQ.Views;
 
