@@ -15,20 +15,19 @@ namespace HQ_Installer.Views
     public partial class MainWindow : Window
     {
 
-        public string Installdir = Program.Configuration["InstallPath"];
-        public string UninstallDir = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+        public string InstallDirStr = "C:\\Program Files\\Call of Duty HQ\\";
 
         public MainWindow()
         {
             InitializeComponent();
-            InstallDir.Text = Installdir;
+            InstallDir.Text = InstallDirStr;
         }
 
         private void Finish_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
         {
             if (RunOnClose.IsChecked == true)
             {
-                Process.Start($"{Installdir}Call of Duty HQ.exe");
+                Process.Start($"{InstallDirStr}Call of Duty HQ.exe");
             }
             this.Close();
         }
@@ -74,10 +73,10 @@ namespace HQ_Installer.Views
 
         private void Client_DownloadFileCompleted(object? sender, System.ComponentModel.AsyncCompletedEventArgs e)
         {
-            if (!Directory.Exists(Installdir))
+            if (!Directory.Exists(InstallDirStr))
             {
-                Directory.CreateDirectory(Installdir);
-                ZipFile.ExtractToDirectory("Call of Duty HQ.zip", Installdir, true);
+                Directory.CreateDirectory(InstallDirStr);
+                ZipFile.ExtractToDirectory("Call of Duty HQ.zip", InstallDirStr, true);
                 File.Delete("Call of Duty HQ.zip");
             }
             OutroPanel.IsVisible = true;
@@ -93,11 +92,11 @@ namespace HQ_Installer.Views
 
         public void RegisterApp()
         {
-            string appName = "Call of Duty HQ Avalonia Version";
+            string appName = "Call of Duty HQ";
             string appVersion = "1.0.0.0";
             string publisher = "Physix";
-            string installLocation = $"{Installdir}";
-            string uninstallString = UninstallDir + @"\uninstall.exe";
+            string installLocation = $"{InstallDirStr}";
+            string uninstallString = InstallDirStr + @"uninstall.exe";
 
             long sizeInBytes = Directory.GetFiles(installLocation, "*", SearchOption.AllDirectories).Sum(file => new FileInfo(file).Length);
             long sizeInKB = sizeInBytes / 1024;

@@ -151,3 +151,8 @@ C:\Users\lolat\OneDrive\Repos\Call of Duty HQ\Avalonia\Call-of-Duty-Launcher\Cal
 C:\Users\lolat\OneDrive\Repos\Call of Duty HQ\Avalonia\Call-of-Duty-Launcher\Call of Duty HQ\bin\Debug\net8.0\Microsoft.Extensions.FileSystemGlobbing.dll
 C:\Users\lolat\OneDrive\Repos\Call of Duty HQ\Avalonia\Call-of-Duty-Launcher\Call of Duty HQ\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
 C:\Users\lolat\OneDrive\Repos\Call of Duty HQ\Avalonia\Call-of-Duty-Launcher\Call of Duty HQ\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\lolat\OneDrive\Repos\Call of Duty HQ\Avalonia\Call-of-Duty-Launcher\Call of Duty HQ\bin\Debug\net8.0\uninstall.deps.json
+C:\Users\lolat\OneDrive\Repos\Call of Duty HQ\Avalonia\Call-of-Duty-Launcher\Call of Duty HQ\bin\Debug\net8.0\uninstall.runtimeconfig.json
+C:\Users\lolat\OneDrive\Repos\Call of Duty HQ\Avalonia\Call-of-Duty-Launcher\Call of Duty HQ\bin\Debug\net8.0\uninstall.exe
+C:\Users\lolat\OneDrive\Repos\Call of Duty HQ\Avalonia\Call-of-Duty-Launcher\Call of Duty HQ\bin\Debug\net8.0\uninstall.dll
+C:\Users\lolat\OneDrive\Repos\Call of Duty HQ\Avalonia\Call-of-Duty-Launcher\Call of Duty HQ\bin\Debug\net8.0\uninstall.pdb

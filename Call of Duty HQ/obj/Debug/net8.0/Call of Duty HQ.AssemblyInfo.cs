@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Call of Duty HQ")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8b2d06af9d85fbd040d066886736d8d1e722f8e9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3c98c4b95ce1f4f0929bed49fd9e8efe980249c1")]
 [assembly: System.Reflection.AssemblyProductAttribute("Call of Duty HQ")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Call of Duty HQ")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
