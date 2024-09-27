@@ -1,0 +1,18 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" Width="400" Height="200"
+        x:Class="uninstall.MainWindow"
+		WindowStartupLocation="CenterScreen"
+        Title="Uninstall">
+	<StackPanel>
+		<StackPanel>
+			<TextBlock Text="Continue?" FontSize="36" FontWeight="Bold"/>
+			<StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0 115 10 0">
+				<Button Content="Cancel" Click="Button_Click"/>
+				<Button Content="Uninstall" Click="Button_Click_1"/>
+			</StackPanel>
+		</StackPanel>
+	</StackPanel>
+</Window>

@@ -29,6 +29,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CoDExecutor\CoDExecutor.csproj" />
+    <ProjectReference Include="..\uninstall\uninstall.csproj" />
   </ItemGroup>
   
   <ItemGroup>
