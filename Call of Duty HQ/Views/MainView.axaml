@@ -11,17 +11,71 @@
     </Design.DataContext>
 	<ScrollViewer>
 		<StackPanel>
-			<TextBlock Text="Games" FontSize="36" FontWeight="Bold" Margin="10 5 0 0"/>
+			<StackPanel>
+				
+			</StackPanel>
+			<TextBlock Text="Games" Classes="header"/>
 			<ScrollViewer>
-				<WrapPanel Margin="10 0">
-					<Button Height="450" Click="CoDHQ_OnClick" IsEnabled="False">
+				<WrapPanel Margin="10 0" HorizontalAlignment="Center">
+					<Button Height="400" Click="CoDHQ_OnClick" IsEnabled="False">
 						<Image Source="/Assets/Images/CoDBo6.jpg"/>
 					</Button>
-					<Button Height="450" Click="CoDHQ_OnClick">
+					<Button Height="400" Click="CoDHQ_OnClick">
 						<Image Source="/Assets/Images/CoDMWIII.jpg"/>
 					</Button>
-					<Button Height="450" Click="CoDHQ_OnClick">
+					<Button Height="400" Click="CoDHQ_OnClick">
 						<Image Source="/Assets/Images/CoDMWII.jpg"/>
+					</Button>
+					<Button Height="400" Click="CoDHQ_OnClick">
+						<Image Source="/Assets/Images/CoDV.jpg"/>
+					</Button>
+					<Button Height="400" Click="CoDHQ_OnClick">
+						<Image Source="/Assets/Images/CoDBOCW.jpg"/>
+					</Button>
+					<Button Height="400" Click="CoDHQ_OnClick">
+						<Image Source="/Assets/Images/CoDMW.jpg"/>
+					</Button>
+					<Button Height="400" Click="CoDHQ_OnClick">
+						<Image Source="/Assets/Images/CoDWWII.jpg"/>
+					</Button>
+					<Button Height="400" Click="CoDHQ_OnClick">
+						<Image Source="/Assets/Images/CoDIW.jpg"/>
+					</Button>
+					<Button Height="400" Click="CoDHQ_OnClick">
+						<Image Source="/Assets/Images/CoDBO3.jpg"/>
+					</Button>
+					<Button Height="400" Click="CoDHQ_OnClick">
+						<Image Source="/Assets/Images/CoDAW.jpg"/>
+					</Button>
+					<Button Height="400" Click="CoDHQ_OnClick">
+						<Image Source="/Assets/Images/CoDG.jpg"/>
+					</Button>
+					<Button Height="400" Click="CoDHQ_OnClick">
+						<Image Source="/Assets/Images/CoDBO2.jpg"/>
+					</Button>
+					<Button Height="400" Click="CoDHQ_OnClick">
+						<Image Source="/Assets/Images/CoDMW3.jpg"/>
+					</Button>
+					<Button Height="400" Click="CoDHQ_OnClick">
+						<Image Source="/Assets/Images/CoDBO.jpg"/>
+					</Button>
+					<Button Height="400" Click="CoDHQ_OnClick">
+						<Image Source="/Assets/Images/CoDMW2.jpg"/>
+					</Button>
+					<Button Height="400" Click="CoDHQ_OnClick">
+						<Image Source="/Assets/Images/CoDWaW.jpg"/>
+					</Button>
+					<Button Height="400" Width="275" Click="CoDHQ_OnClick">
+						<Image Source="/Assets/Images/CoD4MW.jpg"/>
+					</Button>
+					<Button Height="400" Click="CoDHQ_OnClick">
+						<Image Source="/Assets/Images/CoDUO.jpg"/>
+					</Button>
+					<Button Height="400" Click="CoDHQ_OnClick">
+						<Image Source="/Assets/Images/CoD2.jpg"/>
+					</Button>
+					<Button Height="400" Click="CoDHQ_OnClick">
+						<Image Source="/Assets/Images/CoD.jpg"/>
 					</Button>
 				</WrapPanel>
 			</ScrollViewer>

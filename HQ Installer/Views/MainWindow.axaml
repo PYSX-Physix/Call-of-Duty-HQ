@@ -1,0 +1,62 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:HQ_Installer.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="500" d:DesignHeight="300"
+        x:Class="HQ_Installer.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+		CanResize="False" WindowStartupLocation="CenterScreen"
+        Title="Call of Duty HQ Installer"
+		Background="#2B2B2B"
+		RequestedThemeVariant="Dark"
+		Width="500" Height="300">
+
+    <Design.DataContext>
+        <!-- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+
+	<StackPanel>
+		<StackPanel x:Name="IntroPanel" >
+			<TextBlock Classes="header" Text="CoD HQ Installer"/>
+			<TextBlock Margin="10 0 10 0" Text="Welcome to the Call of Duty HQ Installer. This will install the CoD HQ Application. THIS PRODUCT IS NOT OFFICIAL AND HAS NO AFFILIATION WITH ACTIVISON OR IT'S STUDIOS." TextWrapping="WrapWithOverflow"/>
+			<StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0 165 10 0">
+				<Button Content="Cancel" Click="Cancel_Click"/>
+				<Button Content="Install" Click="Install_Click"/>
+			</StackPanel>
+		</StackPanel>
+		<StackPanel x:Name="InstallPanel" IsVisible="False">
+			<TextBlock Classes="header" Text="Chose a Location"/>
+			<TextBlock Margin="10 0 10 0" Text="The default location will be your Program Files. You can chose a custom location if you wish to do so." TextWrapping="WrapWithOverflow"/>
+			<TextBox x:Name="InstallDir" Margin="10 15"/>
+			<StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0 120 10 0">
+				<Button Content="Cancel" Click="Cancel_Click"/>
+				<Button Content="Install" Click="Start_Click"/>
+			</StackPanel>
+		</StackPanel>
+		<StackPanel x:Name="StatusPanel" IsVisible="False">
+			<TextBlock Classes="header" Text="Installing"/>
+			<TextBlock Margin="10 0" Text="We're installing the launcher, this shouldn't take long." TextWrapping="WrapWithOverflow"/>
+			<ProgressBar x:Name="InstallProgressBar" Margin="10 10" IsIndeterminate="True"/>
+			<StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0 165 10 0">
+				<Button Content="Cancel" Click="Cancel_Click" IsEnabled="False"/>
+			</StackPanel>
+		</StackPanel>
+		<StackPanel x:Name="OutroPanel" IsVisible="False">
+			<TextBlock Classes="header" Text="Done!"/>
+			<TextBlock Margin="10 0 10 0" Text="You have now installed the launcher you may now launch the application." TextWrapping="WrapWithOverflow"/>
+			<CheckBox x:Name="RunOnClose" Content="Run After Close" Margin="10"/>
+			<StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0 130 10 0">
+				<Button Content="Finish" Click="Finish_Click"/>
+			</StackPanel>
+		</StackPanel>
+		<StackPanel x:Name="ErrorPanel" IsVisible="False">
+			<TextBlock Classes="header" Text="Error"/>
+			<TextBlock x:Name="ErrorText" Margin="10 0" Text="We're installing the launcher, this shouldn't take long." TextWrapping="WrapWithOverflow"/>
+		</StackPanel>
+	</StackPanel>
+
+</Window>

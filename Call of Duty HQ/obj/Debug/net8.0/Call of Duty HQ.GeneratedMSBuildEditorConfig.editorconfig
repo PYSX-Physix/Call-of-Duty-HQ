@@ -23,7 +23,13 @@ build_property.EnableGeneratedComInterfaceComImportInterop =
 [C:/Users/lolat/OneDrive/Repos/Call of Duty HQ/Avalonia/Call-of-Duty-Launcher/Call of Duty HQ/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
+[C:/Users/lolat/OneDrive/Repos/Call of Duty HQ/Avalonia/Call-of-Duty-Launcher/Call of Duty HQ/Styles/ButtonStyles.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [C:/Users/lolat/OneDrive/Repos/Call of Duty HQ/Avalonia/Call-of-Duty-Launcher/Call of Duty HQ/Styles/Icons.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/lolat/OneDrive/Repos/Call of Duty HQ/Avalonia/Call-of-Duty-Launcher/Call of Duty HQ/Styles/TextBlockStyles.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
 [C:/Users/lolat/OneDrive/Repos/Call of Duty HQ/Avalonia/Call-of-Duty-Launcher/Call of Duty HQ/Views/HelpView.axaml]
