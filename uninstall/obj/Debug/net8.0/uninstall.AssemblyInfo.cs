@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("uninstall")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ac556fa713593105adac0b088efbebb96bcca839")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4b3f45922b23c4a66f7867519c90f71aef1aea3d")]
 [assembly: System.Reflection.AssemblyProductAttribute("uninstall")]
 [assembly: System.Reflection.AssemblyTitleAttribute("uninstall")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

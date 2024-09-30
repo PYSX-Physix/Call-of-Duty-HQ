@@ -354,6 +354,26 @@
           "buildTransitive/CommunityToolkit.Mvvm.targets": {}
         }
       },
+      "FluentAvaloniaUI/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Avalonia": "11.1.0",
+          "Avalonia.Controls.ColorPicker": "11.1.0",
+          "Avalonia.Controls.DataGrid": "11.1.0",
+          "Avalonia.Skia": "11.1.0",
+          "MicroCom.Runtime": "0.11.0"
+        },
+        "compile": {
+          "lib/net6.0/FluentAvalonia.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/FluentAvalonia.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "HarfBuzzSharp/7.3.0.2": {
         "type": "package",
         "dependencies": {
@@ -1320,6 +1340,27 @@
         "lib/netstandard2.1/CommunityToolkit.Mvvm.xml"
       ]
     },
+    "FluentAvaloniaUI/2.1.0": {
+      "sha512": "T/C1P7Sq28sYpFoZUe1ZXcVBOoUkSrBCRiqluVbeLfLR2YITUgf18GUXCwba3zG2YO95I0c9pci6OED1gxuNwQ==",
+      "type": "package",
+      "path": "fluentavaloniaui/2.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "FAIcon.png",
+        "fluentavaloniaui.2.1.0.nupkg.sha512",
+        "fluentavaloniaui.nuspec",
+        "lib/net6.0/FluentAvalonia.dll",
+        "lib/net6.0/FluentAvalonia.pdb",
+        "lib/net6.0/FluentAvalonia.xml",
+        "lib/netstandard2.0/FluentAvalonia.dll",
+        "lib/netstandard2.0/FluentAvalonia.pdb",
+        "lib/netstandard2.0/FluentAvalonia.xml",
+        "lib/netstandard2.1/FluentAvalonia.dll",
+        "lib/netstandard2.1/FluentAvalonia.pdb",
+        "lib/netstandard2.1/FluentAvalonia.xml"
+      ]
+    },
     "HarfBuzzSharp/7.3.0.2": {
       "sha512": "0tCd6HyCmNsX/DniCp2b00fo0xPbdNwKOs9BxxyT8oOOuMlWjcSFwzONKyeckCKVBFEsbSmsAHPDTqxoSDwZMg==",
       "type": "package",
@@ -2161,6 +2202,7 @@
       "Avalonia.Themes.Fluent >= 11.1.3",
       "CoDExecutor >= 1.0.0",
       "CommunityToolkit.Mvvm >= 8.3.2",
+      "FluentAvaloniaUI >= 2.1.0",
       "Microsoft.Extensions.Configuration >= 8.0.0",
       "Microsoft.Extensions.Configuration.FileExtensions >= 8.0.1",
       "Microsoft.Extensions.Configuration.Json >= 8.0.0",
@@ -2169,8 +2211,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\lolat\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\lolat\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -2181,12 +2222,8 @@
       "packagesPath": "C:\\Users\\lolat\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\lolat\\OneDrive\\Repos\\Call of Duty HQ\\Avalonia\\Call-of-Duty-Launcher\\Call of Duty HQ\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
         "C:\\Users\\lolat\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2247,6 +2284,10 @@
           "CommunityToolkit.Mvvm": {
             "target": "Package",
             "version": "[8.3.2, )"
+          },
+          "FluentAvaloniaUI": {
+            "target": "Package",
+            "version": "[2.1.0, )"
           },
           "Microsoft.Extensions.Configuration": {
             "target": "Package",

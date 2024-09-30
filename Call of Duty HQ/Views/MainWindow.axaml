@@ -17,13 +17,18 @@
         <vm:MainWindowViewModel/>
     </Design.DataContext>
 
-	<SplitView CompactPaneLength="43" OpenPaneLength="300" DisplayMode="CompactInline" IsPaneOpen="{Binding IsPaneClosed}">
+	<SplitView CompactPaneLength="48" OpenPaneLength="300" DisplayMode="CompactInline" IsPaneOpen="{Binding IsPaneClosed}">
 		<SplitView.Pane>
 			<StackPanel>
-				<Button Command="{Binding ClosePaneCommand}" Width="43">
+				<Button Command="{Binding ClosePaneCommand}" Width="48">
 					<PathIcon Data="{StaticResource Menu}"/> 
 				</Button>
-				<ListBox ItemsSource="{Binding Items}" SelectedItem="{Binding SelectedItem}">
+				<ListBox Margin="0 0 -100 0" ItemsSource="{Binding Items}" SelectedItem="{Binding SelectedItem}">
+					<ListBox.Styles>
+						<Style Selector="ListBoxItem">
+							<Setter Property="Padding" Value="12 0"/>
+						</Style>
+					</ListBox.Styles>
 					<ListBox.ItemTemplate>
 						<DataTemplate DataType="{x:Type vm:ListItemTemplate}">
 							<StackPanel Orientation="Horizontal" Spacing="15">
