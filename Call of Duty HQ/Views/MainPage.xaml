@@ -11,13 +11,33 @@
         <ScrollView HorizontalAlignment="Center">
             <StackPanel>
                 <StackPanel Name="NewsSection">
-                    
+                    <StackPanel Orientation="Horizontal">
+
+                        <TextBlock Style="{StaticResource PageTitleStyle}" Text="News"/>
+                        <Button Click="Button_Click">
+                            <FontIcon Glyph="&#xE72C;"/>
+                        </Button>
+                    </StackPanel>
+                    <StackPanel>
+                        <FlipView Height="500" Width="900" HorizontalAlignment="Center">
+                            <FlipViewItem>
+                                <Grid>
+                                    <Image Source="/Assets/MWIII_S6_Keyart.jpg" Stretch="Fill"/>
+                                    <Border Background="Black" Opacity="30" VerticalAlignment="Bottom" Height="30"/>
+                                    <TextBlock Text="Text" FontSize="24" FontWeight="Bold" x:Name="FeedbackText" VerticalAlignment="Bottom" Height="30"/>
+                                </Grid>
+                            </FlipViewItem>
+                        </FlipView>
+                    </StackPanel>
                 </StackPanel>
+                <TextBlock Style="{StaticResource PageTitleStyle}" Text="Games" FontWeight="Bold"/>
                 <GridView>
                     <GridView.ItemContainerStyle>
                         <Style TargetType="GridViewItem" BasedOn="{StaticResource DefaultGridViewItemStyle}">
                             <Setter Property="Margin" Value="10"/>
                             <Setter Property="CornerRadius" Value="10"/>
+                            <Setter Property="Height" Value="450"/>
+                            <Setter Property="Width" Value="300"/>
                         </Style>
                     </GridView.ItemContainerStyle>
 
