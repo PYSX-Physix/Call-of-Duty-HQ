@@ -11,10 +11,10 @@
         <ScrollView HorizontalAlignment="Center">
             <StackPanel>
                 <StackPanel Name="NewsSection">
-                    <StackPanel Orientation="Horizontal">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
 
                         <TextBlock Style="{StaticResource PageTitleStyle}" Text="News"/>
-                        <Button Click="Button_Click">
+                        <Button Click="Button_Click" HorizontalAlignment="Right">
                             <FontIcon Glyph="&#xE72C;"/>
                         </Button>
                     </StackPanel>
@@ -22,9 +22,10 @@
                         <FlipView Height="500" Width="900" HorizontalAlignment="Center">
                             <FlipViewItem>
                                 <Grid>
-                                    <Image Source="/Assets/MWIII_S6_Keyart.jpg" Stretch="Fill"/>
-                                    <Border Background="Black" Opacity="30" VerticalAlignment="Bottom" Height="30"/>
-                                    <TextBlock Text="Text" FontSize="24" FontWeight="Bold" x:Name="FeedbackText" VerticalAlignment="Bottom" Height="30"/>
+                                    <Image Source="/Assets/MWIII_S6_Keyart.jpg" Stretch="Fill" x:Name="NewsImage"/>
+                                    <Border Background="Black" Opacity="30" VerticalAlignment="Bottom" Height="30">
+                                        <TextBlock Text="Fetching Stuff" FontSize="24" FontWeight="Bold" x:Name="FeedbackText" VerticalAlignment="Bottom" Height="30" TextWrapping="WrapWholeWords"/>
+                                    </Border>
                                 </Grid>
                             </FlipViewItem>
                         </FlipView>

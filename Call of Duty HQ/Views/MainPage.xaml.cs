@@ -1,5 +1,6 @@
 ﻿using System.Text.Json;
 using Call_of_Duty_HQ.Contracts.Services;
+using Call_of_Duty_HQ.Services;
 using Call_of_Duty_HQ.ViewModels;
 
 using Microsoft.UI.Xaml.Controls;
@@ -25,6 +26,7 @@ public sealed partial class MainPage : Page
 
     private async void MainNews()
     {
+        string imageurl;
         string url = $"http://127.0.0.1:5500/main.json";
 
         using (HttpClient client = new HttpClient())
@@ -46,7 +48,7 @@ public sealed partial class MainPage : Page
 
                     if (root.TryGetProperty("newsimage1", out JsonElement NewsImage))
                     {
-
+                        imageurl = NewsImage.ToString();
                     }
                 }
             }
