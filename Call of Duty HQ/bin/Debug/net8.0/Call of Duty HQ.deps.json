@@ -19,8 +19,7 @@
           "Microsoft.Extensions.Configuration": "8.0.0",
           "Microsoft.Extensions.Configuration.FileExtensions": "8.0.1",
           "Microsoft.Extensions.Configuration.Json": "8.0.0",
-          "Newtonsoft.Json": "13.0.3",
-          "uninstall": "1.0.0"
+          "Newtonsoft.Json": "13.0.3"
         },
         "runtime": {
           "Call of Duty HQ.dll": {}
@@ -575,20 +574,6 @@
             "fileVersion": "1.0.0.0"
           }
         }
-      },
-      "uninstall/1.0.0": {
-        "dependencies": {
-          "Avalonia": "11.1.3",
-          "Avalonia.Desktop": "11.1.3",
-          "Avalonia.Fonts.Inter": "11.1.3",
-          "Avalonia.Themes.Fluent": "11.1.3"
-        },
-        "runtime": {
-          "uninstall.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
       }
     }
   },
@@ -900,11 +885,6 @@
       "hashPath": "tmds.dbus.protocol.0.16.0.nupkg.sha512"
     },
     "CoDExecutor/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "uninstall/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

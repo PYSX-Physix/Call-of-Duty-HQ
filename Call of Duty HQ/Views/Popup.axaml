@@ -9,7 +9,7 @@
     <StackPanel>
         <TextBlock x:Name="PopupTitle" FontSize="16" FontWeight="Bold" Text="Popup Title" Margin="5 5 0 0"/>
         <TextBlock x:Name="PopupMessage" Text="Popup Message" Margin="5 15 0 0" TextWrapping="WrapWithOverflow"/>
-        <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin=" 0 0 10 0 ">
+        <StackPanel x:Name="ComfirmPanel" Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin=" 0 0 10 0 ">
             <Button x:Name="CancelButton" Content="Cancel"/>
             <Button x:Name="PrimaryButton" Content="Confirm"/>
         </StackPanel>

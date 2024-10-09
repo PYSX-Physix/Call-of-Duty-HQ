@@ -92,15 +92,18 @@ namespace HQ_Installer.Views
 
         public void RegisterApp()
         {
+            //Sets up app name and information in Registry Editor
             string appName = "Call of Duty HQ";
-            string appVersion = "1.0.0.0";
+            string appVersion = "1.0";
             string publisher = "Physix";
             string installLocation = $"{InstallDirStr}";
-            string uninstallString = InstallDirStr + @"uninstall.exe";
+            string uninstallString = $"{Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData)}\\uninstall.exe";
 
+            //Gets the size of the program in KB
             long sizeInBytes = Directory.GetFiles(installLocation, "*", SearchOption.AllDirectories).Sum(file => new FileInfo(file).Length);
             long sizeInKB = sizeInBytes / 1024;
 
+            //Adds the keys to a dedicated folder with name, version, publisher, locations, and program size
             RegistryKey key = Registry.LocalMachine.CreateSubKey(@"Software\Microsoft\Windows\CurrentVersion\Uninstall\" + appName);
 #pragma warning disable CA1416 // Validate platform compatibility
             key.SetValue("DisplayName", appName);

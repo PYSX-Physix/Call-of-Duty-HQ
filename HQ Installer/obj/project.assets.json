@@ -2079,7 +2079,8 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\lolat\\.nuget\\packages\\": {}
+    "C:\\Users\\lolat\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
@@ -2090,8 +2091,12 @@
       "packagesPath": "C:\\Users\\lolat\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\lolat\\OneDrive\\Repos\\Call of Duty HQ\\Avalonia\\Call-of-Duty-Launcher\\HQ Installer\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\lolat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

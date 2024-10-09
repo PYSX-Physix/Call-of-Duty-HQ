@@ -1,5 +1,0 @@
-C:\Users\lolat\OneDrive\Repos\Call of Duty HQ\Avalonia\Call-of-Duty-Launcher\uninstall\bin\Release\net8.0\win-x64\publish\uninstall.pdb
-C:\Users\lolat\OneDrive\Repos\Call of Duty HQ\Avalonia\Call-of-Duty-Launcher\uninstall\bin\Release\net8.0\win-x64\publish\av_libglesv2.dll
-C:\Users\lolat\OneDrive\Repos\Call of Duty HQ\Avalonia\Call-of-Duty-Launcher\uninstall\bin\Release\net8.0\win-x64\publish\libHarfBuzzSharp.dll
-C:\Users\lolat\OneDrive\Repos\Call of Duty HQ\Avalonia\Call-of-Duty-Launcher\uninstall\bin\Release\net8.0\win-x64\publish\libSkiaSharp.dll
-C:\Users\lolat\OneDrive\Repos\Call of Duty HQ\Avalonia\Call-of-Duty-Launcher\uninstall\bin\Release\net8.0\win-x64\publish\uninstall.exe

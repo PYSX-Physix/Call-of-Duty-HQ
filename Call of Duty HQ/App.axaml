@@ -15,4 +15,17 @@
         <StyleInclude Source="Styles/Icons.axaml"/>
 		<StyleInclude Source="/Styles/TextBlockStyles.axaml"/>
     </Application.Styles>
+	<TrayIcon.Icons>
+		<TrayIcons>
+			<TrayIcon Icon="/Assets/WindowsLogo.ico"
+					  ToolTipText="CoD HQ">
+				<TrayIcon.Menu>
+					<NativeMenu>
+						<NativeMenuItem Header="Check for Updates" Click="UpdatesClick"/>
+						<NativeMenuItem Header="Exit" Click="ExitMenuItem_Click"/>
+					</NativeMenu>
+				</TrayIcon.Menu>
+			</TrayIcon>
+		</TrayIcons>
+	</TrayIcon.Icons>
 </Application>

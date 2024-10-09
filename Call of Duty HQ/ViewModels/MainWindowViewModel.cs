@@ -17,6 +17,11 @@ namespace Call_of_Duty_HQ.ViewModels
         private ListItemTemplate? _selectedItem;
 
 
+        public void SetActiveViewModel(Type viewModel)
+        {
+            
+        }
+
         partial void OnSelectedItemChanged(ListItemTemplate? value)
         {
             if (value is null) return;

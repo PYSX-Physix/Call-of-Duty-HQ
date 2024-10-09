@@ -3,6 +3,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:vm="using:Call_of_Duty_HQ.ViewModels"
+			 xmlns:uip="using:FluentAvalonia.UI.Controls"
              x:DataType="vm:SettingsViewModel"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="Call_of_Duty_HQ.Views.SettingsView">
@@ -12,12 +13,33 @@
         <vm:SettingsViewModel/>
     </Design.DataContext>
     <StackPanel>
-        <TextBlock Text="Settings" FontSize="36" FontWeight="Bold" Margin="10 5 0 0"/>
-        
-        <TextBlock Text="Steam Directory" FontSize="24" Margin="0 10 0 0"/>
-        <StackPanel Orientation="Horizontal">
-            <TextBox x:Name="SteamDirTB" MinWidth="300" MaxWidth="1000"/>
-            <Button Content="Browse" Click="Button_OnClick"/>
-        </StackPanel>
+        <TextBlock Text="Settings" FontSize="36" FontWeight="Bold"/>
+		<StackPanel>
+			<TextBlock Text="Check for Updates" FontSize="24" FontWeight="Bold"/>
+			<TextBlock x:Name="LocalVersion" Text="Current Version: {Version}"/>
+			<TextBlock x:Name="OnlineVersion" Text="Online Version: {Version}"/>
+		</StackPanel>
+		<uip:SettingsExpander Header="Steam Directory" Description="The directory for Steam that runs Call of Duty.">
+			<uip:SettingsExpanderItem>
+				<StackPanel Orientation="Horizontal">
+					<TextBox x:Name="SteamDirTB" MinWidth="300" MaxWidth="1000"/>
+					<Button Content="Browse" Click="Button_OnClick"/>
+				</StackPanel>
+			</uip:SettingsExpanderItem>
+		</uip:SettingsExpander>
+		<uip:SettingsExpander Header="Release Channel" Description="Choose between 'Release' channel and 'Beta Channel' for early access updates.">
+			<uip:SettingsExpanderItem>
+				<StackPanel Orientation="Horizontal">
+					<ComboBox>
+						<ComboBoxItem>
+							<TextBlock Text="Release"/>
+						</ComboBoxItem>
+						<ComboBoxItem>
+							<TextBlock Text="Beta"/>
+						</ComboBoxItem>
+					</ComboBox>
+				</StackPanel>
+			</uip:SettingsExpanderItem>
+		</uip:SettingsExpander>
     </StackPanel>
 </UserControl>

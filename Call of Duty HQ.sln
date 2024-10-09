@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoDExecutor", "CoDExecutor\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HQ Installer", "HQ Installer\HQ Installer.csproj", "{38F143A8-0C86-43F1-B307-28EACDB93A1B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uninstall", "uninstall\uninstall.csproj", "{39CBA145-4F1B-4B5C-9C79-D8A15B59B499}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uninstall", "uninstall\uninstall.csproj", "{B15E431B-1061-4F06-A278-2072383EB2EC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{38F143A8-0C86-43F1-B307-28EACDB93A1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38F143A8-0C86-43F1-B307-28EACDB93A1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38F143A8-0C86-43F1-B307-28EACDB93A1B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{39CBA145-4F1B-4B5C-9C79-D8A15B59B499}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{39CBA145-4F1B-4B5C-9C79-D8A15B59B499}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{39CBA145-4F1B-4B5C-9C79-D8A15B59B499}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{39CBA145-4F1B-4B5C-9C79-D8A15B59B499}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B15E431B-1061-4F06-A278-2072383EB2EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B15E431B-1061-4F06-A278-2072383EB2EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B15E431B-1061-4F06-A278-2072383EB2EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B15E431B-1061-4F06-A278-2072383EB2EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
