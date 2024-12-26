@@ -8,15 +8,8 @@
 
     <Grid x:Name="ContentArea">
 		<ScrollView>
-			<StackPanel Orientation="Vertical">
-				<InfoBar
-					IsOpen="True"
-					IsIconVisible="True"
-					IsClosable="False"
-					Title="Notice:"
-					Severity="Warning"
-					Message="Call of Duty: Black Ops 6 has been released yet, the button has been disabled to prevent further issues." />
-				<StackPanel Orientation="Horizontal">
+            <StackPanel Orientation="Vertical">
+                <StackPanel Orientation="Horizontal">
 					<TextBlock Text="Call of Duty: Black Ops 6" Style="{ThemeResource TitleTextBlockStyle}"/>
 				</StackPanel>
                 <StackPanel Margin="0 15 0 0" Orientation="Horizontal">
@@ -36,7 +29,7 @@
                                 <TextBlock x:Name="FeedbackText" Text="Feedback: Fetching" Style="{ThemeResource InfoTextStyle}" Margin="0 10"/>
                             </StackPanel>
                         </StackPanel>
-                        <Button Content="Play" FontWeight="SemiBold" Width="100" Margin="25 5" Click="Button_Click" IsEnabled="False"/>
+                        <Button Content="Play" FontWeight="SemiBold" Width="100" Margin="25 5" Click="Button_Click"/>
                     </StackPanel>
                 </StackPanel>
             </StackPanel>
