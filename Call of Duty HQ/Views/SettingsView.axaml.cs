@@ -7,13 +7,16 @@ using Avalonia.Interactivity;
 using Avalonia.Markup.Xaml;
 using Avalonia.Platform.Storage;
 using Call_of_Duty_HQ;
+using Microsoft.Win32;
 
 namespace Call_of_Duty_HQ.Views;
 
 public partial class SettingsView : UserControl
 {
-    string AppVersion = "1.0";
+    string AppVersion = "1.0.0.0";
     private string OnlineVersionString;
+    private string displayVersion;
+
     public SettingsView()
     {
         InitializeComponent();
@@ -22,11 +25,31 @@ public partial class SettingsView : UserControl
 
     private async void ConstructSettings()
     {
+        string registryKey = @"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall";
+        LocalVersion.Text = $"Current Version: {AppVersion}";
         SteamDirTB.Text = Program.Configuration["AppSettings:SteamPath"];
+
+        using (RegistryKey key = Registry.LocalMachine.OpenSubKey(registryKey))
+        {
+            if (key != null)
+            {
+                foreach (string subkeyName in key.GetSubKeyNames())
+                {
+                    using (RegistryKey subkey = key.OpenSubKey(subkeyName))
+                    {
+                        if (subkey != null)
+                        {
+                            displayVersion = subkey.GetValue("DisplayVersion") as string;
+                        }
+                    }
+                }
+            }
+        }
+
         try
         {
             HttpClient client = new HttpClient();
-            HttpResponseMessage message = await client.GetAsync("https://physixstudios.com/launcher.json");
+            HttpResponseMessage message = await client.GetAsync("http://127.0.0.1:5500/avaupdates.json");
             message.EnsureSuccessStatusCode();
             string responsebody = await message.Content.ReadAsStringAsync();
 
@@ -37,8 +60,7 @@ public partial class SettingsView : UserControl
                     versionsummary.TryGetProperty("LatestVersion", out JsonElement versionelement)))
                 {
                     OnlineVersionString = versionelement.ToString();
-                    OnlineVersion.Text = $"Latest Version: {versionelement.ToString()}";
-                    LocalVersion.Text = $"Current Version: {AppVersion}";
+                    OnlineVersion.Text = $"Latest Version: {OnlineVersionString}";
                 }
             }
 

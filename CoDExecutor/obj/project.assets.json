@@ -1536,11 +1536,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lolat\\OneDrive\\Repos\\Call of Duty HQ\\Avalonia\\Call-of-Duty-Launcher\\CoDExecutor\\CoDExecutor.csproj",
+      "projectUniqueName": "C:\\Users\\lolat\\OneDrive\\Repos\\Call of Duty HQ\\Avalonia\\CoDExecutor\\CoDExecutor.csproj",
       "projectName": "CoDExecutor",
-      "projectPath": "C:\\Users\\lolat\\OneDrive\\Repos\\Call of Duty HQ\\Avalonia\\Call-of-Duty-Launcher\\CoDExecutor\\CoDExecutor.csproj",
+      "projectPath": "C:\\Users\\lolat\\OneDrive\\Repos\\Call of Duty HQ\\Avalonia\\CoDExecutor\\CoDExecutor.csproj",
       "packagesPath": "C:\\Users\\lolat\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lolat\\OneDrive\\Repos\\Call of Duty HQ\\Avalonia\\Call-of-Duty-Launcher\\CoDExecutor\\obj\\",
+      "outputPath": "C:\\Users\\lolat\\OneDrive\\Repos\\Call of Duty HQ\\Avalonia\\CoDExecutor\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1572,7 +1572,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -1619,7 +1620,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

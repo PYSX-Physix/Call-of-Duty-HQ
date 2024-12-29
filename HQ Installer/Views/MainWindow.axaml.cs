@@ -94,10 +94,10 @@ namespace HQ_Installer.Views
         {
             //Sets up app name and information in Registry Editor
             string appName = "Call of Duty HQ";
-            string appVersion = "1.0";
+            string appVersion = "1.0.0.0";
             string publisher = "Physix";
             string installLocation = $"{InstallDirStr}";
-            string uninstallString = $"{Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData)}\\uninstall.exe";
+            string uninstallString = $"{Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData)}\\Call of Duty HQ\\uninstall.exe";
 
             //Gets the size of the program in KB
             long sizeInBytes = Directory.GetFiles(installLocation, "*", SearchOption.AllDirectories).Sum(file => new FileInfo(file).Length);
