@@ -18,8 +18,6 @@ using Microsoft.Win32;
 
 namespace Call_of_Duty_Launcher
 {
-
-#pragma warning disable SYSLIB0014 // Type or member is obsolete
     public partial class MainWindow : Window
     {
         string OnlineVersionString;
@@ -28,176 +26,40 @@ namespace Call_of_Duty_Launcher
         public MainWindow()
         {
             InitializeComponent();
-            Startup();
-        }
-
-        private async void Startup()
-        {
-            //Checks if the Directory Exists
-            MainBar.IsIndeterminate = true;
-            MainText.Text = "Checking if Launcher Exists";
-            if (!File.Exists($"{Directory.GetCurrentDirectory()}\\Application\\Call of Duty HQ.exe"))
-            {
-                if (!File.Exists(Directory.GetCurrentDirectory() + "\\Call of Duty HQ.zip"))
-                {
-                    MainBar.IsIndeterminate = false;
-                    try
-                    {
-                        WebClient client = new();
-                        client.DownloadDataCompleted += Client_DownloadDataCompleted;
-                        client.DownloadProgressChanged += Client_DownloadProgressChanged;
-                        client.DownloadFileAsync(new Uri("https://api.onedrive.com/v1.0/shares/s!AqHJOX3p8RnQo5tkymKIaEENISXEjg/root/content"), "Call of Duty HQ.zip");
-                    }
-                    catch (WebException ex)
-                    {
-                        MessageBox.Show(ex.Message);
-                    }
-                    catch (InvalidOperationException ex)
-                    {
-                        MessageBox.Show(ex.Message);
-                    }
-                }
-                else
-                {
-                    MainText.Text = "Extracting Files";
-                    MainBar.IsIndeterminate = true;
-                    try
-                    {
-                        MainBar.IsIndeterminate = true;
-                        MainText.Text = "Extracting Files";
-                        ZipFile.ExtractToDirectory("Call of Duty HQ.zip", "Application");
-                        File.Delete($"{Directory.GetCurrentDirectory()}\\Call of Duty HQ.zip");
-                        Launch();
-                    }
-                    catch (DirectoryNotFoundException ex)
-                    {
-                        MessageBox.Show(ex.Message);
-                    }
-                    catch (InvalidDataException ex)
-                    {
-                        MessageBox.Show(ex.Message);
-                    }
-                    catch (UnauthorizedAccessException ex)
-                    {
-                        MessageBox.Show(ex.Message);
-                    }
-                }
-            }
-            //Checks For Updates
-            MainText.Text = "Checking for Updates...";
-            MainBar.IsIndeterminate = true;
-            try
-            {
-                HttpClient client = new HttpClient();
-                HttpResponseMessage message = await client.GetAsync("http://127.0.0.1:5500/avaupdates.json");
-                message.EnsureSuccessStatusCode();
-                string responsebody = await message.Content.ReadAsStringAsync();
-
-                using (JsonDocument doc = JsonDocument.Parse(responsebody))
-                {
-                    JsonElement root = doc.RootElement;
-                    if (root.TryGetProperty("ReleaseLauncher", out JsonElement versionsummary) && (
-                        versionsummary.TryGetProperty("LatestVersion", out JsonElement versionelement)))
-                    {
-                        OnlineVersionString = versionelement.ToString();
-                    }
-                }
-
-            }
-            catch (HttpRequestException ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            catch (JsonException ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-
             CheckforUpdates();
-            if (displayVersion != OnlineVersionString)
-            {
-                MainBar.IsIndeterminate = false;
-                try
-                {
-                    MainBar.IsIndeterminate = false;
-                    try
-                    {
-                        WebClient updateclient = new();
-                        updateclient.DownloadDataCompleted += Updateclient_DownloadDataCompleted;
-                        updateclient.DownloadProgressChanged += Updateclient_DownloadProgressChanged;
-                        updateclient.DownloadFileAsync(new Uri("https://api.onedrive.com/v1.0/shares/s!AqHJOX3p8RnQo5tkymKIaEENISXEjg/root/content"), "Call of Duty HQ.zip");
-                    }
-                    catch (WebException ex)
-                    {
-                        MessageBox.Show(ex.Message);
-                    }
-                    catch (InvalidOperationException ex)
-                    {
-                        MessageBox.Show(ex.Message);
-                    }
-                }
-                catch (WebException ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-            }
-        }
-
-        private void Updateclient_DownloadDataCompleted(object sender, DownloadDataCompletedEventArgs e)
-        {
-            try
-            {
-                if (Directory.Exists($"{Directory.GetCurrentDirectory()}\\Application"))
-                {
-                    ZipFile.ExtractToDirectory("Call of Duty HQ.zip", "Application", true);
-                    File.Delete(Directory.GetCurrentDirectory() + "Call of Duty HQ.zip");
-                }
-                else
-                {
-                    ZipFile.ExtractToDirectory("Call of Duty HQ.zip", "Application");
-                    File.Delete(Directory.GetCurrentDirectory() + "Call of Duty HQ.zip");
-                }
-            }
-            catch (DirectoryNotFoundException ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            catch (InvalidDataException ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
-        private void Updateclient_DownloadProgressChanged(object sender, DownloadProgressChangedEventArgs e)
-        {
-            throw new NotImplementedException();
         }
 
         private void Launch()
         {
             Process.Start($"{Directory.GetCurrentDirectory()}\\Application\\Call of Duty HQ.exe");
+            Application.Current.Shutdown();
         }
 
         private void Client_DownloadProgressChanged(object sender, DownloadProgressChangedEventArgs e)
         {
             MainBar.Maximum = e.TotalBytesToReceive;
             MainBar.Value = e.BytesReceived;
-            MainText.Text = $"Progress: {e.ProgressPercentage}%";
         }
 
-        private void Client_DownloadDataCompleted(object sender, DownloadDataCompletedEventArgs e)
+        private void Client_DownloadFileCompleted(object? sender, System.ComponentModel.AsyncCompletedEventArgs e)
         {
             try
             {
                 if (Directory.Exists($"{Directory.GetCurrentDirectory()}\\Application"))
                 {
+                    MainText.Text = "Overwriting Old Files";
                     ZipFile.ExtractToDirectory("Call of Duty HQ.zip", "Application", true);
-                    File.Delete(Directory.GetCurrentDirectory() + "Call of Duty HQ.zip");
+                    File.Delete("Call of Duty HQ.zip");
+                    RegisterApp();
+                    Launch();
                 }
                 else
                 {
+                    MainText.Text = "Extracting Files";
+                    Directory.CreateDirectory($"{Directory.GetCurrentDirectory()}\\Application\\");
                     ZipFile.ExtractToDirectory("Call of Duty HQ.zip", "Application");
-                    File.Delete(Directory.GetCurrentDirectory() + "Call of Duty HQ.zip");
+                    File.Delete("Call of Duty HQ.zip");
+                    Launch();
                 }
             }
             catch (DirectoryNotFoundException ex)
@@ -217,30 +79,105 @@ namespace Call_of_Duty_Launcher
 
         private async void CheckforUpdates()
         {
-            string registryKey = @"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall";
-            using (RegistryKey key = Registry.LocalMachine.OpenSubKey(registryKey))
+            if (!Directory.Exists("Application"))
             {
-                if (key != null)
+                WebClient webClient = new WebClient();
+                webClient.DownloadFileCompleted += Client_DownloadFileCompleted;
+                webClient.DownloadProgressChanged += Client_DownloadProgressChanged;
+                webClient.DownloadFileAsync(new Uri("https://github.com/PYSX-Physix/Call-of-Duty-HQ/releases/latest/download/Call.of.Duty.HQ.zip"), "Call of Duty HQ.zip");
+            }
+            else
+            {
+                string registryKey = @"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Call of Duty HQ";
+                using (RegistryKey key = Registry.LocalMachine.OpenSubKey(registryKey))
                 {
-                    foreach (string subkeyName in key.GetSubKeyNames())
+                    if (key != null)
                     {
-                        using (RegistryKey subkey = key.OpenSubKey(subkeyName))
-                        {
-                            if (subkey != null)
-                            {
-                                displayVersion = subkey.GetValue("DisplayVersion") as string;
-                            }
-                        }
+                        displayVersion = key.GetValue("DisplayVersion") as string;
                     }
+                }
+
+                try
+                {
+                    HttpClient client = new HttpClient();
+                    client.DefaultRequestHeaders.Add("User-Agent", "Call of Duty Launcher");
+                    HttpResponseMessage response = await client.GetAsync("https://api.github.com/repos/PYSX-Physix/Call-of-Duty-HQ/releases/latest");
+                    response.EnsureSuccessStatusCode();
+                    string responseBody = await response.Content.ReadAsStringAsync();
+                    var json = JsonDocument.Parse(responseBody);
+                    OnlineVersionString = json.RootElement.GetProperty("tag_name").ToString();
+                }
+                catch (HttpRequestException ex)
+                {
+                    MessageBox.Show(ex.Message);
+                    return;
+                }
+
+                if (displayVersion != OnlineVersionString)
+                {
+                    MessageBox.Show("An update is available. Please click OK to download the latest version.");
+                    WebClient webClient = new WebClient();
+                    webClient.DownloadFileCompleted += Client_DownloadFileCompleted;
+                    webClient.DownloadProgressChanged += Client_DownloadProgressChanged;
+                    webClient.DownloadFileAsync(new Uri("https://github.com/PYSX-Physix/Call-of-Duty-HQ/releases/latest/download/Call.of.Duty.HQ.zip"), "Call of Duty HQ.zip");
+                }
+                else
+                {
+                    Launch();
                 }
             }
         }
 
-        private async void InstallUpdate()
+
+
+        private bool IsAdministrator()
         {
-            
+            var identity = System.Security.Principal.WindowsIdentity.GetCurrent();
+            var principal = new System.Security.Principal.WindowsPrincipal(identity);
+            return principal.IsInRole(System.Security.Principal.WindowsBuiltInRole.Administrator);
+        }
+
+        private void ElevateProcess()
+        {
+            var processInfo = new ProcessStartInfo
+            {
+                UseShellExecute = true,
+                FileName = Process.GetCurrentProcess().MainModule.FileName,
+                Verb = "runas"
+            };
+
+            try
+            {
+                Process.Start(processInfo);
+                Application.Current.Shutdown();
+            }
+            catch (System.ComponentModel.Win32Exception)
+            {
+                MainText.Text= "The application requires administrative privileges to install.";
+                MainBar.IsIndeterminate = false;
+            }
+        }
+
+        public void RegisterApp()
+        {
+            if (IsAdministrator() == false)
+            {
+                ElevateProcess();
+            }
+            else
+            {
+                //Sets up app name and information in Registry Editor
+                string appName = "Call of Duty HQ";
+
+                //Adds the keys to a dedicated folder with name, version, publisher, locations, and program size
+                RegistryKey key = Registry.LocalMachine.CreateSubKey(@"Software\Microsoft\Windows\CurrentVersion\Uninstall\" + appName);
+
+
+                key.SetValue("DisplayVersion", OnlineVersionString);
+                key.Close();
+
+
+            }
         }
     }
-
-#pragma warning restore SYSLIB0014 // Type or member is obsolete
 }

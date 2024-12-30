@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HQ Installer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5cb4ab69a5faa22d105063992bf30bce01b9afed")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7c29dd1236c6fa938661e84ea19b923e1fb9c0d3")]
 [assembly: System.Reflection.AssemblyProductAttribute("HQ Installer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HQ Installer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

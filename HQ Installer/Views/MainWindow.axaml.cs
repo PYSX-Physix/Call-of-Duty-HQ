@@ -61,7 +61,7 @@ namespace HQ_Installer.Views
                 InstallProgressBar.IsIndeterminate = false;
                 webClient.DownloadFileCompleted += Client_DownloadFileCompleted;
                 webClient.DownloadProgressChanged += Client_DownloadProgressChanged;
-                webClient.DownloadFileAsync(new Uri("https://api.onedrive.com/v1.0/shares/s!AqHJOX3p8RnQo5tkymKIaEENISXEjg/root/content"), "Call of Duty HQ.zip");
+                webClient.DownloadFileAsync(new Uri("https://github.com/PYSX-Physix/Call-of-Duty-HQ/releases/latest/download/Call.of.Duty.Launcher.zip"), "Call of Duty Launcher.zip");
             }
             catch (Exception ex)
             {
@@ -76,8 +76,8 @@ namespace HQ_Installer.Views
             if (!Directory.Exists(InstallDirStr))
             {
                 Directory.CreateDirectory(InstallDirStr);
-                ZipFile.ExtractToDirectory("Call of Duty HQ.zip", InstallDirStr, true);
-                File.Delete("Call of Duty HQ.zip");
+                ZipFile.ExtractToDirectory("Call of Duty Launcher.zip", InstallDirStr, true);
+                File.Delete("Call of Duty Launcher.zip");
             }
             OutroPanel.IsVisible = true;
             StatusPanel.IsVisible = false;

@@ -153,9 +153,6 @@ C:\Users\lolat\OneDrive\Repos\Call of Duty HQ\Avalonia\Call-of-Duty-Launcher\Cal
 C:\Users\lolat\OneDrive\Repos\Call of Duty HQ\Avalonia\Call-of-Duty-Launcher\Call of Duty HQ\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\lolat\OneDrive\Repos\Call of Duty HQ\Avalonia\Call-of-Duty-Launcher\Call of Duty HQ\bin\Debug\net8.0\FluentAvalonia.dll
 C:\Users\lolat\OneDrive\Repos\Call of Duty HQ\Avalonia\Call of Duty HQ\bin\Debug\net8.0\appsettings.json
-C:\Users\lolat\OneDrive\Repos\Call of Duty HQ\Avalonia\Call of Duty HQ\bin\Debug\net8.0\CoDExecutor.deps.json
-C:\Users\lolat\OneDrive\Repos\Call of Duty HQ\Avalonia\Call of Duty HQ\bin\Debug\net8.0\CoDExecutor.runtimeconfig.json
-C:\Users\lolat\OneDrive\Repos\Call of Duty HQ\Avalonia\Call of Duty HQ\bin\Debug\net8.0\CoDExecutor.exe
 C:\Users\lolat\OneDrive\Repos\Call of Duty HQ\Avalonia\Call of Duty HQ\bin\Debug\net8.0\Call of Duty HQ.exe
 C:\Users\lolat\OneDrive\Repos\Call of Duty HQ\Avalonia\Call of Duty HQ\bin\Debug\net8.0\Call of Duty HQ.deps.json
 C:\Users\lolat\OneDrive\Repos\Call of Duty HQ\Avalonia\Call of Duty HQ\bin\Debug\net8.0\Call of Duty HQ.runtimeconfig.json
@@ -221,8 +218,6 @@ C:\Users\lolat\OneDrive\Repos\Call of Duty HQ\Avalonia\Call of Duty HQ\bin\Debug
 C:\Users\lolat\OneDrive\Repos\Call of Duty HQ\Avalonia\Call of Duty HQ\bin\Debug\net8.0\runtimes\win-arm64\native\libSkiaSharp.dll
 C:\Users\lolat\OneDrive\Repos\Call of Duty HQ\Avalonia\Call of Duty HQ\bin\Debug\net8.0\runtimes\win-x64\native\libSkiaSharp.dll
 C:\Users\lolat\OneDrive\Repos\Call of Duty HQ\Avalonia\Call of Duty HQ\bin\Debug\net8.0\runtimes\win-x86\native\libSkiaSharp.dll
-C:\Users\lolat\OneDrive\Repos\Call of Duty HQ\Avalonia\Call of Duty HQ\bin\Debug\net8.0\CoDExecutor.dll
-C:\Users\lolat\OneDrive\Repos\Call of Duty HQ\Avalonia\Call of Duty HQ\bin\Debug\net8.0\CoDExecutor.pdb
 C:\Users\lolat\OneDrive\Repos\Call of Duty HQ\Avalonia\Call of Duty HQ\obj\Debug\net8.0\Call of Duty HQ.csproj.AssemblyReference.cache
 C:\Users\lolat\OneDrive\Repos\Call of Duty HQ\Avalonia\Call of Duty HQ\obj\Debug\net8.0\Avalonia\Resources.Inputs.cache
 C:\Users\lolat\OneDrive\Repos\Call of Duty HQ\Avalonia\Call of Duty HQ\obj\Debug\net8.0\Avalonia\resources

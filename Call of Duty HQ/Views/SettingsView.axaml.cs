@@ -13,7 +13,6 @@ namespace Call_of_Duty_HQ.Views;
 
 public partial class SettingsView : UserControl
 {
-    string AppVersion = "1.0.0.0";
     private string OnlineVersionString;
     private string displayVersion;
 
@@ -25,45 +24,28 @@ public partial class SettingsView : UserControl
 
     private async void ConstructSettings()
     {
-        string registryKey = @"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall";
-        LocalVersion.Text = $"Current Version: {AppVersion}";
         SteamDirTB.Text = Program.Configuration["AppSettings:SteamPath"];
 
+        string registryKey = @"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Call of Duty HQ";
         using (RegistryKey key = Registry.LocalMachine.OpenSubKey(registryKey))
         {
             if (key != null)
             {
-                foreach (string subkeyName in key.GetSubKeyNames())
-                {
-                    using (RegistryKey subkey = key.OpenSubKey(subkeyName))
-                    {
-                        if (subkey != null)
-                        {
-                            displayVersion = subkey.GetValue("DisplayVersion") as string;
-                        }
-                    }
-                }
+                displayVersion = key.GetValue("DisplayVersion") as string;
             }
         }
+
+
 
         try
         {
             HttpClient client = new HttpClient();
-            HttpResponseMessage message = await client.GetAsync("http://127.0.0.1:5500/avaupdates.json");
-            message.EnsureSuccessStatusCode();
-            string responsebody = await message.Content.ReadAsStringAsync();
-
-            using (JsonDocument doc = JsonDocument.Parse(responsebody))
-            {
-                JsonElement root = doc.RootElement;
-                if (root.TryGetProperty("ReleaseLauncher", out JsonElement versionsummary) && (
-                    versionsummary.TryGetProperty("LatestVersion", out JsonElement versionelement)))
-                {
-                    OnlineVersionString = versionelement.ToString();
-                    OnlineVersion.Text = $"Latest Version: {OnlineVersionString}";
-                }
-            }
-
+            client.DefaultRequestHeaders.Add("User-Agent", "Call of Duty Launcher");
+            HttpResponseMessage response = await client.GetAsync("https://api.github.com/repos/PYSX-Physix/Call-of-Duty-HQ/releases/latest");
+            response.EnsureSuccessStatusCode();
+            string responseBody = await response.Content.ReadAsStringAsync();
+            var json = JsonDocument.Parse(responseBody);
+            OnlineVersionString = json.RootElement.GetProperty("tag_name").ToString();
         }
         catch (HttpRequestException ex)
         {
@@ -80,14 +62,18 @@ public partial class SettingsView : UserControl
             popup.Show();
         }
 
-        if (AppVersion != OnlineVersionString)
+        LocalVersion.Text = $"Current Version: {displayVersion}";
+        OnlineVersion.Text = $"Online Version: {OnlineVersionString}";
+
+
+        if (displayVersion != OnlineVersionString)
         {
             if (OnlineVersionString != null)
             {
                 Call_of_Duty_HQ.Views.Popup popup = new();
                 popup.Title = "Update Available";
                 popup.PopupTitle.Text = "An Update is Available";
-                popup.PopupMessage.Text = $"An update {OnlineVersionString} you're on {AppVersion}";
+                popup.PopupMessage.Text = $"An update {OnlineVersionString} you're on {displayVersion}";
                 popup.IsQuestion = true;
                 popup.Show();
             }

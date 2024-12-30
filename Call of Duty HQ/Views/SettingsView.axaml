@@ -27,19 +27,5 @@
 				</StackPanel>
 			</uip:SettingsExpanderItem>
 		</uip:SettingsExpander>
-		<uip:SettingsExpander Header="Release Channel" Description="Choose between 'Release' channel and 'Beta Channel' for early access updates.">
-			<uip:SettingsExpanderItem>
-				<StackPanel Orientation="Horizontal">
-					<ComboBox>
-						<ComboBoxItem>
-							<TextBlock Text="Release"/>
-						</ComboBoxItem>
-						<ComboBoxItem>
-							<TextBlock Text="Beta"/>
-						</ComboBoxItem>
-					</ComboBox>
-				</StackPanel>
-			</uip:SettingsExpanderItem>
-		</uip:SettingsExpander>
     </StackPanel>
 </UserControl>

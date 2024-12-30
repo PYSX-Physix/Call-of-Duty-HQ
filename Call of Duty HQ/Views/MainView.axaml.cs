@@ -3,6 +3,7 @@ using Avalonia.Controls;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Interactivity;
 using Avalonia.Markup.Xaml;
+using Call_of_Duty_HQ.Services;
 using Microsoft.Extensions.Configuration;
 
 namespace Call_of_Duty_HQ.Views;
@@ -16,22 +17,18 @@ public partial class MainView : UserControl
         InitializeComponent();
     }
 
-    private void StartCoDExecutor(int steamId)
+
+    private void StartCoDGame(int SteamID)
     {
-        CoDExecutor.Views.MainWindow view = new()
-        {
-            steamPath = SteamDir
-        };
-        view.StartCoD(steamId);
-        view.Show();
+        Steam steam = new Steam();
+        steam.StartCoD(SteamID);
         if (Application.Current.ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
         {
             desktop.Shutdown();
         }
     }
-    
     private void CoDHQ_OnClick(object? sender, RoutedEventArgs e)
     {
-        StartCoDExecutor(1938090);
+        StartCoDGame(1938090);
     }
 }

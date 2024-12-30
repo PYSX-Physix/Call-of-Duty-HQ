@@ -13,7 +13,6 @@
           "Avalonia.Diagnostics": "11.1.3",
           "Avalonia.Fonts.Inter": "11.1.3",
           "Avalonia.Themes.Fluent": "11.1.3",
-          "CoDExecutor": "1.0.0",
           "CommunityToolkit.Mvvm": "8.3.2",
           "FluentAvaloniaUI": "2.1.0",
           "Microsoft.Extensions.Configuration": "8.0.0",
@@ -573,22 +572,6 @@
             "fileVersion": "0.16.0.0"
           }
         }
-      },
-      "CoDExecutor/1.0.0": {
-        "dependencies": {
-          "Avalonia": "11.1.3",
-          "Avalonia.Desktop": "11.1.3",
-          "Avalonia.Diagnostics": "11.1.3",
-          "Avalonia.Fonts.Inter": "11.1.3",
-          "Avalonia.Themes.Fluent": "11.1.3",
-          "CommunityToolkit.Mvvm": "8.3.2"
-        },
-        "runtime": {
-          "CoDExecutor.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
       }
     }
   },
@@ -926,11 +909,6 @@
       "sha512": "sha512-9Ne9AvrRWrDQvzbMcbTz3EaGRE1vQmkeeu0Xp7Ii0Wdlhwfjst8FDRas+RBslU5kdPWs2aeMLErzyT1DwH9zeA==",
       "path": "tmds.dbus.protocol/0.16.0",
       "hashPath": "tmds.dbus.protocol.0.16.0.nupkg.sha512"
-    },
-    "CoDExecutor/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
     }
   }
 }
