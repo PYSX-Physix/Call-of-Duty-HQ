@@ -20,47 +20,7 @@ public sealed partial class MainPage : Page
     {
         ViewModel = App.GetService<MainViewModel>();
         InitializeComponent();
-        MainNews();
         _navigationService = App.GetService<INavigationService>();
-    }
-
-    private async void MainNews()
-    {
-        string imageurl;
-        string url = $"http://127.0.0.1:5500/main.json";
-
-        using (HttpClient client = new HttpClient())
-        {
-            try
-            {
-                HttpResponseMessage response = await client.GetAsync(url);
-                response.EnsureSuccessStatusCode();
-                string responseBody = await response.Content.ReadAsStringAsync();
-
-                // Parse the JSON response
-                using (JsonDocument doc = JsonDocument.Parse(responseBody))
-                {
-                    JsonElement root = doc.RootElement;
-                    if (root.TryGetProperty("newstitle", out JsonElement querySummary))
-                    {
-                        FeedbackText.Text = $"{querySummary.GetString()}";
-                    }
-
-                    if (root.TryGetProperty("newsimage1", out JsonElement NewsImage))
-                    {
-                        imageurl = NewsImage.ToString();
-                    }
-                }
-            }
-            catch (HttpRequestException ex)
-            {
-                FeedbackText.Text = $"Exception Caught! Message: {ex.Message}";
-            }
-            catch (JsonException ex)
-            {
-                FeedbackText.Text = $"JSON Parsing Exception! Message: {ex.Message}";
-            }
-        }
     }
 
     private void BO6_Tapped(object sender, Microsoft.UI.Xaml.Input.TappedRoutedEventArgs e)
@@ -161,11 +121,6 @@ public sealed partial class MainPage : Page
     private void C_Tapped(object sender, Microsoft.UI.Xaml.Input.TappedRoutedEventArgs e)
     {
         _navigationService.NavigateTo(typeof(CoDViewModel).FullName);
-    }
-
-    private void Button_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
-    {
-        MainNews();
     }
 #pragma warning restore CS8604 // Possible null reference argument.
 }

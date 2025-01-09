@@ -32,6 +32,16 @@
                         <Button Content="Play" FontWeight="SemiBold" Width="100" Margin="25 5" Click="Button_Click"/>
                     </StackPanel>
                 </StackPanel>
+                <StackPanel Margin="0 100 0 0" HorizontalAlignment="Left">
+                    <TextBlock Text="Shipped With"/>
+                    <StackPanel>
+                        <Border CornerRadius="10" Height="450" Width="300" Tapped="Border_Tapped">
+                            <Border.Background>
+                                <ImageBrush ImageSource="/Assets/Images/MWR_Keyart.jpg" Stretch="Fill"/>
+                            </Border.Background>
+                        </Border>
+                    </StackPanel>
+                </StackPanel>
             </StackPanel>
         </ScrollView>
     </Grid>

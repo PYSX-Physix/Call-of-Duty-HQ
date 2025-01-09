@@ -38,6 +38,7 @@ public class PageService : IPageService
         Configure<SettingsViewModel, SettingsPage>();
         Configure<AboutViewModel, AboutPage>();
         Configure<HelpViewModel, HelpPage>();
+        Configure<MWRViewModel, MWRPage>();
     }
 
     public Type GetPageType(string key)

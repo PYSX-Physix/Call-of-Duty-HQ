@@ -15,7 +15,7 @@
                 <StackPanel Margin="0 15 0 0" Orientation="Horizontal">
                     <Border CornerRadius="10" Height="450" Width="300">
                         <Border.Background>
-                            <ImageBrush ImageSource="/Assets/Images/CoDBO6.jpg" Stretch="Fill"/>
+                            <ImageBrush ImageSource="/Assets/Images/BO6_Keyart.jpg" Stretch="Fill"/>
                         </Border.Background>
                     </Border>
                     <StackPanel Orientation="Vertical">

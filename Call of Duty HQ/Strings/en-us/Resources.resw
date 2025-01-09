@@ -225,4 +225,7 @@
   <data name="Settings_Resources.Text" xml:space="preserve">
     <value>Resources Used</value>
   </data>
+  <data name="Shell_MWR.Content" xml:space="preserve">
+    <value>MWR</value>
+  </data>
 </root>

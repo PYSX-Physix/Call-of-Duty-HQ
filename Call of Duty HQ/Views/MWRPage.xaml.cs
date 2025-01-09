@@ -7,19 +7,19 @@ using Call_of_Duty_HQ.Contracts.Services;
 
 namespace Call_of_Duty_HQ.Views;
 
-public sealed partial class IWPage : Page
+public sealed partial class MWRPage : Page
 {
     string steamPath = ApplicationData.Current.LocalSettings.Values["Steam Path"] as string;
     readonly INavigationService _navigationService;
 
-    public IWViewModel ViewModel
+    public MWRViewModel ViewModel
     {
         get;
     }
 
-    public IWPage()
+    public MWRPage()
     {
-        ViewModel = App.GetService<IWViewModel>();
+        ViewModel = App.GetService<MWRViewModel>();
         InitializeComponent();
         GetSteamStoreInfo();
         _navigationService = App.GetService<INavigationService>();
@@ -27,7 +27,7 @@ public sealed partial class IWPage : Page
 
     private async void GetSteamStoreInfo()
     {
-        string url = $"https://store.steampowered.com/appreviews/292730?json=1";
+        string url = $"https://store.steampowered.com/appreviews/393080?json=1";
 
         using (HttpClient client = new HttpClient())
         {
@@ -57,12 +57,12 @@ public sealed partial class IWPage : Page
                 FeedbackText.Text = $"JSON Parsing Exception! Message: {ex.Message}";
             }
         }
-    
-}
+
+    }
 
     private void Button_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
     {
-        Process.Start($"{steamPath}\\steam.exe", "steam://rungameid/292730");
+        Process.Start($"{steamPath}\\steam.exe", "steam://rungameid/393080");
     }
 
     private void Border_Tapped(object sender, Microsoft.UI.Xaml.Input.TappedRoutedEventArgs e)
