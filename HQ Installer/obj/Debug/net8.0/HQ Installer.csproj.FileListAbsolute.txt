@@ -152,3 +152,9 @@ C:\Users\lolat\OneDrive\Repos\Call of Duty HQ\Avalonia\HQ Installer\obj\Debug\ne
 C:\Users\lolat\OneDrive\Repos\Call of Duty HQ\Avalonia\HQ Installer\obj\Debug\net8.0\HQ Insta.4286D20F.Up2Date
 C:\Users\lolat\OneDrive\Repos\Call of Duty HQ\Avalonia\HQ Installer\obj\Debug\net8.0\HQ Installer.genruntimeconfig.cache
 C:\Users\lolat\OneDrive\Repos\Call of Duty HQ\Avalonia\HQ Installer\obj\Debug\net8.0\ref\HQ Installer.dll
+C:\Users\lolat\OneDrive\Repos\Call of Duty HQ\Avalonia\HQ Installer\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+C:\Users\lolat\OneDrive\Repos\Call of Duty HQ\Avalonia\HQ Installer\bin\Debug\net8.0\System.Text.Json.dll
+C:\Users\lolat\OneDrive\Repos\Call of Duty HQ\Avalonia\HQ Installer\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\lolat\OneDrive\Repos\Call of Duty HQ\Avalonia\HQ Installer\obj\Debug\net8.0\HQ Installer.dll
+C:\Users\lolat\OneDrive\Repos\Call of Duty HQ\Avalonia\HQ Installer\obj\Debug\net8.0\refint\HQ Installer.dll
+C:\Users\lolat\OneDrive\Repos\Call of Duty HQ\Avalonia\HQ Installer\obj\Debug\net8.0\HQ Installer.pdb

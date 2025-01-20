@@ -14,6 +14,8 @@
 	<ScrollViewer>
 		<StackPanel>
 			<StackPanel>
+				<TextBlock Text="Call of Duty HQ" Classes="header"/>
+				<TextBlock Text="Welcome to Call of Duty HQ! Here you can find information about the Call of Duty franchise, including the latest news, games, and more."/>
 			</StackPanel>
 			<TextBlock Text="Games" Classes="header"/>
 			<ScrollViewer>
@@ -23,8 +25,8 @@
 							<Setter Property="Margin" Value="5"/>
 						</Style>
 					</WrapPanel.Styles>
-					<Button Height="400" Click="CoDHQ_OnClick" IsEnabled="False">
-						<Image Source="/Assets/Images/CoDBo6.jpg"/>
+					<Button Height="400" Click="CoDHQ_OnClick">
+						<Image Source="/Assets/Images/BO6_Keyart.jpg"/>
 					</Button>
 					<Button Height="400" Click="CoDHQ_OnClick">
 						<Image Source="/Assets/Images/CoDMWIII.jpg"/>

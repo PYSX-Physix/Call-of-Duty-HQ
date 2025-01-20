@@ -42,6 +42,7 @@ namespace Call_of_Duty_HQ.ViewModels
         public ObservableCollection<ListItemTemplate> Items { get; } = new()
         {
             new ListItemTemplate(typeof(MainViewModel), "Home", "Home"),
+            new ListItemTemplate(typeof(RoadmapViewModel), "Roadmap", "Calendar"),
             new ListItemTemplate(typeof(HelpViewModel), "Help", "Help"),
             new ListItemTemplate(typeof(SettingsViewModel), "Settings", "Settings"),
         };

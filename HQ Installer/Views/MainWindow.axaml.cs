@@ -15,7 +15,7 @@ namespace HQ_Installer.Views
     public partial class MainWindow : Window
     {
 
-        public string InstallDirStr = "C:\\Program Files\\Call of Duty HQ\\";
+        public string InstallDirStr = "C:\\Program Files\\Call of Duty HQ";
 
         public MainWindow()
         {
@@ -27,7 +27,7 @@ namespace HQ_Installer.Views
         {
             if (RunOnClose.IsChecked == true)
             {
-                Process.Start($"{InstallDirStr}Call of Duty HQ.exe");
+                Process.Start($"{InstallDirStr}\\Call of Duty Launcher.exe");
             }
             this.Close();
         }
@@ -87,7 +87,7 @@ namespace HQ_Installer.Views
         private void Client_DownloadProgressChanged(object sender, DownloadProgressChangedEventArgs e)
         {
             InstallProgressBar.Maximum = e.TotalBytesToReceive;
-            InstallProgressBar.Value = e.ProgressPercentage;
+            InstallProgressBar.Value = e.BytesReceived;
         }
 
         public void RegisterApp()

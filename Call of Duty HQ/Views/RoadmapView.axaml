@@ -1,0 +1,21 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="using:Call_of_Duty_HQ.ViewModels"
+             x:DataType="vm:RoadmapViewModel"
+			 xmlns:uip="using:FluentAvalonia.UI.Controls"
+			 xmlns:ui="using:FluentAvalonia.UI"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Call_of_Duty_HQ.Views.RoadmapView">
+	<StackPanel>
+		<TextBlock Text="Roadmap" Classes="header"/>
+		<TextBlock Margin="20 0 0 0" Text="Welcome to the roadmap! Here you can find information about the upcoming features and updates for Call of Duty HQ."/>
+		<TextBlock Text="Upcoming Features" Classes="header"/>
+		<StackPanel Margin="20 0 0 0">
+			<TextBlock Text="Detailed views of each game"/>
+			<TextBlock Text="Override the theme via settings"/>
+			<TextBlock Text="Make the settings menu a lot nicer"/>
+		</StackPanel>
+	</StackPanel>
+</UserControl>

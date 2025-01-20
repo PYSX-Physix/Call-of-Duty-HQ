@@ -232,3 +232,6 @@ C:\Users\lolat\OneDrive\Repos\Call of Duty HQ\Avalonia\Call of Duty HQ\obj\Debug
 C:\Users\lolat\OneDrive\Repos\Call of Duty HQ\Avalonia\Call of Duty HQ\obj\Debug\net8.0\Call of .B616396D.Up2Date
 C:\Users\lolat\OneDrive\Repos\Call of Duty HQ\Avalonia\Call of Duty HQ\obj\Debug\net8.0\Call of Duty HQ.genruntimeconfig.cache
 C:\Users\lolat\OneDrive\Repos\Call of Duty HQ\Avalonia\Call of Duty HQ\obj\Debug\net8.0\ref\Call of Duty HQ.dll
+C:\Users\lolat\OneDrive\Repos\Call of Duty HQ\Avalonia\Call of Duty HQ\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+C:\Users\lolat\OneDrive\Repos\Call of Duty HQ\Avalonia\Call of Duty HQ\bin\Debug\net8.0\System.Text.Json.dll
+C:\Users\lolat\OneDrive\Repos\Call of Duty HQ\Avalonia\Call of Duty HQ\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll

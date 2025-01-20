@@ -115,11 +115,19 @@ namespace Call_of_Duty_Launcher
 
                 if (displayVersion != OnlineVersionString)
                 {
-                    MessageBox.Show("An update is available. Please click OK to download the latest version.");
-                    WebClient webClient = new WebClient();
-                    webClient.DownloadFileCompleted += Client_DownloadFileCompleted;
-                    webClient.DownloadProgressChanged += Client_DownloadProgressChanged;
-                    webClient.DownloadFileAsync(new Uri("https://github.com/PYSX-Physix/Call-of-Duty-HQ/releases/latest/download/Call.of.Duty.HQ.zip"), "Call of Duty HQ.zip");
+                    
+                    if (IsAdministrator() == false) 
+                    {
+                        MessageBox.Show("An update is available. Please click OK to download the latest version.", "Update Available");
+                        ElevateProcess();
+                    }
+                    else
+                    {
+                        WebClient webClient = new WebClient();
+                        webClient.DownloadFileCompleted += Client_DownloadFileCompleted;
+                        webClient.DownloadProgressChanged += Client_DownloadProgressChanged;
+                        webClient.DownloadFileAsync(new Uri("https://github.com/PYSX-Physix/Call-of-Duty-HQ/releases/latest/download/Call.of.Duty.HQ.zip"), "Call of Duty HQ.zip");
+                    }
                 }
                 else
                 {
